@@ -1,0 +1,4 @@
+UMA Integration Instructions
+-----------------------------
+Download the .unitypackage, then import into your project:
+https://drive.google.com/open?id=19Dlj2-vBryqg7s0ksmOrUd3zuy7CrBM7

@@ -1,0 +1,22 @@
+﻿using UnityEngine;
+using System.Collections;
+
+namespace Michsky.UI.CCUI
+{
+    public class SmoothRotating : MonoBehaviour
+    {
+        [Header("SETTINGS")]
+        public float rotationSpeed = 2;
+
+        void OnMouseDrag()
+        {
+            float rotX = Input.GetAxis("Mouse X") * rotationSpeed * Mathf.Deg2Rad;
+            // Enable this if you want to move Y rotation
+            //float rotY = Input.GetAxis("Mouse Y")*rotSpeed*Mathf.Deg2Rad;
+
+            transform.Rotate(Vector3.up, -rotX);
+            // Enable this if you want to move Y rotation
+            //transform.RotateAround(Vector3.right, rotY);
+        }
+    }
+}

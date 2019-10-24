@@ -1,0 +1,37 @@
+﻿Field UI - Complete Main Menu v1.2.6
+--------------------------------------
+Contact me via:
+E-mail: isa.steam@outlook.com
+Website: https://www.michsky.com
+Discord: https://discord.gg/VXpHyUt
+YouTube: https://www.youtube.com/c/michsky
+Unity Connect: https://connect.unity.com/u/isa-kocak-1
+Steam: https://steamcommunity.com/id/geezjesus
+----------------------------------------
+
+Changelog v1.2.6
+----------------
+• Unity 2019 compatibility
+• Added customizable blur system
+• Improved performance
+• Fixed some warnings
+• Minor fixes
+----------------------------
+
+Changelog v1.2a
+----------------
+• Improved mobile scene
+• Improved performance
+• Fixed panel animation bug
+----------------------------
+
+Changelog v1.1f
+----------------
+• Added new Multiplayer panels
+• Added ability to edit positions of splash screen elements
+• Added namespace to the scripts
+• Fixed shader warnings
+• Fixed infinite radial slider
+• Fixed chat scaling on different sizes
+• Fixed blur masking on some buttons
+-------------------------------------
