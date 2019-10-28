@@ -3,15 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UMA;
+using UMA.CharacterSystem;
+
 
 public class GameManager : MonoBehaviour
 
 {
-    public GameObject loadingObject ;
+    public GameObject loadingObject;
+    public GameObject genderSwitch;
+    public GameObject avatar;
 
     void Start()
     {
-        loadingObject.SetActive(false);
+        if (loadingObject)
+        {
+            loadingObject.SetActive(false);
+        }
+
+        if (genderSwitch)
+        {            
+            Debug.Log(genderSwitch.GetComponent<bool>());
+        }        
     }
 
     public void LoginButton(GameObject obj)
@@ -83,7 +96,7 @@ public class GameManager : MonoBehaviour
         while (!operation.isDone)
         {
             float progress = Mathf.Clamp01(operation.progress / .9f);
-            Debug.Log(progress);
+            //Debug.Log(progress);
 
             yield return null;
         }

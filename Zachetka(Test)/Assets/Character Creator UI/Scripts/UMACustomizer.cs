@@ -76,6 +76,7 @@ namespace Michsky.UI.CCUI
 
         [Header("SETTINGS")]
         public string myRecipe;
+        public string saveFilePath;
         public string saveName = "Cool Character";
 
         public Dictionary<string, DnaSetter> dna;
@@ -378,9 +379,19 @@ namespace Michsky.UI.CCUI
 
         public void SaveRecipe()
         {
-            myRecipe = avatar.GetCurrentRecipe();
-            File.WriteAllText(Application.persistentDataPath + "/" + saveName + ".txt", myRecipe);
-            Debug.Log("Recipe saved to: " + Application.persistentDataPath + "/" + saveName + ".txt");
+            if(saveFilePath != null)
+            {
+                myRecipe = avatar.GetCurrentRecipe();
+                File.WriteAllText(saveFilePath + "/" + saveName + ".txt", myRecipe);
+                Debug.Log("Recipe saved to: " + saveFilePath + "/" + saveName + ".txt");
+            }
+            else
+            {
+                myRecipe = avatar.GetCurrentRecipe();
+                File.WriteAllText(Application.persistentDataPath + "/" + saveName + ".txt", myRecipe);
+                Debug.Log("Recipe saved to: " + Application.persistentDataPath + "/" + saveName + ".txt");
+            }
+            
         }
 
         public void LoadRecipe()
