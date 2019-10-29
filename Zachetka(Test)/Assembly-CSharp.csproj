@@ -149,7 +149,7 @@
      <Compile Include="Assets\Hexart UI\Scripts\UIGradient.cs" />
      <Compile Include="Assets\Hexart UI\Scripts\VideoEndCheck.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\NewBehaviourScript.cs" />
+     <Compile Include="Assets\Scripts\JsonFileReader.cs" />
      <Compile Include="Assets\Scripts\PlaceOnPlane.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />

@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UMA;
 using UMA.CharacterSystem;
-
+using Michsky.UI.CCUI;
 
 public class GameManager : MonoBehaviour
 
@@ -13,6 +14,27 @@ public class GameManager : MonoBehaviour
     public GameObject loadingObject;
     public GameObject genderSwitch;
     public GameObject avatar;
+    public string recipeFilePath;
+
+    void Awake()
+    {
+        PlayerData playerData = new PlayerData();
+
+        string json = File.ReadAllText(recipeFilePath + "/MyCharSet.txt");
+        playerData = JsonUtility.FromJson<PlayerData>(json);
+        //Debug.Log(playerData.race);
+
+        if (playerData.race == "HumanMaleDCS")
+        {
+            genderSwitch.GetComponentInChildren<SwitchManager>().isOn = true;
+            avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
+        }
+        else
+        {
+            genderSwitch.GetComponentInChildren<SwitchManager>().isOn = false;
+            avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
+        }
+    }
 
     void Start()
     {
@@ -20,11 +42,11 @@ public class GameManager : MonoBehaviour
         {
             loadingObject.SetActive(false);
         }
+    }
 
-        if (genderSwitch)
-        {            
-            Debug.Log(genderSwitch.GetComponent<bool>());
-        }        
+    void Update()
+    {
+        
     }
 
     public void LoginButton(GameObject obj)
@@ -68,7 +90,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ARSwitcherButton(GameObject obj)
+    public void ARSwitcherButton(GameObject obj) // AR switcher method
     {
         string curState = obj.GetComponentInChildren<Button>().name;
 
@@ -100,5 +122,10 @@ public class GameManager : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    private class PlayerData
+    {
+        public string race;
     }
 }
