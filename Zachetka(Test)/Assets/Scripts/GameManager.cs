@@ -20,20 +20,22 @@ public class GameManager : MonoBehaviour
     {
         PlayerData playerData = new PlayerData();
 
-        string json = File.ReadAllText(recipeFilePath + "/MyCharSet.txt");
+        string json = File.ReadAllText(recipeFilePath + '\\' + "MyCharSet.txt");
         playerData = JsonUtility.FromJson<PlayerData>(json);
         //Debug.Log(playerData.race);
 
         if (playerData.race == "HumanMaleDCS")
         {
             genderSwitch.GetComponentInChildren<SwitchManager>().isOn = true;
-            avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
+            Debug.Log(genderSwitch.GetComponentInChildren<SwitchManager>().isOn);
         }
         else
         {
             genderSwitch.GetComponentInChildren<SwitchManager>().isOn = false;
-            avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
+            Debug.Log(genderSwitch.GetComponentInChildren<SwitchManager>().isOn);
         }
+
+        avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
     }
 
     void Start()
@@ -42,6 +44,8 @@ public class GameManager : MonoBehaviour
         {
             loadingObject.SetActive(false);
         }
+
+        genderSwitch.SetActive(true);
     }
 
     void Update()
@@ -122,6 +126,11 @@ public class GameManager : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    public void SaveRecepie()
+    {
+        avatar.GetComponent<UMACustomizer>().SaveRecipe();
     }
 
     private class PlayerData

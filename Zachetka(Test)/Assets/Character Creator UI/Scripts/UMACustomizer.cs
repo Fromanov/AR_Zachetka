@@ -382,14 +382,14 @@ namespace Michsky.UI.CCUI
             if(saveFilePath != null)
             {
                 myRecipe = avatar.GetCurrentRecipe();
-                File.WriteAllText(saveFilePath + "/" + saveName + ".txt", myRecipe);
-                Debug.Log("Recipe saved to: " + saveFilePath + "/" + saveName + ".txt");
+                File.WriteAllText(saveFilePath + "\\" + saveName + ".txt", myRecipe);
+                Debug.Log("Recipe saved to: " + saveFilePath + "\\" + saveName + ".txt");
             }
             else
             {
                 myRecipe = avatar.GetCurrentRecipe();
-                File.WriteAllText(Application.persistentDataPath + "/" + saveName + ".txt", myRecipe);
-                Debug.Log("Recipe saved to: " + Application.persistentDataPath + "/" + saveName + ".txt");
+                File.WriteAllText(Application.persistentDataPath + "\\" + saveName + ".txt", myRecipe);
+                Debug.Log("Recipe saved to: " + Application.persistentDataPath + "\\" + saveName + ".txt");
             }
             
         }
