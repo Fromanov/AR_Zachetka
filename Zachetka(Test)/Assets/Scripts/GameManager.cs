@@ -28,14 +28,15 @@ public class GameManager : MonoBehaviour
         {
             genderSwitch.GetComponentInChildren<SwitchManager>().isOn = true;
             Debug.Log(genderSwitch.GetComponentInChildren<SwitchManager>().isOn);
-        }
-        else
-        {
+			avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
+		}
+        else if (playerData.race == "HumanFemaleDCS")
+		{
             genderSwitch.GetComponentInChildren<SwitchManager>().isOn = false;
             Debug.Log(genderSwitch.GetComponentInChildren<SwitchManager>().isOn);
-        }
-
-        avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
+			avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
+		}		
+        
     }
 
     void Start()
