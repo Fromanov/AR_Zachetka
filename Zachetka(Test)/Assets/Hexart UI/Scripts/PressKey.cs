@@ -15,10 +15,7 @@ namespace Michsky.UI.Hexart
 
         void Update()
         {
-            if (Input.GetKeyDown(hotkey))
-            {
-                pressAction.Invoke();
-            }
-        }
+			pressAction.Invoke();
+		}
     }
 }

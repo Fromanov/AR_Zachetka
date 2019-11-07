@@ -7,6 +7,7 @@ using UnityEngine.UI;
 using UMA;
 using UMA.CharacterSystem;
 using Michsky.UI.CCUI;
+using Michsky.UI.FieldCompleteMainMenu;
 
 public class GameManager : MonoBehaviour
 
@@ -14,29 +15,33 @@ public class GameManager : MonoBehaviour
     public GameObject loadingObject;
     public GameObject genderSwitch;
     public GameObject avatar;
+	public GameObject menuManager;
     public string recipeFilePath;
+	public bool logged = true;
 
     void Awake()
     {
         PlayerData playerData = new PlayerData();
 
-        string json = File.ReadAllText(recipeFilePath + '\\' + "MyCharSet.txt");
-        playerData = JsonUtility.FromJson<PlayerData>(json);
-        //Debug.Log(playerData.race);
-
-        if (playerData.race == "HumanMaleDCS")
-        {
-            genderSwitch.GetComponentInChildren<SwitchManager>().isOn = true;
-            Debug.Log(genderSwitch.GetComponentInChildren<SwitchManager>().isOn);
-			avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
-		}
-        else if (playerData.race == "HumanFemaleDCS")
+		if (recipeFilePath != null)
 		{
-            genderSwitch.GetComponentInChildren<SwitchManager>().isOn = false;
-            Debug.Log(genderSwitch.GetComponentInChildren<SwitchManager>().isOn);
-			avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
-		}		
-        
+			string json = File.ReadAllText(recipeFilePath + '\\' + "MyCharSet.txt");
+			playerData = JsonUtility.FromJson<PlayerData>(json);
+			//Debug.Log(playerData.race);
+
+			if (playerData.race == "HumanMaleDCS")
+			{
+				genderSwitch.GetComponentInChildren<Michsky.UI.CCUI.SwitchManager>().isOn = true;
+				Debug.Log(genderSwitch.GetComponentInChildren<Michsky.UI.CCUI.SwitchManager>().isOn);
+				avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
+			}
+			else if (playerData.race == "HumanFemaleDCS")
+			{
+				genderSwitch.GetComponentInChildren<Michsky.UI.CCUI.SwitchManager>().isOn = false;
+				Debug.Log(genderSwitch.GetComponentInChildren<Michsky.UI.CCUI.SwitchManager>().isOn);
+				avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
+			}
+		}        
     }
 
     void Start()
@@ -56,18 +61,19 @@ public class GameManager : MonoBehaviour
 
     public void LoginButton(GameObject obj)
     {
-        string curText = obj.GetComponent<Button>().name;
+        string curText = obj.name;
 
-        switch (curText)
+		Debug.Log("Pressed");
+
+		switch (curText)
         {
-            case "Exit Button":
-                Debug.Log("Exit works!");
+            case "Exit Button":                
                 Application.Quit();
                 break;
 
             case "Login Button":
-                Debug.Log("Start");
-                SceneManager.LoadScene("MainMenu");
+				//menuManager.gameObject.GetComponent<SplashScreenManager>().isLoggedIn = true;
+				Debug.Log(menuManager.gameObject.GetComponent<SplashScreenManager>().isLoggedIn);
                 break;
         }
     }
@@ -84,7 +90,7 @@ public class GameManager : MonoBehaviour
                 //SceneManager.LoadScene("");
                 break;
 
-            case "Profile Button":
+            case "Character Button":
                 loadingObject.SetActive(true);
                 LoadLevel("CharacterRoom");
                 break;
@@ -107,6 +113,7 @@ public class GameManager : MonoBehaviour
 
             case "On":
                 SceneManager.LoadScene("MainMenu");
+
                 break;
         }
     }
@@ -123,16 +130,9 @@ public class GameManager : MonoBehaviour
         while (!operation.isDone)
         {
             float progress = Mathf.Clamp01(operation.progress / .9f);
-            //Debug.Log(progress);
-
             yield return null;
         }
-    }
-
-    public void SaveRecepie()
-    {
-        avatar.GetComponent<UMACustomizer>().SaveRecipe();
-    }
+    }   
 
     private class PlayerData
     {

@@ -19,6 +19,13 @@ namespace Michsky.UI.FieldCompleteMainMenu
         public bool disableSplashScreen;
         public bool enableBlurSystem = true;
 
+
+		void Awake()
+		{
+			DontDestroyOnLoad(this);
+			isLoggedIn = true;
+		}
+
         void Start()
         {
             if(enableBlurSystem == true)
@@ -59,7 +66,15 @@ namespace Michsky.UI.FieldCompleteMainMenu
                 splashScreenRegister.SetActive(true);
             }
 
-            else if (isLoggedIn == true && alwaysShowLoginScreen == true)
+			else if (isLoggedIn == true && alwaysShowLoginScreen == false && disableSplashScreen == true)
+			{
+				Debug.Log("Disable splash screen");
+				splashScreen.SetActive(false);
+				splashScreenLogin.SetActive(false);
+				splashScreenRegister.SetActive(false);
+			}
+
+			else if (isLoggedIn == true && alwaysShowLoginScreen == true)
             {
                 splashScreen.SetActive(false);
                 splashScreenLogin.SetActive(true);
@@ -71,7 +86,7 @@ namespace Michsky.UI.FieldCompleteMainMenu
                 splashScreen.SetActive(true);
                 splashScreenLogin.SetActive(false);
                 splashScreenRegister.SetActive(false);
-            }
+            }			
         }
     }
 }

@@ -20,7 +20,7 @@ namespace Michsky.UI.FieldCompleteMainMenu
         {
             if (usernameText.text == username && passwordText.text == password)
             {
-                switchPanelMain.Animate();
+                switchPanelMain.Animate();				
             }
             else
             {
