@@ -1,7 +1,8 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.UI;
 
-namespace Michsky.UI.FieldCompleteMainMenu
+namespace Michsky.UI.Hexart
 {
     public class CustomInputField : MonoBehaviour
     {

@@ -21,28 +21,35 @@ public class GameManager : MonoBehaviour
 
     void Awake()
     {
-        PlayerData playerData = new PlayerData();
+		UserSettings playerData = new UserSettings();
+
+		//recipeFilePath = Application.persistentDataPath;
 
 		if (recipeFilePath != null)
 		{
-			string json = File.ReadAllText(recipeFilePath + '\\' + "MyCharSet.txt");
-			playerData = JsonUtility.FromJson<PlayerData>(json);
-			//Debug.Log(playerData.race);
+			string json = File.ReadAllText(recipeFilePath + '/' + "MyCharSet.txt");
+			playerData = JsonUtility.FromJson<UserSettings>(json);			
 
 			if (playerData.race == "HumanMaleDCS")
 			{
 				genderSwitch.GetComponentInChildren<Michsky.UI.CCUI.SwitchManager>().isOn = true;
 				Debug.Log(genderSwitch.GetComponentInChildren<Michsky.UI.CCUI.SwitchManager>().isOn);
-				avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
+				avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "/MyCharSet.txt");
 			}
 			else if (playerData.race == "HumanFemaleDCS")
 			{
 				genderSwitch.GetComponentInChildren<Michsky.UI.CCUI.SwitchManager>().isOn = false;
 				Debug.Log(genderSwitch.GetComponentInChildren<Michsky.UI.CCUI.SwitchManager>().isOn);
-				avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
+				avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "/MyCharSet.txt");
 			}
-		}        
-    }
+		}
+
+		if (recipeFilePath != null)
+		{
+			recipeFilePath = Application.persistentDataPath;
+		}
+
+	}
 
     void Start()
     {
@@ -51,7 +58,11 @@ public class GameManager : MonoBehaviour
             loadingObject.SetActive(false);
         }
 
-        genderSwitch.SetActive(true);
+		if (genderSwitch)
+		{
+			genderSwitch.SetActive(true);
+		}
+		
     }
 
     void Update()
@@ -132,10 +143,5 @@ public class GameManager : MonoBehaviour
             float progress = Mathf.Clamp01(operation.progress / .9f);
             yield return null;
         }
-    }   
-
-    private class PlayerData
-    {
-        public string race;
-    }
+    }      
 }

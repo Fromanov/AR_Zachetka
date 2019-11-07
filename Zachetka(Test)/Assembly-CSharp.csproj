@@ -425,6 +425,7 @@
      <Compile Include="Assets\UMA\Examples\Physics Examples\UMA_JiggleMaster\UMA_JiggleBoneDiagnostic.cs" />
      <Compile Include="Assets\UMA\Examples\Physics Examples\UMA_JiggleMaster\UMA_JiggleElement.cs" />
      <Compile Include="Assets\UMA\Examples\Timeline Example\Scripts\UMAPlayOnAwake.cs" />
+     <Compile Include="Assets\UserSettings.cs" />
      <None Include="Assets\Field - Complete Main Menu\Read Me.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />

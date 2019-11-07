@@ -1,10 +1,22 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - FloatCubes
     - GameManager
-    - GyroControl
-    - Michsky.UI.FieldCompleteMainMenu.SwitchManager
+    - Michsky.UI.CCUI.BlurManager
+    - Michsky.UI.CCUI.CamPositionControl
+    - Michsky.UI.CCUI.CameraAdjuster
+    - Michsky.UI.CCUI.CameraMotionControls
+    - Michsky.UI.CCUI.ColorPickerWheel
+    - Michsky.UI.CCUI.ColorSelector
+    - Michsky.UI.CCUI.GetUMARootPart
+    - Michsky.UI.CCUI.PanelAnimManager
+    - Michsky.UI.CCUI.RadioAnimManager
+    - Michsky.UI.CCUI.RadioButtonAnim
+    - Michsky.UI.CCUI.SliderManager
+    - Michsky.UI.CCUI.SwitchManager
+    - Michsky.UI.CCUI.UMAChangeColor
+    - Michsky.UI.CCUI.UMACustomizer
+    - Michsky.UI.CCUI.UMADnaSlider
     - Michsky.UI.Hexart.LoadingScreen
     - UMA.BlendshapeDNAConverterPlugin
     - UMA.BonePoseDNAConverterPlugin
@@ -36,6 +48,7 @@ ScriptsOnlyBuild:
     - UMA.PoseTools.UMABonePose
     - UMA.PoseTools.UMAExpressionSet
     - UMA.RaceData
+    - UMA.SharedColorTable
     - UMA.SkeletonDNAConverterPlugin
     - UMA.SlotDataAsset
     - UMA.TextureMerge
@@ -63,6 +76,8 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    - TMPro.TMP_SubMeshUI
+    - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -72,15 +87,22 @@ ScriptsOnlyBuild:
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
+    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
+    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
     - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
+    - UnityEngine.UI.VerticalLayoutGroup
     com.unity.multiplayer-hlapi.Runtime.dll:
     - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
-    Assets/Scenes/GyroRoom.unity:
+    Assets/Scenes/CharacterRoom.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -101,17 +123,15 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
-    - Class: 65
+    - Class: 58
       Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 91
+    - Class: 89
       Script: {instanceID: 0}
-    - Class: 92
+    - Class: 91
       Script: {instanceID: 0}
     - Class: 95
       Script: {instanceID: 0}
@@ -122,15 +142,19 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 9764}
+    - Class: 114
       Script: {instanceID: 9774}
     - Class: 114
-      Script: {instanceID: 9886}
+      Script: {instanceID: 9796}
     - Class: 114
       Script: {instanceID: 10036}
     - Class: 114
       Script: {instanceID: 10054}
     - Class: 114
       Script: {instanceID: 10056}
+    - Class: 114
+      Script: {instanceID: 10062}
     - Class: 114
       Script: {instanceID: 10088}
     - Class: 114
@@ -148,9 +172,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10210}
     - Class: 114
+      Script: {instanceID: 10218}
+    - Class: 114
+      Script: {instanceID: 10298}
+    - Class: 114
+      Script: {instanceID: 10306}
+    - Class: 114
+      Script: {instanceID: 10326}
+    - Class: 114
       Script: {instanceID: 10440}
     - Class: 114
+      Script: {instanceID: 10452}
+    - Class: 114
       Script: {instanceID: 10466}
+    - Class: 114
+      Script: {instanceID: 10512}
     - Class: 114
       Script: {instanceID: 10528}
     - Class: 114
@@ -161,8 +197,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10598}
     - Class: 114
       Script: {instanceID: 10644}
-    - Class: 114
-      Script: {instanceID: 10676}
     - Class: 114
       Script: {instanceID: 10702}
     - Class: 114
@@ -178,13 +212,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10994}
     - Class: 114
+      Script: {instanceID: 11014}
+    - Class: 114
       Script: {instanceID: 11028}
     - Class: 114
+      Script: {instanceID: 11040}
+    - Class: 114
       Script: {instanceID: 11178}
+    - Class: 114
+      Script: {instanceID: 11222}
+    - Class: 114
+      Script: {instanceID: 11254}
     - Class: 114
       Script: {instanceID: 11296}
     - Class: 114
       Script: {instanceID: 11304}
+    - Class: 114
+      Script: {instanceID: 11316}
     - Class: 114
       Script: {instanceID: 11410}
     - Class: 114
@@ -194,13 +238,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11644}
     - Class: 114
+      Script: {instanceID: 11648}
+    - Class: 114
       Script: {instanceID: 11650}
     - Class: 114
+      Script: {instanceID: 11672}
+    - Class: 114
       Script: {instanceID: 11700}
+    - Class: 114
+      Script: {instanceID: 11722}
+    - Class: 114
+      Script: {instanceID: 11812}
+    - Class: 114
+      Script: {instanceID: 11860}
     - Class: 114
       Script: {instanceID: 11888}
     - Class: 114
       Script: {instanceID: 11926}
+    - Class: 114
+      Script: {instanceID: 12022}
     - Class: 114
       Script: {instanceID: 12028}
     - Class: 114
@@ -209,6 +265,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12120}
     - Class: 114
       Script: {instanceID: 12130}
+    - Class: 114
+      Script: {instanceID: 12152}
     - Class: 114
       Script: {instanceID: 12216}
     - Class: 114
@@ -220,15 +278,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12342}
     - Class: 114
+      Script: {instanceID: 12384}
+    - Class: 114
       Script: {instanceID: 12480}
     - Class: 114
       Script: {instanceID: 12536}
+    - Class: 114
+      Script: {instanceID: 12578}
     - Class: 114
       Script: {instanceID: 12620}
     - Class: 114
       Script: {instanceID: 12748}
     - Class: 114
       Script: {instanceID: 12766}
+    - Class: 114
+      Script: {instanceID: 12914}
     - Class: 114
       Script: {instanceID: 12926}
     - Class: 114
@@ -242,13 +306,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13098}
     - Class: 114
+      Script: {instanceID: 13158}
+    - Class: 114
       Script: {instanceID: 13178}
     - Class: 114
       Script: {instanceID: 13232}
     - Class: 114
       Script: {instanceID: 13234}
-    - Class: 114
-      Script: {instanceID: 13254}
     - Class: 114
       Script: {instanceID: 13300}
     - Class: 115
@@ -268,6 +332,8 @@ ScriptsOnlyBuild:
     - Class: 224
       Script: {instanceID: 0}
     - Class: 225
+      Script: {instanceID: 0}
+    - Class: 258
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -2138,7 +2204,7 @@ ScriptsOnlyBuild:
     className: Benchmark02
   - hash:
       serializedVersion: 2
-      Hash: 15d338ae3e910bb45f9f67b3fd9ca24a
+      Hash: 1cc3f8795a747cb40da8ffa40a4810de
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameManager
@@ -2690,5 +2756,5 @@ ScriptsOnlyBuild:
     className: DynamicDNAConverterBehaviour
   platform: 13
   scenePathNames:
-  - Assets/Scenes/GyroRoom.unity
-  playerPath: C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Releace/fullTest.apk
+  - Assets/Scenes/CharacterRoom.unity
+  playerPath: C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Releace/characterTest.apk

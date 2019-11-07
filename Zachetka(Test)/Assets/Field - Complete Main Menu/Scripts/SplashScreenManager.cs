@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.IO;
+using UnityEngine;
 
 namespace Michsky.UI.FieldCompleteMainMenu
 {
@@ -20,10 +21,11 @@ namespace Michsky.UI.FieldCompleteMainMenu
         public bool enableBlurSystem = true;
 
 
+		private string recipeFilePath = "";
+
 		void Awake()
 		{
-			DontDestroyOnLoad(this);
-			isLoggedIn = true;
+			string json = File.ReadAllText(recipeFilePath + '\\' + "Settings.json");
 		}
 
         void Start()
@@ -86,7 +88,14 @@ namespace Michsky.UI.FieldCompleteMainMenu
                 splashScreen.SetActive(true);
                 splashScreenLogin.SetActive(false);
                 splashScreenRegister.SetActive(false);
-            }			
-        }
+            }
+
+			else if (isLoggedIn == true)
+			{
+				splashScreen.SetActive(true);
+				splashScreenLogin.SetActive(false);
+				splashScreenRegister.SetActive(false);
+			}
+		}
     }
 }
