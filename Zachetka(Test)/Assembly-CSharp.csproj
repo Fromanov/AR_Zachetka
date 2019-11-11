@@ -62,6 +62,7 @@
      <Compile Include="Assets\Character Creator UI\Scripts\ColorPickerWheel.cs" />
      <Compile Include="Assets\Character Creator UI\Scripts\ColorSelector.cs" />
      <Compile Include="Assets\Character Creator UI\Scripts\GetUMARootPart.cs" />
+     <Compile Include="Assets\Character Creator UI\Scripts\LoginManager.cs" />
      <Compile Include="Assets\Character Creator UI\Scripts\PanelAnimManager.cs" />
      <Compile Include="Assets\Character Creator UI\Scripts\RadioAnimManager.cs" />
      <Compile Include="Assets\Character Creator UI\Scripts\RadioButtonAnim.cs" />
@@ -71,6 +72,18 @@
      <Compile Include="Assets\Character Creator UI\Scripts\UMAChangeColor.cs" />
      <Compile Include="Assets\Character Creator UI\Scripts\UMACustomizer.cs" />
      <Compile Include="Assets\Character Creator UI\Scripts\UMADnaSlider.cs" />
+     <Compile Include="Assets\FedinaPart\GamePrefabs\SetTargetFramerate.cs" />
+     <Compile Include="Assets\FedinaPart\Scriptsforgame\Instruction.cs" />
+     <Compile Include="Assets\FedinaPart\Scriptsforgame\Music.cs" />
+     <Compile Include="Assets\FedinaPart\Scriptsforgame\Opisanie.cs" />
+     <Compile Include="Assets\FedinaPart\Scriptsforgame\ScenesManage.cs" />
+     <Compile Include="Assets\FedinaPart\Scriptsforgame\Skidki.cs" />
+     <Compile Include="Assets\FedinaPart\Scriptsforgame\Skini.cs" />
+     <Compile Include="Assets\FedinaPart\Scriptsforgame\TextMenu.cs" />
+     <Compile Include="Assets\FedinaPart\Scriptsforgame\TheStackGame.cs" />
+     <Compile Include="Assets\FedinaPart\Stack\Scripts\MainMenu.cs" />
+     <Compile Include="Assets\FedinaPart\Stack\Scripts\RemoveRuble.cs" />
+     <Compile Include="Assets\FedinaPart\Stack\Scripts\Stack.cs" />
      <Compile Include="Assets\Field - Complete Main Menu\Scripts\AnimatorDisableHelper.cs" />
      <Compile Include="Assets\Field - Complete Main Menu\Scripts\BlurManager.cs" />
      <Compile Include="Assets\Field - Complete Main Menu\Scripts\ChatUIManager.cs" />
@@ -151,6 +164,7 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\JsonFileReader.cs" />
      <Compile Include="Assets\Scripts\PlaceOnPlane.cs" />
+     <Compile Include="Assets\Scripts\UserSettings.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
@@ -425,7 +439,6 @@
      <Compile Include="Assets\UMA\Examples\Physics Examples\UMA_JiggleMaster\UMA_JiggleBoneDiagnostic.cs" />
      <Compile Include="Assets\UMA\Examples\Physics Examples\UMA_JiggleMaster\UMA_JiggleElement.cs" />
      <Compile Include="Assets\UMA\Examples\Timeline Example\Scripts\UMAPlayOnAwake.cs" />
-     <Compile Include="Assets\UserSettings.cs" />
      <None Include="Assets\Field - Complete Main Menu\Read Me.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -458,6 +471,7 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\UMA\Examples\DynamicCharacterSystem Examples\Assets\Resources\CharacterRecipes\WerewolfClothed1.txt" />
      <None Include="Assets\UMA\InternalDataStore\InGame\Resources\PlaceholderAssets\PlaceholderAssetsREADME.txt" />
+     <None Include="Assets\FedinaPart\Shaders\FeatheredPlaneShader.shader" />
      <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
@@ -488,6 +502,7 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Mobile.shader" />
      <None Include="Assets\UMA\Content\UMA_Core\HumanShared\Materials\Shaders\HairFadeCutout2.shader" />
+     <None Include="Assets\FedinaPart\Stack\ArtWork\VertexColor.shader" />
      <None Include="Assets\UMA\Core\StandardAssets\UMA\Atlas\AtlasCutoutShader.shader" />
      <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
      <None Include="Assets\UMA\Examples\Legacy Examples\ReadMe - Networking Demo.txt" />
