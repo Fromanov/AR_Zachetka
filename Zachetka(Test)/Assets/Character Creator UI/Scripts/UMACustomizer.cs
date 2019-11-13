@@ -76,12 +76,17 @@ namespace Michsky.UI.CCUI
 
         [Header("SETTINGS")]
         public string myRecipe;
-        public string saveFilePath;
+        private string saveFilePath;
         public string saveName = "Cool Character";
 
         public Dictionary<string, DnaSetter> dna;
 
-        void OnEnable()
+		private void Awake()
+		{
+			
+		}
+
+		void OnEnable()
         {
             avatar.CharacterUpdated.AddListener(Updated);
         }
@@ -379,7 +384,8 @@ namespace Michsky.UI.CCUI
 
         public void SaveRecipe()
         {
-            if(saveFilePath != null)
+			
+			if (saveFilePath != null)
             {
                 myRecipe = avatar.GetCurrentRecipe();
                 File.WriteAllText(saveFilePath + "\\" + saveName + ".txt", myRecipe);
@@ -388,18 +394,19 @@ namespace Michsky.UI.CCUI
             else
             {
                 myRecipe = avatar.GetCurrentRecipe();
-                File.WriteAllText(Application.persistentDataPath + "\\" + saveName + ".txt", myRecipe);
-                Debug.Log("Recipe saved to: " + Application.persistentDataPath + "\\" + saveName + ".txt");
+                File.WriteAllText(Application.persistentDataPath + "/CharacterRecipes/" + saveName + ".txt", myRecipe);
+                Debug.Log("Recipe saved to: " + Application.persistentDataPath + "/CharacterRecipes/" + saveName + ".txt");
             }
             
         }
 
         public void LoadRecipe()
         {
-            myRecipe = File.ReadAllText(Application.persistentDataPath + "/" + saveName + ".txt");
+			
+            myRecipe = File.ReadAllText(Application.persistentDataPath + "/CharacterRecipes/" + saveName + ".txt");
             avatar.ClearSlots();
             avatar.LoadFromRecipeString(myRecipe);
-            Debug.Log("Recipe loaded from: " + Application.persistentDataPath + "/" + saveName + ".txt");
+            Debug.Log("Recipe loaded from: " + Application.persistentDataPath + "/CharacterRecipes/" + saveName + ".txt");
         }
     }
 }

@@ -57,6 +57,23 @@
   <ItemGroup>
      <Compile Include="Assets\Character Creator UI\Editor\InitCCUI.cs" />
      <Compile Include="Assets\Hexart UI\Editor\InitHexUI.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\AndroidPlugin.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\Autorun.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\BuildPostProcessor.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\Compatibility.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\EditorConstants.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\Installer.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\Legacy\LunarConsoleLegacyActionsEditor.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\Log.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\LunarConsoleActionEditor.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\LunarConsoleEditor.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\LunarConsoleEditorAnalytics.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\LunarConsoleHttpClient.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\MenuItems.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\SimpleJSON.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\UI\ActionsAndVariablesWindow.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\Updater.cs" />
+     <Compile Include="Assets\LunarConsole\Editor\Utils.cs" />
      <Compile Include="Assets\UMA\Core\Editor\DNAPlugins\ColorDNAConverterPropertyDrawers.cs" />
      <Compile Include="Assets\UMA\Core\Editor\DNAPlugins\SkeletonDNAConverterPluginInspector.cs" />
      <Compile Include="Assets\UMA\Core\Editor\Extensions\DynamicCharacterSystem\DCARendererManagerEditor.cs" />

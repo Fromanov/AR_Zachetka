@@ -13,44 +13,71 @@ using UnityEngine.Networking;
 public class GameManager : MonoBehaviour
 
 {
+	[Header("Login stuff")]
 	[SerializeField]
 	private GameObject Login_Canvas;
 	[SerializeField]
 	private GameObject Register_Canvas;
 
+	[Header("Main menu")]
 	public GameObject loadingObject;
+	public GameObject menuPanelObject;
+	public GameObject mainStacker;
+	public GameObject skinsStacker;
+	public GameObject instructionStacker;
+	public GameObject salesStacker;
+
+	[Header("Uma stuff")]
 	public GameObject genderSwitch;
 	public GameObject avatar;
 	public string recipeFilePath;
 
-	[SerializeField]
-	public GameObject main;
-	public GameObject skins;
-	public GameObject instruction;
-	public GameObject sales;
-
 
 	void Awake()
 	{
+
+		recipeFilePath = Application.persistentDataPath;
+
 		PlayerData playerData = new PlayerData();
 
-		string json = File.ReadAllText(recipeFilePath + '\\' + "MyCharSet.txt");
-		playerData = JsonUtility.FromJson<PlayerData>(json);
-		//Debug.Log(playerData.race);
-
-		if (playerData.race == "HumanMaleDCS")
-		{
-			genderSwitch.GetComponentInChildren<SwitchManager>().isOn = true;
-			Debug.Log(genderSwitch.GetComponentInChildren<SwitchManager>().isOn);
-			avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
-		}
-		else if (playerData.race == "HumanFemaleDCS")
-		{
-			genderSwitch.GetComponentInChildren<SwitchManager>().isOn = false;
-			Debug.Log(genderSwitch.GetComponentInChildren<SwitchManager>().isOn);
-			avatar.GetComponent<DynamicCharacterAvatar>().LoadFromTextFile(recipeFilePath + "\\MyCharSet.txt");
+		if (!Directory.Exists(recipeFilePath + "/CharacterRecipes"))
+		{			
+			Directory.CreateDirectory(recipeFilePath + "/CharacterRecipes");
 		}
 
+		recipeFilePath = recipeFilePath + "/CharacterRecipes";
+
+		if (!File.Exists(recipeFilePath + '/' + "MyCharSet.txt"))
+		{
+			//File.WriteAllText(recipeFilePath + '/' + "MyCharSet.txt", );
+			avatar.GetComponent<UMACustomizer>().ResetClick();
+		}
+		else
+		{
+			string json = File.ReadAllText(recipeFilePath + '/' + "MyCharSet.txt");
+			playerData = JsonUtility.FromJson<PlayerData>(json);
+
+			if (playerData.race == "HumanMaleDCS")
+			{				
+				if (genderSwitch)
+				{
+					genderSwitch.GetComponentInChildren<SwitchManager>().isOn = true;
+					Debug.Log(genderSwitch.GetComponentInChildren<SwitchManager>().isOn);
+					avatar.GetComponent<UMACustomizer>().LoadRecipe();
+					genderSwitch.SetActive(true);
+				} 
+			}
+			else if (playerData.race == "HumanFemaleDCS")
+			{				
+				if (genderSwitch)
+				{
+					genderSwitch.GetComponentInChildren<SwitchManager>().isOn = false;
+					Debug.Log(genderSwitch.GetComponentInChildren<SwitchManager>().isOn);
+					avatar.GetComponent<UMACustomizer>().LoadRecipe();
+					genderSwitch.SetActive(true);
+				}
+			}
+		}		
 	}
 
 	void Start()
@@ -58,16 +85,12 @@ public class GameManager : MonoBehaviour
 		if (loadingObject)
 		{
 			loadingObject.SetActive(false);
-		}
-
-		genderSwitch.SetActive(true);
+		}		
 	}
 
 
 	public void Button(GameObject obj)
 	{
-		
-
 		string tag = obj.tag;
 
 		switch (tag)
@@ -87,8 +110,9 @@ public class GameManager : MonoBehaviour
 
 		switch (curState)
 		{
-			case "Profile Button":
-				loadingObject.SetActive(true);
+			case "Character Button":
+				menuPanelObject.SetActive(false);
+				loadingObject.SetActive(true);				
 				LoadLevel("CharacterRoom");
 				break;
 
@@ -125,38 +149,38 @@ public class GameManager : MonoBehaviour
 				break;
 
 			case "Skins Button":
-				sales.SetActive(false);
-				main.SetActive(false);
-				skins.SetActive(true);
-				instruction.SetActive(false);	
+				salesStacker.SetActive(false);
+				mainStacker.SetActive(false);
+				skinsStacker.SetActive(true);
+				instructionStacker.SetActive(false);	
 				break;
 
 			case "Sales Button":
-				sales.SetActive(true);
-				main.SetActive(false);
-				skins.SetActive(false);
-				instruction.SetActive(false);
+				salesStacker.SetActive(true);
+				mainStacker.SetActive(false);
+				skinsStacker.SetActive(false);
+				instructionStacker.SetActive(false);
 				break;
 
 			case "Instruction Button":
-				sales.SetActive(false);
-				main.SetActive(false);
-				skins.SetActive(false);
-				instruction.SetActive(true);
+				salesStacker.SetActive(false);
+				mainStacker.SetActive(false);
+				skinsStacker.SetActive(false);
+				instructionStacker.SetActive(true);
 				break;
 
 			case "AR Stack Game":
-				sales.SetActive(false);
-				main.SetActive(true);
-				skins.SetActive(false);
-				instruction.SetActive(false);				
+				salesStacker.SetActive(false);
+				mainStacker.SetActive(true);
+				skinsStacker.SetActive(false);
+				instructionStacker.SetActive(false);				
 				break;
 
 			case "Back Button":
-				sales.SetActive(false);
-				main.SetActive(true);
-				skins.SetActive(false);
-				instruction.SetActive(false);				
+				salesStacker.SetActive(false);
+				mainStacker.SetActive(true);
+				skinsStacker.SetActive(false);
+				instructionStacker.SetActive(false);				
 				break;
 		}
 	}
