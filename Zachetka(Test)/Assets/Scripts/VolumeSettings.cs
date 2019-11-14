@@ -5,6 +5,7 @@ using UnityEngine.Audio;
 using UnityEngine.UI;
 using System.IO;
 using System;
+using UnityEngine.SceneManagement;
 
 public class VolumeSettings : MonoBehaviour
 {
@@ -33,8 +34,8 @@ public class VolumeSettings : MonoBehaviour
 
 	private void Awake()
 	{
-		currentSettings = new Settings(masterSlider.value, musicSlider.value, soundFxSlider.value);
-		SAVE_PATH = Application.dataPath + "/VolumeSettings.txt";
+		currentSettings = new Settings();
+		SAVE_PATH = Application.persistentDataPath + "/VolumeSettings.txt";
 
 		masterSlider.onValueChanged.AddListener(delegate { OnSliderChange(mMaster); });
 		soundFxSlider.onValueChanged.AddListener(delegate { OnSliderChange(mSound); });
@@ -46,11 +47,14 @@ public class VolumeSettings : MonoBehaviour
 		if (File.Exists(SAVE_PATH))
 		{
 
-			defaultSettings = JsonUtility.FromJson<Settings>(File.ReadAllText(SAVE_PATH));
+			currentSettings = JsonUtility.FromJson<Settings>(File.ReadAllText(SAVE_PATH));
+			Debug.Log(currentSettings);
 
 		}
 		else
 		{
+			Debug.Log("NOT EXIST");
+			currentSettings = defaultSettings;
 			string jsonSettings = JsonUtility.ToJson(defaultSettings);
 
 			File.CreateText(SAVE_PATH).Dispose();
@@ -62,12 +66,21 @@ public class VolumeSettings : MonoBehaviour
 
 
 		}
-		masterSlider.value = defaultSettings.Master_Value;
-		soundFxSlider.value = defaultSettings.SoundFx_Value;
-		musicSlider.value = defaultSettings.Music_Value;
+		masterSlider.value = currentSettings.Master_Value;
+		soundFxSlider.value = currentSettings.SoundFx_Value;
+		musicSlider.value = currentSettings.Music_Value;
+		
+
+
+	}
+
+	private void Start()
+	{
 		Master.audioMixer.SetFloat("MasterVolume", Mathf.Log10(masterSlider.value / 100) * 20);
 		Music.audioMixer.SetFloat("MusicVolume", Mathf.Log10(musicSlider.value / 100) * 20);
 		SoundFx.audioMixer.SetFloat("SoundFxVolume", Mathf.Log10(soundFxSlider.value / 100) * 20);
+		SceneManager.activeSceneChanged += ChangedActiveScene;
+
 	}
 
 	private void OnSliderChange(string type)
@@ -94,7 +107,11 @@ public class VolumeSettings : MonoBehaviour
 	}
 
 
-
+	private void ChangedActiveScene(Scene current, Scene next)
+	{
+		SaveSettings();
+		
+	}
 
 
 	public class Settings
@@ -109,12 +126,22 @@ public class VolumeSettings : MonoBehaviour
 			Music_Value = music;
 			SoundFx_Value = soundFx;
 		}
+
+		public Settings() { }
 	}
+
+	
 
 	private void OnApplicationQuit()
 	{
+		SaveSettings();
 		
+	}
 
+
+	private void SaveSettings()
+	{
+		Debug.Log(SAVE_PATH);
 		string jsonSettings = JsonUtility.ToJson(currentSettings);
 
 		using (TextWriter writer = new StreamWriter(SAVE_PATH, false))
@@ -124,5 +151,3 @@ public class VolumeSettings : MonoBehaviour
 		}
 	}
 }
-
-

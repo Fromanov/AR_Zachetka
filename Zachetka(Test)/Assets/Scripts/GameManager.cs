@@ -36,20 +36,17 @@ public class GameManager : MonoBehaviour
 	void Awake()
 	{
 
-		recipeFilePath = Application.persistentDataPath;
+		recipeFilePath = Application.persistentDataPath + "/CharacterRecipes";
 
 		PlayerData playerData = new PlayerData();
 
-		if (!Directory.Exists(recipeFilePath + "/CharacterRecipes"))
+		if (!Directory.Exists(recipeFilePath))
 		{			
-			Directory.CreateDirectory(recipeFilePath + "/CharacterRecipes");
-		}
-
-		recipeFilePath = recipeFilePath + "/CharacterRecipes";
+			Directory.CreateDirectory(recipeFilePath);
+		}		
 
 		if (!File.Exists(recipeFilePath + '/' + "MyCharSet.txt"))
-		{
-			//File.WriteAllText(recipeFilePath + '/' + "MyCharSet.txt", );
+		{			
 			avatar.GetComponent<UMACustomizer>().ResetClick();
 		}
 		else
@@ -65,7 +62,11 @@ public class GameManager : MonoBehaviour
 					Debug.Log(genderSwitch.GetComponentInChildren<SwitchManager>().isOn);
 					avatar.GetComponent<UMACustomizer>().LoadRecipe();
 					genderSwitch.SetActive(true);
-				} 
+				}
+				else
+				{
+					avatar.GetComponent<UMACustomizer>().LoadRecipe();
+				}
 			}
 			else if (playerData.race == "HumanFemaleDCS")
 			{				
@@ -75,6 +76,10 @@ public class GameManager : MonoBehaviour
 					Debug.Log(genderSwitch.GetComponentInChildren<SwitchManager>().isOn);
 					avatar.GetComponent<UMACustomizer>().LoadRecipe();
 					genderSwitch.SetActive(true);
+				}
+				else
+				{
+					avatar.GetComponent<UMACustomizer>().LoadRecipe();
 				}
 			}
 		}		
