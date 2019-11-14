@@ -79,7 +79,10 @@ public class GameManager : MonoBehaviour
 				}
 				else
 				{
-					avatar.GetComponent<UMACustomizer>().LoadRecipe();
+					if(avatar)
+					{
+						avatar.GetComponent<UMACustomizer>().LoadRecipe();
+					}					
 				}
 			}
 		}		

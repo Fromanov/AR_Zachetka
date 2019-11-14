@@ -48,7 +48,7 @@ public class VolumeSettings : MonoBehaviour
 		{
 
 			currentSettings = JsonUtility.FromJson<Settings>(File.ReadAllText(SAVE_PATH));
-			Debug.Log(currentSettings);
+			Debug.Log("Settings load from: " + SAVE_PATH);
 
 		}
 		else
@@ -79,8 +79,6 @@ public class VolumeSettings : MonoBehaviour
 		Master.audioMixer.SetFloat("MasterVolume", Mathf.Log10(masterSlider.value / 100) * 20);
 		Music.audioMixer.SetFloat("MusicVolume", Mathf.Log10(musicSlider.value / 100) * 20);
 		SoundFx.audioMixer.SetFloat("SoundFxVolume", Mathf.Log10(soundFxSlider.value / 100) * 20);
-		SceneManager.activeSceneChanged += ChangedActiveScene;
-
 	}
 
 	private void OnSliderChange(string type)
@@ -100,19 +98,9 @@ public class VolumeSettings : MonoBehaviour
 				Music.audioMixer.SetFloat("MusicVolume", Mathf.Log10(musicSlider.value / 100) * 20);
 				currentSettings.Music_Value = musicSlider.value;
 				break;
-
-
 		}
 
 	}
-
-
-	private void ChangedActiveScene(Scene current, Scene next)
-	{
-		SaveSettings();
-		
-	}
-
 
 	public class Settings
 	{
@@ -139,9 +127,9 @@ public class VolumeSettings : MonoBehaviour
 	}
 
 
-	private void SaveSettings()
+	public void SaveSettings()
 	{
-		Debug.Log(SAVE_PATH);
+		Debug.Log("Settings saved to: " + SAVE_PATH);
 		string jsonSettings = JsonUtility.ToJson(currentSettings);
 
 		using (TextWriter writer = new StreamWriter(SAVE_PATH, false))

@@ -76,6 +76,7 @@
      <Compile Include="Assets\FedinaPart\Scriptsforgame\Instruction.cs" />
      <Compile Include="Assets\FedinaPart\Scriptsforgame\Music.cs" />
      <Compile Include="Assets\FedinaPart\Scriptsforgame\Opisanie.cs" />
+     <Compile Include="Assets\FedinaPart\Scriptsforgame\PanelsPauseFail.cs" />
      <Compile Include="Assets\FedinaPart\Scriptsforgame\ScenesManage.cs" />
      <Compile Include="Assets\FedinaPart\Scriptsforgame\Skidki.cs" />
      <Compile Include="Assets\FedinaPart\Scriptsforgame\Skini.cs" />

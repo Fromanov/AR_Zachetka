@@ -45,6 +45,7 @@ public class TheStackGame : MonoBehaviour
 	public RaycastHit hit;
 	public GameObject Cont;
 	public Text txt;
+	public GameObject panelfail;
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -152,8 +153,7 @@ public class TheStackGame : MonoBehaviour
 								PlayerPrefs.SetInt("max", max_value);
 							}
 							Bitir();
-							obj.SetActive(true);
-							objtwo.SetActive(true);
+
 							if (counter >= PlayerPrefs.GetInt("max"))
 							{
 								PlayerPrefs.SetInt("max", counter);
@@ -191,8 +191,8 @@ public class TheStackGame : MonoBehaviour
 							PlayerPrefs.SetInt("max", max_value);
 						}
 						Bitir();
-						obj.SetActive(true);
-						objtwo.SetActive(true);
+						Debug.Log("Fail");
+						panelfail.SetActive(true);
 						if (counter >= PlayerPrefs.GetInt("max"))
 						{
 							PlayerPrefs.SetInt("max", counter);
@@ -334,8 +334,7 @@ public class TheStackGame : MonoBehaviour
 	{
 		dead = true;
 		go_stack[stack_index].AddComponent<Rigidbody>();
-		obj.SetActive(true);
-		objtwo.SetActive(true);
+		panelfail.SetActive(true);
 		ButtonPause.SetActive(false);
 		txt.enabled = false;
 	}
