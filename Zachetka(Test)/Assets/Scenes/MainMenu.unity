@@ -1857,12 +1857,6 @@ PrefabInstance:
       propertyPath: _effectGradient.key1.b
       value: 0.3137255
       objectReference: {fileID: 0}
-    - target: {fileID: 114606817093544668, guid: e6083abf9fe5e6b4090973a15b282249,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 470b0621b23ac5645878581c772e83f5,
-        type: 3}
     - target: {fileID: 95378529968253254, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
       propertyPath: m_Enabled
@@ -1917,6 +1911,12 @@ PrefabInstance:
       propertyPath: m_Name
       value: Title
       objectReference: {fileID: 0}
+    - target: {fileID: 114606817093544668, guid: e6083abf9fe5e6b4090973a15b282249,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 470b0621b23ac5645878581c772e83f5,
+        type: 3}
     - target: {fileID: 1627381349688398, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -3786,7 +3786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -80, y: -900}
+  m_AnchoredPosition: {x: -80, y: -940}
   m_SizeDelta: {x: 60, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &86396285
@@ -10061,6 +10061,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1618146936}
     m_Modifications:
+    - target: {fileID: 114194135669267784, guid: 8def70f124b39aa41aa786fc4e560294,
+        type: 3}
+      propertyPath: m_Text
+      value: CONTROLS
+      objectReference: {fileID: 0}
     - target: {fileID: 1783234438976950, guid: 8def70f124b39aa41aa786fc4e560294, type: 3}
       propertyPath: m_Name
       value: Controls
@@ -10173,11 +10178,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114194135669267784, guid: 8def70f124b39aa41aa786fc4e560294,
-        type: 3}
-      propertyPath: m_Text
-      value: CONTROLS
       objectReference: {fileID: 0}
     - target: {fileID: 114564759377294240, guid: 8def70f124b39aa41aa786fc4e560294,
         type: 3}
@@ -16291,6 +16291,15 @@ PrefabInstance:
       propertyPath: _effectGradient.key1.r
       value: 0.32549018
       objectReference: {fileID: 0}
+    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
+      propertyPath: m_Name
+      value: Text_
+      objectReference: {fileID: 0}
     - target: {fileID: 114606817093544668, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
       propertyPath: m_Sprite
@@ -16326,15 +16335,6 @@ PrefabInstance:
         type: 3}
       propertyPath: _effectGradient.key1.b
       value: 0.09803922
-      objectReference: {fileID: 0}
-    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
-      propertyPath: m_Name
-      value: Text_
       objectReference: {fileID: 0}
     - target: {fileID: 224749441192074346, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
@@ -16863,7 +16863,7 @@ RectTransform:
   m_GameObject: {fileID: 520513801}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_Children:
   - {fileID: 1763869480}
   m_Father: {fileID: 1781027062}
@@ -18467,6 +18467,15 @@ PrefabInstance:
       propertyPath: _effectGradient.ctime2
       value: 65535
       objectReference: {fileID: 0}
+    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
+      propertyPath: m_Name
+      value: Text_
+      objectReference: {fileID: 0}
     - target: {fileID: 114606817093544668, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
       propertyPath: m_Sprite
@@ -18502,15 +18511,6 @@ PrefabInstance:
         type: 3}
       propertyPath: _effectGradient.key1.b
       value: 0.09803922
-      objectReference: {fileID: 0}
-    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
-      propertyPath: m_Name
-      value: Text_
       objectReference: {fileID: 0}
     - target: {fileID: 224749441192074346, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
@@ -26498,6 +26498,15 @@ PrefabInstance:
       propertyPath: _effectGradient.key1.r
       value: 0.2745098
       objectReference: {fileID: 0}
+    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
+      propertyPath: m_Name
+      value: Text_
+      objectReference: {fileID: 0}
     - target: {fileID: 114606817093544668, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
       propertyPath: m_Sprite
@@ -26533,15 +26542,6 @@ PrefabInstance:
         type: 3}
       propertyPath: _effectGradient.key1.b
       value: 0.09803922
-      objectReference: {fileID: 0}
-    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
-      propertyPath: m_Name
-      value: Text_
       objectReference: {fileID: 0}
     - target: {fileID: 224749441192074346, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
@@ -27642,6 +27642,15 @@ PrefabInstance:
       propertyPath: _effectGradient.key0.r
       value: 0.7568628
       objectReference: {fileID: 0}
+    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
+      propertyPath: m_Name
+      value: Text_
+      objectReference: {fileID: 0}
     - target: {fileID: 114606817093544668, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
       propertyPath: m_Sprite
@@ -27677,15 +27686,6 @@ PrefabInstance:
         type: 3}
       propertyPath: _effectGradient.key1.b
       value: 0.09803922
-      objectReference: {fileID: 0}
-    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
-      propertyPath: m_Name
-      value: Text_
       objectReference: {fileID: 0}
     - target: {fileID: 224749441192074346, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
@@ -44638,6 +44638,15 @@ PrefabInstance:
       propertyPath: _effectGradient.m_NumAlphaKeys
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
+      propertyPath: m_Name
+      value: Text_
+      objectReference: {fileID: 0}
     - target: {fileID: 114606817093544668, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
       propertyPath: m_Sprite
@@ -44673,15 +44682,6 @@ PrefabInstance:
         type: 3}
       propertyPath: _effectGradient.key1.b
       value: 0.09803922
-      objectReference: {fileID: 0}
-    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
-      propertyPath: m_Name
-      value: Text_
       objectReference: {fileID: 0}
     - target: {fileID: 224749441192074346, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
@@ -54435,6 +54435,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1452645425}
     m_Modifications:
+    - target: {fileID: 1264411408652600, guid: 4d20d8d25f565be45ac54695f4cf7a1d, type: 3}
+      propertyPath: m_Name
+      value: Content
+      objectReference: {fileID: 0}
     - target: {fileID: 224615128447586424, guid: 4d20d8d25f565be45ac54695f4cf7a1d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -54524,10 +54528,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1264411408652600, guid: 4d20d8d25f565be45ac54695f4cf7a1d, type: 3}
-      propertyPath: m_Name
-      value: Content
       objectReference: {fileID: 0}
     - target: {fileID: 225834705006004478, guid: 4d20d8d25f565be45ac54695f4cf7a1d,
         type: 3}
@@ -54690,6 +54690,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1618146936}
     m_Modifications:
+    - target: {fileID: 114194135669267784, guid: 8def70f124b39aa41aa786fc4e560294,
+        type: 3}
+      propertyPath: m_Text
+      value: AUDIO
+      objectReference: {fileID: 0}
     - target: {fileID: 1783234438976950, guid: 8def70f124b39aa41aa786fc4e560294, type: 3}
       propertyPath: m_Name
       value: Audio
@@ -54802,11 +54807,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114194135669267784, guid: 8def70f124b39aa41aa786fc4e560294,
-        type: 3}
-      propertyPath: m_Text
-      value: AUDIO
       objectReference: {fileID: 0}
     - target: {fileID: 114564759377294240, guid: 8def70f124b39aa41aa786fc4e560294,
         type: 3}
@@ -56561,6 +56561,15 @@ PrefabInstance:
       propertyPath: _effectGradient.key1.r
       value: 0.4764151
       objectReference: {fileID: 0}
+    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
+      propertyPath: m_Name
+      value: Text_
+      objectReference: {fileID: 0}
     - target: {fileID: 114606817093544668, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
       propertyPath: m_Sprite
@@ -56596,15 +56605,6 @@ PrefabInstance:
         type: 3}
       propertyPath: _effectGradient.key1.b
       value: 0.09803922
-      objectReference: {fileID: 0}
-    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
-      propertyPath: m_Name
-      value: Text_
       objectReference: {fileID: 0}
     - target: {fileID: 224749441192074346, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
@@ -58749,6 +58749,15 @@ PrefabInstance:
       propertyPath: _effectGradient.key1.r
       value: 0.32549018
       objectReference: {fileID: 0}
+    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
+      propertyPath: m_Name
+      value: Text_
+      objectReference: {fileID: 0}
     - target: {fileID: 114606817093544668, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
       propertyPath: m_Sprite
@@ -58784,15 +58793,6 @@ PrefabInstance:
         type: 3}
       propertyPath: _effectGradient.key1.b
       value: 0.09803922
-      objectReference: {fileID: 0}
-    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
-      propertyPath: m_Name
-      value: Text_
       objectReference: {fileID: 0}
     - target: {fileID: 224749441192074346, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
@@ -59517,6 +59517,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1618146936}
     m_Modifications:
+    - target: {fileID: 114194135669267784, guid: 8def70f124b39aa41aa786fc4e560294,
+        type: 3}
+      propertyPath: m_Text
+      value: GRAPHICS
+      objectReference: {fileID: 0}
     - target: {fileID: 1783234438976950, guid: 8def70f124b39aa41aa786fc4e560294, type: 3}
       propertyPath: m_Name
       value: Graphics
@@ -59629,11 +59634,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114194135669267784, guid: 8def70f124b39aa41aa786fc4e560294,
-        type: 3}
-      propertyPath: m_Text
-      value: GRAPHICS
       objectReference: {fileID: 0}
     - target: {fileID: 114564759377294240, guid: 8def70f124b39aa41aa786fc4e560294,
         type: 3}
@@ -63007,6 +63007,15 @@ PrefabInstance:
       propertyPath: _effectGradient.key1.r
       value: 0.9215687
       objectReference: {fileID: 0}
+    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
+      propertyPath: m_Name
+      value: Text_
+      objectReference: {fileID: 0}
     - target: {fileID: 114606817093544668, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}
       propertyPath: m_Sprite
@@ -63042,15 +63051,6 @@ PrefabInstance:
         type: 3}
       propertyPath: _effectGradient.key1.b
       value: 0.09803922
-      objectReference: {fileID: 0}
-    - target: {fileID: 224968563911553202, guid: e6083abf9fe5e6b4090973a15b282249,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1746635275645254, guid: e6083abf9fe5e6b4090973a15b282249, type: 3}
-      propertyPath: m_Name
-      value: Text_
       objectReference: {fileID: 0}
     - target: {fileID: 224749441192074346, guid: e6083abf9fe5e6b4090973a15b282249,
         type: 3}

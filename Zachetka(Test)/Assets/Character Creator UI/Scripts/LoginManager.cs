@@ -116,7 +116,7 @@ public class LoginManager : MonoBehaviour
 			LoginResponseObject response = JsonUtility.FromJson<LoginResponseObject>(request.downloadHandler.text);
 			if (response.jwt != null && response.jwt.Length > 200)
 			{
-				gameManager.LoadLevel("Main Menu");
+				gameManager.LoadLevel("MainMenu");
 			}
 			else
 			{

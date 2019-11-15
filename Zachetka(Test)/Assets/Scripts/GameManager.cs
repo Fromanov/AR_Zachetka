@@ -93,7 +93,9 @@ public class GameManager : MonoBehaviour
 		if (loadingObject)
 		{
 			loadingObject.SetActive(false);
-		}		
+		}
+
+		LunarConsolePlugin.LunarConsole.Show();
 	}
 
 

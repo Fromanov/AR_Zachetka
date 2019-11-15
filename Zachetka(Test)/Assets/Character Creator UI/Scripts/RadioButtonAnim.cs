@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 namespace Michsky.UI.CCUI
 {
-    public class RadioButtonAnim : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+    public class RadioButtonAnim : MonoBehaviour, IPointerEnterHandler //, IPointerExitHandler
     {
         private Animator buttonAnimator;
 
@@ -25,7 +25,7 @@ namespace Michsky.UI.CCUI
             }
         }
 
-        public void OnPointerExit(PointerEventData eventData)
+        /*public void OnPointerExit(PointerEventData eventData)
         {
             if (buttonAnimator.GetCurrentAnimatorStateInfo(0).IsName("Hover to Pressed"))
             {
@@ -36,6 +36,6 @@ namespace Michsky.UI.CCUI
             {
                 buttonAnimator.Play("Hover to Normal");
             }
-        }
+        }*/
     }
 }
