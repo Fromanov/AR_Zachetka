@@ -222,10 +222,4 @@ public class GameManager : MonoBehaviour
 	{
 		public string race;
 	}
-
-
-
-
-
-
 }

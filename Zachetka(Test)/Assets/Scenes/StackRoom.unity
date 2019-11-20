@@ -3588,7 +3588,7 @@ MonoBehaviour:
   objtwo: {fileID: 0}
   max_value: 0
   b: 0
-  ButtonPause: {fileID: 1819899849}
+  ButtonPause: {fileID: 423644936}
   ButtonContinue: {fileID: 1504044830}
   Zachetka: {fileID: 2800000, guid: be21d85efaad608458f909c18fa22d47, type: 3}
   Ground: {fileID: 2800000, guid: 93d1327799630d24caa95ce1f6e2974c, type: 3}

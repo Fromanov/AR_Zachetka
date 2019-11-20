@@ -108,20 +108,8 @@ public class TheStackGame : MonoBehaviour
 		{
 			if (Input.GetMouseButtonDown(0) &&	(PlayerPrefs.GetInt("pause") == 0))
 			{
-				
-				
-
-
-
-
 				a++;
 				ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-
-
-
-
-
 
 				if (Physics.Raycast(ray, out hit))
 				{
@@ -160,12 +148,7 @@ public class TheStackGame : MonoBehaviour
 							}
 
 						}
-					}
-	
-					
-
-
-					
+					}					
 				}
 				else if(PlayerPrefs.GetInt("pause") == 0)
 				{
@@ -254,17 +237,12 @@ public class TheStackGame : MonoBehaviour
 			go_stack[stack_index].GetComponent<Renderer>().material.color = Color.white;
 			go_stack[stack_index].GetComponent<Renderer>().material.SetTexture("_MainTex", Rock);
 		}
-
-
-
 	}
 
 	void Hareketlendir()
 	{
 		if (x_ekseninde_hareket)
 		{
-
-
 			if (!stack_alindi)
 			{
 				go_stack[stack_index].transform.localPosition = new Vector3(-0.51f, count, hassasiyet);
@@ -297,7 +275,6 @@ public class TheStackGame : MonoBehaviour
 			}
 			go_stack[stack_index].transform.localPosition += new Vector3(0, 0, hiz);
 		}
-
 	}
 
 	bool Stack_Kontrol()
@@ -330,6 +307,7 @@ public class TheStackGame : MonoBehaviour
 		}
 		return true;
 	}
+
 	void Bitir()
 	{
 		dead = true;
@@ -338,7 +316,6 @@ public class TheStackGame : MonoBehaviour
 		ButtonPause.SetActive(false);
 		txt.enabled = false;
 	}
-
 
 	private bool IsMouseOverUI()
 	{
@@ -361,9 +338,7 @@ public class TheStackGame : MonoBehaviour
 		Cont.SetActive(false);
 		PlayerPrefs.SetInt("pause", 0);
 		txt.enabled = true;
-
 	}
-
 
 	public void Paus()
 	{

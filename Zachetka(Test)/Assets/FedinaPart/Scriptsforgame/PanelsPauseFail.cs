@@ -25,7 +25,7 @@ public class PanelsPauseFail : MonoBehaviour
 		switch(curState)
 		{
 			case "Back Button":
-				//
+				Time.timeScale = 0;
 				panelpause.SetActive(true);
 				break;
 			case "Menu Button":

@@ -180,7 +180,7 @@
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\JsonFileReader.cs" />
      <Compile Include="Assets\Scripts\PlaceOnPlane.cs" />
-     <Compile Include="Assets\Scripts\UserSettings.cs" />
+     <Compile Include="Assets\Scripts\UserDataControl.cs" />
      <Compile Include="Assets\Scripts\VolumeSettings.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
