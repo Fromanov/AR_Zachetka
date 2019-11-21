@@ -32,8 +32,6 @@ public class TheStackGame : MonoBehaviour
 	public GameObject objtwo;
 	public int max_value;
 	public int b = 0;
-	public GameObject ButtonPause;
-	public GameObject ButtonContinue;
 	public Texture Zachetka;
 	public Texture Ground;
 	public Texture Grass;
@@ -43,9 +41,9 @@ public class TheStackGame : MonoBehaviour
 	public GameObject clicker;
 	public Ray ray;
 	public RaycastHit hit;
-	public GameObject Cont;
-	public Text txt;
+	//public Text txt;
 	public GameObject panelfail;
+	public GameObject panelpause;
 	// Start is called before the first frame update
 	void Start()
 	{
@@ -313,8 +311,7 @@ public class TheStackGame : MonoBehaviour
 		dead = true;
 		go_stack[stack_index].AddComponent<Rigidbody>();
 		panelfail.SetActive(true);
-		ButtonPause.SetActive(false);
-		txt.enabled = false;
+		//txt.enabled = false;
 	}
 
 	private bool IsMouseOverUI()
@@ -334,18 +331,23 @@ public class TheStackGame : MonoBehaviour
 
 	public void Continue()
 	{
-		objtwo.SetActive(false);
-		Cont.SetActive(false);
-		PlayerPrefs.SetInt("pause", 0);
-		txt.enabled = true;
+		//objtwo.SetActive(false);
+		panelpause.SetActive(false);
+		//PlayerPrefs.SetInt("pause", 0);
+		//txt.enabled = true;
+		Time.timeScale = 1;
 	}
 
 	public void Paus()
 	{
-		PlayerPrefs.SetInt("pause", 1);
-		objtwo.SetActive(true);
-		Cont.SetActive(true);
-		txt.enabled = false;
+		//PlayerPrefs.SetInt("pause", 1);
+		//objtwo.SetActive(true);
+		//Cont.SetActive(true);
+		//txt.enabled = false;
+		Debug.Log("Pause");
+		panelpause.SetActive(true);
+		Time.timeScale = 0;
+
 	}
 
 

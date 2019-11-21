@@ -28,7 +28,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -37,7 +37,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -72,7 +72,51 @@
      <Compile Include="Assets\Character Creator UI\Scripts\UMAChangeColor.cs" />
      <Compile Include="Assets\Character Creator UI\Scripts\UMACustomizer.cs" />
      <Compile Include="Assets\Character Creator UI\Scripts\UMADnaSlider.cs" />
+     <Compile Include="Assets\cubeMovier.cs" />
      <Compile Include="Assets\FedinaPart\GamePrefabs\SetTargetFramerate.cs" />
+     <Compile Include="Assets\FedinaPart\Scenes\ARCollaborationData\CollaborationNetworkingIndicator.cs" />
+     <Compile Include="Assets\FedinaPart\Scenes\ARCollaborationData\CollaborativeSession.cs" />
+     <Compile Include="Assets\FedinaPart\Scenes\ARCollaborationData\DisplayTrackingState.cs" />
+     <Compile Include="Assets\FedinaPart\Scenes\ARCollaborationData\ReferencePointInfoManager.cs" />
+     <Compile Include="Assets\FedinaPart\Scenes\ARKitCoachingOverlay\ARKitCoachingOverlay.cs" />
+     <Compile Include="Assets\FedinaPart\Scenes\FaceTracking\DisplayFaceInfo.cs" />
+     <Compile Include="Assets\FedinaPart\Scenes\FaceTracking\ToggleManagers.cs" />
+     <Compile Include="Assets\FedinaPart\Scenes\ImageTracking\TrackedImageInfoManager.cs" />
+     <Compile Include="Assets\FedinaPart\Scenes\Plane Detection\PlaneClassificationLabeler.cs" />
+     <Compile Include="Assets\FedinaPart\Scenes\PointCloud\ARAllPointCloudPointsParticleVisualizer.cs" />
+     <Compile Include="Assets\FedinaPart\Scenes\PointCloud\SwitchPointCloudVisualizationMode.cs" />
+     <Compile Include="Assets\FedinaPart\Scenes\SimpleAR\SessionReloader.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\ARCoreFaceRegionManager.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\ARFeatheredPlaneMeshVisualizer.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\ARKitBlendShapeVisualizer.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\ARWorldMapController.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\BoneController.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\CameraConfigController.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\DisableVerticalPlanes.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\EnvironmentProbeVisualizer.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\EyePoseVisualizer.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\EyeTrackingUI.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\FaceMaterialSwitcher.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\FixationPoint2DVisualizer.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\FixationPoint3DVisualizer.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\HumanBodyTracker.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\LightEstimation.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\LightEstimationUI.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\Logger.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\MakeAppearOnPlane.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\PlaceMultipleObjectsOnPlane.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\PlaceOnPlane.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\PlaneDetectionController.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\ReferencePointCreator.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\RotationController.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\ScaleController.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\ScreenSpaceJointVisualizer.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\SupportChecker.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\TestBodyAnchorScale.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\TestCameraImage.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\TestDepthImage.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\UX\FadePlaneOnBoundaryChange.cs" />
+     <Compile Include="Assets\FedinaPart\Scripts\UX\UIManager.cs" />
      <Compile Include="Assets\FedinaPart\Scriptsforgame\Instruction.cs" />
      <Compile Include="Assets\FedinaPart\Scriptsforgame\Music.cs" />
      <Compile Include="Assets\FedinaPart\Scriptsforgame\Opisanie.cs" />
@@ -179,7 +223,6 @@
      <Compile Include="Assets\LunarConsole\Scripts\Utils\StringUtils.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\JsonFileReader.cs" />
-     <Compile Include="Assets\Scripts\PlaceOnPlane.cs" />
      <Compile Include="Assets\Scripts\UserDataControl.cs" />
      <Compile Include="Assets\Scripts\VolumeSettings.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
@@ -477,6 +520,7 @@
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\UMA\Examples\Legacy Examples\Assets\Shaders\Debug_Tangents.shader" />
      <None Include="Assets\Hexart UI\Shaders\Masked UI Blur.shader" />
+     <None Include="Assets\FedinaPart\Scenes\Object Tracking\Printable Templates\README.txt" />
      <None Include="Assets\Hexart UI\Read Me.txt" />
      <None Include="Assets\UMA\Content\UMA_Core\HumanShared\Materials\Shaders\HairFadeCutout.shader" />
      <None Include="Assets\UMA\Examples\DynamicCharacterSystem Examples\Assets\Resources\CharacterRecipes\Fram.txt" />
@@ -485,6 +529,7 @@
      <None Include="Assets\UMA\Examples\Legacy Examples\Assets\Shaders\Debug_Normals.shader" />
      <None Include="Assets\UMA\Examples\DynamicCharacterSystem Examples\Assets\Resources\CharacterRecipes\HumanMale1.txt" />
      <None Include="Assets\UMA\Examples\DynamicCharacterSystem Examples\Assets\Resources\CharacterRecipes\HumanFemaleDancer1.txt" />
+     <None Include="Assets\FedinaPart\Scenes\PlaneOcclusion\PlaneOcclusionShader.shader" />
      <None Include="Assets\UMA\Examples\DynamicCharacterSystem Examples\Assets\Resources\CharacterRecipes\ToonFemaleDancer1c.txt" />
      <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\UMA\Examples\DynamicCharacterSystem Examples\Assets\Resources\CharacterRecipes\WerewolfClothed1.txt" />
@@ -608,6 +653,30 @@
  </Reference>
  <Reference Include="com.unity.multiplayer-hlapi.Runtime">
  <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.ARCore">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.ARCore.Editor">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.ARKit.FaceTracking.Editor">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.FaceTracking.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.ARKit">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.ARKit.FaceTracking">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.FaceTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.ARKit.Editor">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.Management">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.Management.Editor">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

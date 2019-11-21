@@ -1,69 +1,17 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - GameManager
-    - GyroControl
-    - LoginManager
-    - LunarConsolePlugin.LunarConsole
-    - Michsky.UI.CCUI.BlurManager
-    - Michsky.UI.CCUI.CamPositionControl
-    - Michsky.UI.CCUI.CameraAdjuster
-    - Michsky.UI.CCUI.CameraMotionControls
-    - Michsky.UI.CCUI.ColorPickerWheel
-    - Michsky.UI.CCUI.ColorSelector
-    - Michsky.UI.CCUI.GetUMARootPart
-    - Michsky.UI.CCUI.PanelAnimManager
-    - Michsky.UI.CCUI.RadioAnimManager
-    - Michsky.UI.CCUI.RadioButtonAnim
-    - Michsky.UI.CCUI.SliderManager
-    - Michsky.UI.CCUI.SwitchManager
-    - Michsky.UI.CCUI.UMAChangeColor
-    - Michsky.UI.CCUI.UMACustomizer
-    - Michsky.UI.CCUI.UMADnaSlider
-    - Michsky.UI.FieldCompleteMainMenu.ChatUIManager
-    - Michsky.UI.FieldCompleteMainMenu.ExitToSystem
-    - Michsky.UI.FieldCompleteMainMenu.ObjectDisableHelper
-    - Michsky.UI.FieldCompleteMainMenu.SettingsManager
-    - Michsky.UI.FieldCompleteMainMenu.SplashScreenManager
-    - Michsky.UI.FieldCompleteMainMenu.SwitchManager
-    - Michsky.UI.FieldCompleteMainMenu.SwitchToMainPanels
-    - Michsky.UI.FieldCompleteMainMenu.TooltipManager
-    - Michsky.UI.FieldCompleteMainMenu.TopPanelManager
-    - Michsky.UI.FieldCompleteMainMenu.UIElementSound
-    - Michsky.UI.Hexart.BlurManager
-    - Michsky.UI.Hexart.CustomInputField
-    - Michsky.UI.Hexart.ExitToSystem
-    - Michsky.UI.Hexart.FeedbackSystem
-    - Michsky.UI.Hexart.HorizontalSelector
-    - Michsky.UI.Hexart.LayoutGroupPositionFix
-    - Michsky.UI.Hexart.ListTabsManager
-    - Michsky.UI.Hexart.LoadScene
     - Michsky.UI.Hexart.LoadingScreen
-    - Michsky.UI.Hexart.LoadingStyle
-    - Michsky.UI.Hexart.PressKey
-    - Michsky.UI.Hexart.SettingsTabManager
-    - Michsky.UI.Hexart.SliderManager
-    - Michsky.UI.Hexart.SplashScreenManager
-    - Michsky.UI.Hexart.SwitchAnim
-    - Michsky.UI.Hexart.TimedAction
-    - Michsky.UI.Hexart.ToggleAnim
-    - Michsky.UI.Hexart.TopPanelButton
     - Michsky.UI.Hexart.UIElementSound
-    - Michsky.UI.Hexart.VideoEndCheck
     - Music
-    - PanelsPauseFail
-    - ScenesManage
+    - PlaceOnPlane
+    - SessionReloader
+    - TextMenu
     - TheStackGame
     - UMA.BlendshapeDNAConverterPlugin
     - UMA.BonePoseDNAConverterPlugin
     - UMA.CapsuleColliderSlotScript
-    - UMA.CharacterSystem.DynamicAssetLoader
-    - UMA.CharacterSystem.DynamicCharacterAvatar
-    - UMA.CharacterSystem.DynamicCharacterSystem
     - UMA.CharacterSystem.DynamicDNAConverterBehaviour
-    - UMA.CharacterSystem.DynamicOverlayLibrary
-    - UMA.CharacterSystem.DynamicRaceLibrary
-    - UMA.CharacterSystem.DynamicSlotLibrary
     - UMA.CharacterSystem.UMAWardrobeRecipe
     - UMA.ColorDNAConverterPlugin
     - UMA.DNARangeAsset
@@ -84,24 +32,18 @@ ScriptsOnlyBuild:
     - UMA.PoseTools.UMABonePose
     - UMA.PoseTools.UMAExpressionSet
     - UMA.RaceData
-    - UMA.SharedColorTable
     - UMA.SkeletonDNAConverterPlugin
     - UMA.SlotDataAsset
-    - UMA.TextureMerge
     - UMA.TutorialDNAConverterBehaviour
     - UMA.UMAAssetIndexer
     - UMA.UMAClothProperties
-    - UMA.UMAContext
-    - UMA.UMADefaultMeshCombiner
-    - UMA.UMAGenerator
     - UMA.UMAMaterial
     - UMA.UMAPhysicsSlotDefinition
-    - UMA.UMAPostProcess
     - UMA.UMARendererAsset
     - UMA.UMATextRecipe
     - UMA.UmaTPose
     - UnityEngine.UI.UIGradient
-    - VolumeSettings
+    - cubeMovier
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -114,368 +56,37 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
-    - TMPro.TMP_SubMeshUI
-    - TMPro.TextMeshProUGUI
+    Unity.XR.ARFoundation.dll:
+    - UnityEngine.XR.ARFoundation.ARCameraBackground
+    - UnityEngine.XR.ARFoundation.ARCameraManager
+    - UnityEngine.XR.ARFoundation.ARInputManager
+    - UnityEngine.XR.ARFoundation.ARPlane
+    - UnityEngine.XR.ARFoundation.ARPlaneManager
+    - UnityEngine.XR.ARFoundation.ARPlaneMeshVisualizer
+    - UnityEngine.XR.ARFoundation.ARPointCloud
+    - UnityEngine.XR.ARFoundation.ARPointCloudManager
+    - UnityEngine.XR.ARFoundation.ARPointCloudParticleVisualizer
+    - UnityEngine.XR.ARFoundation.ARRaycastManager
+    - UnityEngine.XR.ARFoundation.ARSession
+    - UnityEngine.XR.ARFoundation.ARSessionOrigin
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
+    UnityEngine.SpatialTracking.dll:
+    - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
-    - UnityEngine.EventSystems.EventTrigger
     - UnityEngine.EventSystems.StandaloneInputModule
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
-    - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
-    - UnityEngine.UI.GridLayoutGroup
-    - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
-    - UnityEngine.UI.InputField
-    - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
-    - UnityEngine.UI.RawImage
-    - UnityEngine.UI.ScrollRect
-    - UnityEngine.UI.Scrollbar
-    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
-    - UnityEngine.UI.Toggle
-    - UnityEngine.UI.ToggleGroup
-    - UnityEngine.UI.VerticalLayoutGroup
+    com.unity.multiplayer-hlapi.Runtime.dll:
+    - UnityEngine.Networking.NetworkCallbacks
   sceneClasses:
-    Assets/Scenes/CharacterRoom.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 58
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 89
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 10022}
-    - Class: 114
-      Script: {instanceID: 10034}
-    - Class: 114
-      Script: {instanceID: 10064}
-    - Class: 114
-      Script: {instanceID: 10344}
-    - Class: 114
-      Script: {instanceID: 10352}
-    - Class: 114
-      Script: {instanceID: 10408}
-    - Class: 114
-      Script: {instanceID: 10430}
-    - Class: 114
-      Script: {instanceID: 10502}
-    - Class: 114
-      Script: {instanceID: 10510}
-    - Class: 114
-      Script: {instanceID: 10598}
-    - Class: 114
-      Script: {instanceID: 10610}
-    - Class: 114
-      Script: {instanceID: 10632}
-    - Class: 114
-      Script: {instanceID: 10774}
-    - Class: 114
-      Script: {instanceID: 10788}
-    - Class: 114
-      Script: {instanceID: 10834}
-    - Class: 114
-      Script: {instanceID: 10980}
-    - Class: 114
-      Script: {instanceID: 11198}
-    - Class: 114
-      Script: {instanceID: 11226}
-    - Class: 114
-      Script: {instanceID: 11394}
-    - Class: 114
-      Script: {instanceID: 11422}
-    - Class: 114
-      Script: {instanceID: 11572}
-    - Class: 114
-      Script: {instanceID: 11618}
-    - Class: 114
-      Script: {instanceID: 11652}
-    - Class: 114
-      Script: {instanceID: 11698}
-    - Class: 114
-      Script: {instanceID: 11722}
-    - Class: 114
-      Script: {instanceID: 12002}
-    - Class: 114
-      Script: {instanceID: 12088}
-    - Class: 114
-      Script: {instanceID: 12092}
-    - Class: 114
-      Script: {instanceID: 12116}
-    - Class: 114
-      Script: {instanceID: 12148}
-    - Class: 114
-      Script: {instanceID: 12172}
-    - Class: 114
-      Script: {instanceID: 12274}
-    - Class: 114
-      Script: {instanceID: 12326}
-    - Class: 114
-      Script: {instanceID: 12498}
-    - Class: 114
-      Script: {instanceID: 12504}
-    - Class: 114
-      Script: {instanceID: 12646}
-    - Class: 114
-      Script: {instanceID: 12718}
-    - Class: 114
-      Script: {instanceID: 12840}
-    - Class: 114
-      Script: {instanceID: 12896}
-    - Class: 114
-      Script: {instanceID: 13002}
-    - Class: 114
-      Script: {instanceID: 13062}
-    - Class: 114
-      Script: {instanceID: 13110}
-    - Class: 114
-      Script: {instanceID: 13154}
-    - Class: 114
-      Script: {instanceID: 13474}
-    - Class: 114
-      Script: {instanceID: 13506}
-    - Class: 114
-      Script: {instanceID: 13680}
-    - Class: 114
-      Script: {instanceID: 13744}
-    - Class: 114
-      Script: {instanceID: 13766}
-    - Class: 114
-      Script: {instanceID: 13822}
-    - Class: 114
-      Script: {instanceID: 13824}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 124
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 225
-      Script: {instanceID: 0}
-    - Class: 258
-      Script: {instanceID: 0}
-    Assets/Scenes/GyroRoom.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 64
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 84
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 92
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 10014}
-    - Class: 114
-      Script: {instanceID: 10034}
-    - Class: 114
-      Script: {instanceID: 10086}
-    - Class: 114
-      Script: {instanceID: 10148}
-    - Class: 114
-      Script: {instanceID: 10344}
-    - Class: 114
-      Script: {instanceID: 10346}
-    - Class: 114
-      Script: {instanceID: 10352}
-    - Class: 114
-      Script: {instanceID: 10408}
-    - Class: 114
-      Script: {instanceID: 10430}
-    - Class: 114
-      Script: {instanceID: 10502}
-    - Class: 114
-      Script: {instanceID: 10510}
-    - Class: 114
-      Script: {instanceID: 10598}
-    - Class: 114
-      Script: {instanceID: 10610}
-    - Class: 114
-      Script: {instanceID: 10632}
-    - Class: 114
-      Script: {instanceID: 10640}
-    - Class: 114
-      Script: {instanceID: 10724}
-    - Class: 114
-      Script: {instanceID: 10788}
-    - Class: 114
-      Script: {instanceID: 10838}
-    - Class: 114
-      Script: {instanceID: 10980}
-    - Class: 114
-      Script: {instanceID: 11014}
-    - Class: 114
-      Script: {instanceID: 11172}
-    - Class: 114
-      Script: {instanceID: 11198}
-    - Class: 114
-      Script: {instanceID: 11226}
-    - Class: 114
-      Script: {instanceID: 11572}
-    - Class: 114
-      Script: {instanceID: 11652}
-    - Class: 114
-      Script: {instanceID: 11698}
-    - Class: 114
-      Script: {instanceID: 11724}
-    - Class: 114
-      Script: {instanceID: 11742}
-    - Class: 114
-      Script: {instanceID: 11836}
-    - Class: 114
-      Script: {instanceID: 11846}
-    - Class: 114
-      Script: {instanceID: 11904}
-    - Class: 114
-      Script: {instanceID: 12088}
-    - Class: 114
-      Script: {instanceID: 12126}
-    - Class: 114
-      Script: {instanceID: 12148}
-    - Class: 114
-      Script: {instanceID: 12274}
-    - Class: 114
-      Script: {instanceID: 12426}
-    - Class: 114
-      Script: {instanceID: 12436}
-    - Class: 114
-      Script: {instanceID: 12498}
-    - Class: 114
-      Script: {instanceID: 12662}
-    - Class: 114
-      Script: {instanceID: 12718}
-    - Class: 114
-      Script: {instanceID: 12732}
-    - Class: 114
-      Script: {instanceID: 12840}
-    - Class: 114
-      Script: {instanceID: 13002}
-    - Class: 114
-      Script: {instanceID: 13062}
-    - Class: 114
-      Script: {instanceID: 13154}
-    - Class: 114
-      Script: {instanceID: 13296}
-    - Class: 114
-      Script: {instanceID: 13322}
-    - Class: 114
-      Script: {instanceID: 13358}
-    - Class: 114
-      Script: {instanceID: 13506}
-    - Class: 114
-      Script: {instanceID: 13554}
-    - Class: 114
-      Script: {instanceID: 13616}
-    - Class: 114
-      Script: {instanceID: 13680}
-    - Class: 114
-      Script: {instanceID: 13766}
-    - Class: 114
-      Script: {instanceID: 13788}
-    - Class: 114
-      Script: {instanceID: 13822}
-    - Class: 114
-      Script: {instanceID: 13824}
-    - Class: 114
-      Script: {instanceID: 13848}
-    - Class: 114
-      Script: {instanceID: 13854}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 124
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 225
-      Script: {instanceID: 0}
-    - Class: 241
-      Script: {instanceID: 0}
-    - Class: 243
-      Script: {instanceID: 0}
-    - Class: 245
-      Script: {instanceID: 0}
-    - Class: 328
-      Script: {instanceID: 0}
-    - Class: 329
-      Script: {instanceID: 0}
-    Assets/Scenes/LoginRoom.unity:
+    Assets/Scenes/ArStackRoom.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -496,13 +107,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 49
       Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
     - Class: 74
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
-    - Class: 84
+    - Class: 89
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -516,8 +133,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 10034}
-    - Class: 114
-      Script: {instanceID: 10150}
     - Class: 114
       Script: {instanceID: 10324}
     - Class: 114
@@ -535,11 +150,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10446}
     - Class: 114
-      Script: {instanceID: 10598}
+      Script: {instanceID: 10470}
     - Class: 114
-      Script: {instanceID: 10632}
+      Script: {instanceID: 10700}
+    - Class: 114
+      Script: {instanceID: 10724}
     - Class: 114
       Script: {instanceID: 10758}
+    - Class: 114
+      Script: {instanceID: 10762}
     - Class: 114
       Script: {instanceID: 10852}
     - Class: 114
@@ -551,13 +170,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10980}
     - Class: 114
+      Script: {instanceID: 11030}
+    - Class: 114
       Script: {instanceID: 11044}
+    - Class: 114
+      Script: {instanceID: 11088}
     - Class: 114
       Script: {instanceID: 11098}
     - Class: 114
       Script: {instanceID: 11138}
-    - Class: 114
-      Script: {instanceID: 11194}
     - Class: 114
       Script: {instanceID: 11198}
     - Class: 114
@@ -567,23 +188,19 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11410}
     - Class: 114
-      Script: {instanceID: 11530}
-    - Class: 114
-      Script: {instanceID: 11560}
+      Script: {instanceID: 11578}
     - Class: 114
       Script: {instanceID: 11698}
     - Class: 114
       Script: {instanceID: 11706}
     - Class: 114
-      Script: {instanceID: 11748}
+      Script: {instanceID: 11742}
     - Class: 114
       Script: {instanceID: 11820}
     - Class: 114
-      Script: {instanceID: 11856}
-    - Class: 114
       Script: {instanceID: 11860}
     - Class: 114
-      Script: {instanceID: 11966}
+      Script: {instanceID: 11928}
     - Class: 114
       Script: {instanceID: 12050}
     - Class: 114
@@ -591,19 +208,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12094}
     - Class: 114
-      Script: {instanceID: 12126}
-    - Class: 114
-      Script: {instanceID: 12264}
-    - Class: 114
       Script: {instanceID: 12356}
-    - Class: 114
-      Script: {instanceID: 12386}
     - Class: 114
       Script: {instanceID: 12394}
     - Class: 114
-      Script: {instanceID: 12452}
+      Script: {instanceID: 12400}
     - Class: 114
-      Script: {instanceID: 12498}
+      Script: {instanceID: 12486}
     - Class: 114
       Script: {instanceID: 12504}
     - Class: 114
@@ -613,23 +224,29 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12620}
     - Class: 114
+      Script: {instanceID: 12648}
+    - Class: 114
       Script: {instanceID: 12750}
     - Class: 114
       Script: {instanceID: 12782}
     - Class: 114
+      Script: {instanceID: 12810}
+    - Class: 114
       Script: {instanceID: 12848}
+    - Class: 114
+      Script: {instanceID: 12938}
     - Class: 114
       Script: {instanceID: 13002}
     - Class: 114
-      Script: {instanceID: 13062}
+      Script: {instanceID: 13046}
     - Class: 114
-      Script: {instanceID: 13154}
+      Script: {instanceID: 13062}
     - Class: 114
       Script: {instanceID: 13294}
     - Class: 114
-      Script: {instanceID: 13296}
-    - Class: 114
       Script: {instanceID: 13314}
+    - Class: 114
+      Script: {instanceID: 13336}
     - Class: 114
       Script: {instanceID: 13486}
     - Class: 114
@@ -637,28 +254,32 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13554}
     - Class: 114
-      Script: {instanceID: 13574}
-    - Class: 114
-      Script: {instanceID: 13616}
+      Script: {instanceID: 13570}
     - Class: 114
       Script: {instanceID: 13678}
     - Class: 114
-      Script: {instanceID: 13680}
-    - Class: 114
       Script: {instanceID: 13766}
     - Class: 114
-      Script: {instanceID: 13788}
-    - Class: 114
-      Script: {instanceID: 13818}
+      Script: {instanceID: 13796}
     - Class: 114
       Script: {instanceID: 13900}
+    - Class: 114
+      Script: {instanceID: 75300}
+    - Class: 114
+      Script: {instanceID: 75330}
+    - Class: 114
+      Script: {instanceID: 382074}
     - Class: 115
       Script: {instanceID: 0}
-    - Class: 124
+    - Class: 120
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -677,228 +298,6 @@ ScriptsOnlyBuild:
     - Class: 245
       Script: {instanceID: 0}
     - Class: 258
-      Script: {instanceID: 0}
-    - Class: 328
-      Script: {instanceID: 0}
-    - Class: 329
-      Script: {instanceID: 0}
-    Assets/Scenes/MainMenu.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 84
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 10014}
-    - Class: 114
-      Script: {instanceID: 10034}
-    - Class: 114
-      Script: {instanceID: 10086}
-    - Class: 114
-      Script: {instanceID: 10148}
-    - Class: 114
-      Script: {instanceID: 10346}
-    - Class: 114
-      Script: {instanceID: 10352}
-    - Class: 114
-      Script: {instanceID: 10408}
-    - Class: 114
-      Script: {instanceID: 10510}
-    - Class: 114
-      Script: {instanceID: 10598}
-    - Class: 114
-      Script: {instanceID: 10632}
-    - Class: 114
-      Script: {instanceID: 10640}
-    - Class: 114
-      Script: {instanceID: 10724}
-    - Class: 114
-      Script: {instanceID: 10838}
-    - Class: 114
-      Script: {instanceID: 10980}
-    - Class: 114
-      Script: {instanceID: 11014}
-    - Class: 114
-      Script: {instanceID: 11172}
-    - Class: 114
-      Script: {instanceID: 11198}
-    - Class: 114
-      Script: {instanceID: 11652}
-    - Class: 114
-      Script: {instanceID: 11724}
-    - Class: 114
-      Script: {instanceID: 11742}
-    - Class: 114
-      Script: {instanceID: 11836}
-    - Class: 114
-      Script: {instanceID: 11846}
-    - Class: 114
-      Script: {instanceID: 11904}
-    - Class: 114
-      Script: {instanceID: 12088}
-    - Class: 114
-      Script: {instanceID: 12126}
-    - Class: 114
-      Script: {instanceID: 12274}
-    - Class: 114
-      Script: {instanceID: 12426}
-    - Class: 114
-      Script: {instanceID: 12436}
-    - Class: 114
-      Script: {instanceID: 12498}
-    - Class: 114
-      Script: {instanceID: 12662}
-    - Class: 114
-      Script: {instanceID: 12732}
-    - Class: 114
-      Script: {instanceID: 13002}
-    - Class: 114
-      Script: {instanceID: 13154}
-    - Class: 114
-      Script: {instanceID: 13296}
-    - Class: 114
-      Script: {instanceID: 13322}
-    - Class: 114
-      Script: {instanceID: 13358}
-    - Class: 114
-      Script: {instanceID: 13616}
-    - Class: 114
-      Script: {instanceID: 13680}
-    - Class: 114
-      Script: {instanceID: 13766}
-    - Class: 114
-      Script: {instanceID: 13788}
-    - Class: 114
-      Script: {instanceID: 13822}
-    - Class: 114
-      Script: {instanceID: 13854}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 225
-      Script: {instanceID: 0}
-    - Class: 241
-      Script: {instanceID: 0}
-    - Class: 243
-      Script: {instanceID: 0}
-    - Class: 245
-      Script: {instanceID: 0}
-    - Class: 328
-      Script: {instanceID: 0}
-    - Class: 329
-      Script: {instanceID: 0}
-    Assets/Scenes/StackRoom.unity:
-    - Class: 1
-      Script: {instanceID: 0}
-    - Class: 4
-      Script: {instanceID: 0}
-    - Class: 20
-      Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
-    - Class: 23
-      Script: {instanceID: 0}
-    - Class: 28
-      Script: {instanceID: 0}
-    - Class: 33
-      Script: {instanceID: 0}
-    - Class: 43
-      Script: {instanceID: 0}
-    - Class: 48
-      Script: {instanceID: 0}
-    - Class: 65
-      Script: {instanceID: 0}
-    - Class: 74
-      Script: {instanceID: 0}
-    - Class: 81
-      Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
-    - Class: 83
-      Script: {instanceID: 0}
-    - Class: 91
-      Script: {instanceID: 0}
-    - Class: 95
-      Script: {instanceID: 0}
-    - Class: 104
-      Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
-    - Class: 114
-      Script: {instanceID: 10034}
-    - Class: 114
-      Script: {instanceID: 10346}
-    - Class: 114
-      Script: {instanceID: 10408}
-    - Class: 114
-      Script: {instanceID: 10724}
-    - Class: 114
-      Script: {instanceID: 10762}
-    - Class: 114
-      Script: {instanceID: 10980}
-    - Class: 114
-      Script: {instanceID: 11198}
-    - Class: 114
-      Script: {instanceID: 11742}
-    - Class: 114
-      Script: {instanceID: 12088}
-    - Class: 114
-      Script: {instanceID: 12644}
-    - Class: 114
-      Script: {instanceID: 12648}
-    - Class: 114
-      Script: {instanceID: 13002}
-    - Class: 114
-      Script: {instanceID: 13392}
-    - Class: 114
-      Script: {instanceID: 13766}
-    - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
-      Script: {instanceID: 0}
-    - Class: 157
-      Script: {instanceID: 0}
-    - Class: 213
-      Script: {instanceID: 0}
-    - Class: 222
-      Script: {instanceID: 0}
-    - Class: 223
-      Script: {instanceID: 0}
-    - Class: 224
-      Script: {instanceID: 0}
-    - Class: 225
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -1069,12 +468,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: GroupTrack
-  - hash:
-      serializedVersion: 2
-      Hash: ee81144d213302d21b603298f19b15e5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: PlaceOnPlane
   - hash:
       serializedVersion: 2
       Hash: bc76e2379c9170e3a9b4e3db79a306f1
@@ -1797,7 +1190,7 @@ ScriptsOnlyBuild:
     className: SampleCode
   - hash:
       serializedVersion: 2
-      Hash: 8f1e591808db709cb76cb7d85cb9a8d7
+      Hash: 1268406d3f2e4b2c2b670b560b6db769
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: AREnvironmentProbeManager
@@ -2367,7 +1760,7 @@ ScriptsOnlyBuild:
     className: MorphSetDnaConverterBehaviour
   - hash:
       serializedVersion: 2
-      Hash: 982acebdb29318e47aa2d3c2cb7e1539
+      Hash: 0535c7e7c34dd1cdfc5b1f8ffce1aebe
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARTrackedImageManager
@@ -2553,7 +1946,7 @@ ScriptsOnlyBuild:
     className: PanelAnimManager
   - hash:
       serializedVersion: 2
-      Hash: bf8303f7968baf488c0fc27825633d3b
+      Hash: af1424ac2db682554237dfcc4bf2bae5
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TheStackGame
@@ -2691,7 +2084,7 @@ ScriptsOnlyBuild:
     className: UMARendererAsset
   - hash:
       serializedVersion: 2
-      Hash: d0976f085ee327327a35839ca3cb80f1
+      Hash: d39905ff8fda75afed4d688761c322e1
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARFaceManager
@@ -3165,7 +2558,7 @@ ScriptsOnlyBuild:
     className: UMASimpleLOD
   - hash:
       serializedVersion: 2
-      Hash: 20d20168517d1c0e098918311aa95bbb
+      Hash: cbe6deff75fc0987595a61e9510f7917
     assemblyName: Unity.XR.ARFoundation.dll
     namespaceName: UnityEngine.XR.ARFoundation
     className: ARCameraBackground
@@ -3427,11 +2820,367 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: UMA.CharacterSystem
     className: DynamicDNAConverterBehaviour
+  - hash:
+      serializedVersion: 2
+      Hash: c853cb82a4e41644c56bc34a641dab4c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TestCameraImage
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlaneClassificationLabeler
+  - hash:
+      serializedVersion: 2
+      Hash: d62ec461222feffaaf0194c6612f4b06
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ARWorldMapController
+  - hash:
+      serializedVersion: 2
+      Hash: 5a7c987e7f413654ac9c6e781748ef16
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TestDepthImage
+  - hash:
+      serializedVersion: 2
+      Hash: b8ca006c45f5c4c1b12a026628de4d8f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlaneDetectionController
+  - hash:
+      serializedVersion: 2
+      Hash: 50352c5dc0d67dbddb21e4b4825354a1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HumanBodyTracker
+  - hash:
+      serializedVersion: 2
+      Hash: c395ba5cbe76eabddd627cbc709da252
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Logger
+  - hash:
+      serializedVersion: 2
+      Hash: 29f9c9c5e0d94b4e8710f6200a13f601
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SessionReloader
+  - hash:
+      serializedVersion: 2
+      Hash: 41f7090de639b848a963b2101164280e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CameraConfigController
+  - hash:
+      serializedVersion: 2
+      Hash: 0218233827df77a06d777d0e021c9485
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FaceMaterialSwitcher
+  - hash:
+      serializedVersion: 2
+      Hash: f31d0b4c9596d4806daef2de3435778b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MakeAppearOnPlane
+  - hash:
+      serializedVersion: 2
+      Hash: bac6a659a57881e37417a66e827e654a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ARKitBlendShapeVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 25099b6a3e53bff637df6c2455ee5d06
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ARKitCoachingOverlay
+  - hash:
+      serializedVersion: 2
+      Hash: 41f7090de639b848a963b2101164280e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LightEstimation
+  - hash:
+      serializedVersion: 2
+      Hash: 6f5d59524ca544715ba3094ca60b1c21
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DisableVerticalPlanes
+  - hash:
+      serializedVersion: 2
+      Hash: 03b3f34a74914d92717dad16b4cddda2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FixationPoint2DVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 81635c7a9476079f49a38a4e259d5ddc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RotationController
+  - hash:
+      serializedVersion: 2
+      Hash: 08aeedf855a0ac301255454d73dfc62b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EyePoseVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 76b7e183d9d3382d8f2b9ae1c01d0aa6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ARFeatheredPlaneMeshVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: a0cc457a2880fba17729cc3769240c33
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlaceOnPlane
+  - hash:
+      serializedVersion: 2
+      Hash: 74834271e8824d6b843931f0da2cb7dc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnvironmentProbeVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 81635c7a9476079f49a38a4e259d5ddc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScaleController
+  - hash:
+      serializedVersion: 2
+      Hash: 91a9a5a4c7ce6a82e70f775cd48ae21f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ScreenSpaceJointVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ReferencePointCreator
+  - hash:
+      serializedVersion: 2
+      Hash: 19da6c0d6a949df7b466ab77327de22d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CollaborationNetworkingIndicator
+  - hash:
+      serializedVersion: 2
+      Hash: 30236b5d44565490280fe453d8a66ceb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ReferencePointInfoManager
+  - hash:
+      serializedVersion: 2
+      Hash: bb5db861a0dbd34aeb3a98b7bfe99dfe
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TrackedImageInfoManager
+  - hash:
+      serializedVersion: 2
+      Hash: 45ebcfa8ac9ddfc6039df03f8ff427a0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EyeTrackingUI
+  - hash:
+      serializedVersion: 2
+      Hash: ce9abffff631ce620d0e3aff98023d18
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TestBodyAnchorScale
+  - hash:
+      serializedVersion: 2
+      Hash: e22a400e7bf1fc0e86297c12f0909541
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CollaborativeSession
+  - hash:
+      serializedVersion: 2
+      Hash: fbd7a5ef119e29c650d27b2e6e4f5316
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ARCoreFaceRegionManager
+  - hash:
+      serializedVersion: 2
+      Hash: d6faa36c8b1c36c5d2a7c7bda5631ae5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SwitchPointCloudVisualizationMode
+  - hash:
+      serializedVersion: 2
+      Hash: 3ff308b29cb7d342522fab634bcfd0a2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DisplayFaceInfo
+  - hash:
+      serializedVersion: 2
+      Hash: d30e8114c5c58864558ab609c4afa19d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARAllPointCloudPointsParticleVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 175da85c18a06cda8cb96bda568b397d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LightEstimationUI
+  - hash:
+      serializedVersion: 2
+      Hash: b878bee07b714cc0c9366c841377c5e2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BoneController
+  - hash:
+      serializedVersion: 2
+      Hash: bce0c62fe984eaff6bf3555b7bcb4334
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIManager
+  - hash:
+      serializedVersion: 2
+      Hash: 841823eea328ff391819605c5419a1bd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SupportChecker
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FadePlaneOnBoundaryChange
+  - hash:
+      serializedVersion: 2
+      Hash: ee81144d213302d21b603298f19b15e5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlaceMultipleObjectsOnPlane
+  - hash:
+      serializedVersion: 2
+      Hash: d11ec27b992d7ec2e1245bb17202ca86
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ToggleManagers
+  - hash:
+      serializedVersion: 2
+      Hash: 09b83952eaa0013fd29c87420023da1f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DisplayTrackingState
+  - hash:
+      serializedVersion: 2
+      Hash: 574b5eb7f9f0a987dee7eb4c76ee54a3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FixationPoint3DVisualizer
+  - hash:
+      serializedVersion: 2
+      Hash: 0c5108545fb925730d4d5887ebcdd20c
+    assemblyName: Unity.XR.ARSubsystems.dll
+    namespaceName: UnityEngine.XR.ARSubsystems
+    className: XRReferenceObjectLibrary
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARPoseDriver
+  - hash:
+      serializedVersion: 2
+      Hash: 9b6303c7164a38e06044ec2036c18b6b
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARParticipantManager
+  - hash:
+      serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARParticipant
+  - hash:
+      serializedVersion: 2
+      Hash: ef705ae677d649d6c0ff3b4060963abd
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARTrackedObjectManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARBackgroundRendererFeature
+  - hash:
+      serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARHumanBody
+  - hash:
+      serializedVersion: 2
+      Hash: 290afc8da8e459e0b8dc7444bfaf5e35
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARTrackedObject
+  - hash:
+      serializedVersion: 2
+      Hash: f01b8479fad97752e37bd0c55f99db2a
+    assemblyName: Unity.XR.ARFoundation.dll
+    namespaceName: UnityEngine.XR.ARFoundation
+    className: ARHumanBodyManager
+  - hash:
+      serializedVersion: 2
+      Hash: 98aa0a0c8ff2910eb12af89c7e0eb661
+    assemblyName: Unity.XR.Management.dll
+    namespaceName: UnityEngine.XR.Management
+    className: XRGeneralSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARCore.dll
+    namespaceName: UnityEngine.XR.ARCore
+    className: ARCoreLoader
+  - hash:
+      serializedVersion: 2
+      Hash: 4632a1062ac8865f91f6bdfe3c0ff90c
+    assemblyName: Unity.XR.ARCore.dll
+    namespaceName: UnityEngine.XR.ARCore
+    className: ARCoreLoaderSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 8ab9295d94483c961936d82d233d3df2
+    assemblyName: Unity.XR.Management.dll
+    namespaceName: UnityEngine.XR.Management
+    className: XRManagerSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.XR.ARKit.dll
+    namespaceName: UnityEngine.XR.ARKit
+    className: ARKitLoader
+  - hash:
+      serializedVersion: 2
+      Hash: dc1bf7169b005112f7a4da5a6b15f0c4
+    assemblyName: Unity.XR.ARKit.dll
+    namespaceName: UnityEngine.XR.ARKit
+    className: ARKitReferenceObjectEntry
+  - hash:
+      serializedVersion: 2
+      Hash: 4632a1062ac8865f91f6bdfe3c0ff90c
+    assemblyName: Unity.XR.ARKit.dll
+    namespaceName: UnityEngine.XR.ARKit
+    className: ARKitLoaderSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 968f94aaddca12ca3b922fc1a5fee7dd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: cubeMovier
   platform: 13
   scenePathNames:
-  - Assets/Scenes/LoginRoom.unity
-  - Assets/Scenes/MainMenu.unity
-  - Assets/Scenes/CharacterRoom.unity
-  - Assets/Scenes/GyroRoom.unity
-  - Assets/Scenes/StackRoom.unity
-  playerPath: C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Releace/fullTest.apk
+  - Assets/Scenes/ArStackRoom.unity
+  playerPath: C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Releace/ArStackerTest.apk

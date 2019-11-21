@@ -194,6 +194,24 @@ public class GameManager : MonoBehaviour
 				break;
 		}
 	}
+	public void ArStackerPause(GameObject obj)
+	{
+		string curState = obj.GetComponent<Button>().name;
+		switch (curState)
+		{
+			case "Back Button":
+				Debug.Log("Paues");
+				Time.timeScale = 0;
+				
+				break;
+			case "Continue Button":
+				Debug.Log("Continue");
+				Time.timeScale = 1;
+				break;
+
+		}
+	}
+
 
 	public void LoadLevel(string sceneName)
 	{
@@ -212,6 +230,7 @@ public class GameManager : MonoBehaviour
 			yield return null;
 		}
 	}
+
 
 	public void SaveRecepie()
 	{

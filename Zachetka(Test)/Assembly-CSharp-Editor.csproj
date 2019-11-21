@@ -28,7 +28,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -37,7 +37,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
-    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
   </PropertyGroup>
   <PropertyGroup>
     <NoConfig>true</NoConfig>
@@ -273,6 +273,30 @@
  </Reference>
  <Reference Include="com.unity.multiplayer-hlapi.Runtime">
  <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.ARCore">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.ARCore.Editor">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.ARKit.FaceTracking.Editor">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.FaceTracking.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.ARKit">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.ARKit.FaceTracking">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.FaceTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.ARKit.Editor">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.Management">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.Management.Editor">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
