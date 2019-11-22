@@ -81,9 +81,11 @@ namespace Michsky.UI.CCUI
 
         public Dictionary<string, DnaSetter> dna;
 
+		private FirebaseClass firebase;
+
 		private void Awake()
 		{
-			
+			firebase = GameObject.Find("Firebase").GetComponent<FirebaseClass>();
 		}
 
 		void OnEnable()
@@ -384,16 +386,19 @@ namespace Michsky.UI.CCUI
 
         public void SaveRecipe()
         {
+			myRecipe = avatar.GetCurrentRecipe();
 			
+			firebase.WriteDataInDB(myRecipe);
+
 			if (saveFilePath != null)
             {
-                myRecipe = avatar.GetCurrentRecipe();
+                
                 File.WriteAllText(saveFilePath + "\\" + saveName + ".txt", myRecipe);
                 Debug.Log("Recipe saved to: " + saveFilePath + "\\" + saveName + ".txt");
             }
             else
             {
-                myRecipe = avatar.GetCurrentRecipe();
+               
                 File.WriteAllText(Application.persistentDataPath + "/CharacterRecipes/" + saveName + ".txt", myRecipe);
                 Debug.Log("Recipe saved to: " + Application.persistentDataPath + "/CharacterRecipes/" + saveName + ".txt");
             }
@@ -402,11 +407,19 @@ namespace Michsky.UI.CCUI
 
         public void LoadRecipe()
         {
-			
-            myRecipe = File.ReadAllText(Application.persistentDataPath + "/CharacterRecipes/" + saveName + ".txt");
-            avatar.ClearSlots();
-            avatar.LoadFromRecipeString(myRecipe);
-            Debug.Log("Recipe loaded from: " + Application.persistentDataPath + "/CharacterRecipes/" + saveName + ".txt");
+
+			firebase.GetDataFromDB();
+
+            //myRecipe = File.ReadAllText(Application.persistentDataPath + "/CharacterRecipes/" + saveName + ".txt");
+            //avatar.ClearSlots();
+            //avatar.LoadFromRecipeString(myRecipe);
+            //Debug.Log("Recipe loaded from: " + Application.persistentDataPath + "/CharacterRecipes/" + saveName + ".txt");
         }
+
+		public void LoadAvatar(string recipe)
+		{
+			avatar.ClearSlots();
+			avatar.LoadFromRecipeString(recipe);
+		}
     }
 }

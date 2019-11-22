@@ -181,21 +181,27 @@
      <Compile Include="Assets\UMA\Examples\Editor\Legacy\EnvPresetChooserEd.cs" />
      <Compile Include="Assets\UMA\Examples\Editor\Physics\ClothHelperEditor.cs" />
      <Compile Include="Assets\UMA\Examples\Editor\Physics\UMABoneVisualizerEditor.cs" />
+     <None Include="Assets\PlayServicesResolver\Editor\play-services-resolver_v1.2.130.0.txt" />
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDna_GetType_Fragment.cs.txt" />
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDna_GetNames_Fragment.cs.txt" />
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDnaChild_Byte_ToDna_Fragment.cs.txt" />
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDnaChild_GetIndex_Fragment.cs.txt" />
+     <None Include="Assets\Firebase\Editor\FirebaseAuth_version-6.7.0_manifest.txt" />
+     <None Include="Assets\Firebase\Editor\FirebaseDatabase_version-6.7.0_manifest.txt" />
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDnaChild_Byte_FromDna_Fragment.cs.txt" />
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDnaChild_GetValue_Fragment.cs.txt" />
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDnaChild_Byte_Fields_Fragment.cs.txt" />
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDna_Save_Fragment.cs.txt" />
+     <None Include="Assets\Firebase\Editor\AuthDependencies.xml" />
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDnaChild_Template.cs.txt" />
+     <None Include="Assets\Firebase\Editor\AppDependencies.xml" />
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDnaChild_GetNames_Fragment.cs.txt" />
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDna_Template.cs.txt" />
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDnaChild_SetValue_Fragment.cs.txt" />
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDnaChild_SetIndex_Fragment.cs.txt" />
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDna_Load_Fragment.cs.txt" />
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDna_GetTypes_Fragment.cs.txt" />
+     <None Include="Assets\Firebase\Editor\DatabaseDependencies.xml" />
  <Reference Include="UnityEditor.TestRunner">
  <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
@@ -492,6 +498,48 @@
  </Reference>
  <Reference Include="UnityEditor.Android.Extensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Editor">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.App">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Auth">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Database">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.Platform">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+ </Reference>
+ <Reference Include="Firebase.TaskExtension">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.MiniJson">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.Sharpen">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Google.Sharpen.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Compat">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Tasks">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.IOSResolver_v1.2.130.0">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.130.0.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.JarResolver_v1.2.130.0">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.130.0.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandler">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+ </Reference>
+ <Reference Include="Google.VersionHandlerImpl_v1.2.130.0">
+ <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.130.0.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
  <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
