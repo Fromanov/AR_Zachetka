@@ -294,3 +294,7 @@ C:\Users\VrlabdvDev1\Desktop\Froman\Zachetka_Test(01)\obj\Debug\Assembly-CSharp.
 C:\Users\VrlabdvDev1\Desktop\Froman\Zachetka_Test(01)\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 C:\Users\VrlabdvDev1\Desktop\Froman\Zachetka_Test(01)\obj\Debug\Assembly-CSharp.dll
 C:\Users\VrlabdvDev1\Desktop\Froman\Zachetka_Test(01)\obj\Debug\Assembly-CSharp.pdb
+C:\Users\VrlabdvDev1\Desktop\Froman\AR_Zachetka\Zachetka(Test)\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\VrlabdvDev1\Desktop\Froman\AR_Zachetka\Zachetka(Test)\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\VrlabdvDev1\Desktop\Froman\AR_Zachetka\Zachetka(Test)\obj\Debug\Assembly-CSharp.dll
+C:\Users\VrlabdvDev1\Desktop\Froman\AR_Zachetka\Zachetka(Test)\obj\Debug\Assembly-CSharp.pdb

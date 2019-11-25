@@ -2847,6 +2847,8 @@ MonoBehaviour:
   password_login: {fileID: 157112921}
   email_register: {fileID: 1957425997}
   password_register: {fileID: 1604111195}
+  dataHoursJson: 
+  dataCoinsJson: 
 --- !u!4 &676429462
 Transform:
   m_ObjectHideFlags: 0
@@ -3009,7 +3011,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &778534861
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4593,7 +4595,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1100679396
 RectTransform:
   m_ObjectHideFlags: 0

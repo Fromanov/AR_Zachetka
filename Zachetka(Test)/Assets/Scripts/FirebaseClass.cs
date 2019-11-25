@@ -37,29 +37,23 @@ public class FirebaseClass : MonoBehaviour
 
 	public event MethodContainer onCount;
 
-
-
+	public string dataHoursJson;
+	public string dataCoinsJson;
 
 	public void Awake()
 	{
-
 		InitializeFirebase();
-		DontDestroyOnLoad(this);
-		
+		DontDestroyOnLoad(this);		
 		
 		gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
 		if (gameManager == null)
 		{
 			Debug.Log(TAG + "Game Manager is NULL");
 		}
-
 	}
-
-
 
 	public void Register()
 	{
-
 		auth.CreateUserWithEmailAndPasswordAsync(email_register.text, password_register.text).ContinueWith(task => {
 			if (task.IsCanceled)
 			{
@@ -77,14 +71,10 @@ public class FirebaseClass : MonoBehaviour
 			Debug.LogFormat("Firebase user created successfully: {0} ({1})",
 				newUser.DisplayName, newUser.UserId);
 		});
-
-
 	}
-
 
 	public void Signin()
 	{
-
 		auth.SignInWithEmailAndPasswordAsync(email_login.text, password_login.text).ContinueWithOnMainThread(authTask =>
 		{
 			if (authTask.IsCanceled)
@@ -101,13 +91,10 @@ public class FirebaseClass : MonoBehaviour
 			{
 				newUser = authTask.Result;
 				gameManager.LoadLevel("MainMenu");
+				GetHoursDataFromDB();
 			}
-
 		});
-
-
 	}
-
 
 	// Track state changes of the auth object.
 	void AuthStateChanged(object sender, System.EventArgs eventArgs)
@@ -123,12 +110,9 @@ public class FirebaseClass : MonoBehaviour
 			if (signedIn)
 			{
 				Debug.Log("Signed in " + user.UserId);
-
 			}
 		}
 	}
-
-
 
 	private void InitializeFirebase()
 	{
@@ -138,24 +122,18 @@ public class FirebaseClass : MonoBehaviour
 		AuthStateChanged(this, null);
 		FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://zachetka-d22be.firebaseio.com/");
 		reference = FirebaseDatabase.DefaultInstance.RootReference;
-		
-
 	}
 
-
-
-
-	public void WriteDataInDB(string data)
+	public void WriteDataInDB(string avatarData)
 	{
-		Debug.Log(data);
-		reference.Child("users").Child(user.UserId).Child("Avatar").SetRawJsonValueAsync(data);
-		
+		Debug.Log(avatarData);
+		reference.Child("users").Child(user.UserId).Child("Avatar").SetRawJsonValueAsync(avatarData);
+		//reference.Child("users").Child(user.UserId).Child("hoursinvr").SetRawJsonValueAsync(data); 
+		//reference.Child("users").Child(user.UserId).Child("vrcoin").SetRawJsonValueAsync(data);
 	}
 
 	public void GetDataFromDB()
 	{
-
-
 		reference.Child("users").Child(user.UserId).Child("Avatar").GetValueAsync().ContinueWithOnMainThread(dataTask =>
 		{
 			if (dataTask.IsCanceled)
@@ -171,14 +149,51 @@ public class FirebaseClass : MonoBehaviour
 			if (dataTask.IsCompleted && dataTask.Result != null)
 			{
 				Debug.Log(dataTask.Result.GetRawJsonValue());
-				GameObject.Find("UMA Character Avatar").GetComponent<UMACustomizer>().LoadAvatar(dataTask.Result.GetRawJsonValue());
-
+				GameObject.Find("UMA Character Avatar").GetComponent<UMACustomizer>().LoadAvatar(dataTask.Result.GetRawJsonValue());				
 			}
+		});		
+	}
 
+	public void GetHoursDataFromDB()
+	{
+		reference.Child("users").Child(user.UserId).Child("hoursinvr").GetValueAsync().ContinueWithOnMainThread(dataTask =>
+		{
+			if (dataTask.IsCanceled)
+			{
+				Debug.LogError("Loading data from Firebase was canceled.");
+				return;
+			}
+			if (dataTask.IsFaulted)
+			{
+				Debug.LogError("Loading data from Firebase encountered an error: " + dataTask.Exception);
+				return;
+			}
+			if (dataTask.IsCompleted && dataTask.Result != null)
+			{
+				dataHoursJson = dataTask.Result.GetRawJsonValue();
+			}
+		});		
+	}
+
+	public void GetCoinsDataFromDB()
+	{
+		reference.Child("users").Child(user.UserId).Child("vrcoin").GetValueAsync().ContinueWithOnMainThread(dataTask =>
+		{
+			if (dataTask.IsCanceled)
+			{
+				Debug.LogError("Loading data from Firebase was canceled.");
+				return;
+			}
+			if (dataTask.IsFaulted)
+			{
+				Debug.LogError("Loading data from Firebase encountered an error: " + dataTask.Exception);
+				return;
+			}
+			if (dataTask.IsCompleted && dataTask.Result != null)
+			{
+				dataCoinsJson = dataTask.Result.GetRawJsonValue();				
+			}
 		});
-
-
-
 	}
 
 	void OnDestroy()
@@ -195,5 +210,4 @@ public class FirebaseClass : MonoBehaviour
 			auth.SignOut();
 		}
 	}
-
 }

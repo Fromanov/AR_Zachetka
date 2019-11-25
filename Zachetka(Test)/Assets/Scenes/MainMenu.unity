@@ -779,7 +779,7 @@ GameObject:
   - component: {fileID: 37388299}
   - component: {fileID: 37388298}
   m_Layer: 5
-  m_Name: Hours in VR (1)
+  m_Name: VR Coin Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6658,7 +6658,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u0412\u0420\u0415\u041C\u042F \u0412 VR"
+  m_Text: VR Coins
 --- !u!222 &172178079
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7913,7 +7913,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -0.000030517578}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &244081367
@@ -18551,7 +18551,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "30 \u0447."
+  m_Text: "0 \u0447."
 --- !u!222 &600592362
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -45015,7 +45015,7 @@ GameObject:
   - component: {fileID: 1699754871}
   - component: {fileID: 1699754875}
   m_Layer: 5
-  m_Name: Profie
+  m_Name: Profie Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45092,6 +45092,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0d611ad3bcfa58841afce955b07e309c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  userHours: {fileID: 600592359}
+  userRank: {fileID: 8161934803838935407}
+  userCoinValue: {fileID: 1439477773}
 --- !u!1 &1702184514
 GameObject:
   m_ObjectHideFlags: 0
@@ -56730,7 +56733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2070219235
 RectTransform:
   m_ObjectHideFlags: 0
@@ -56747,10 +56750,10 @@ RectTransform:
   m_Father: {fileID: 1989150857}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 556.1, y: -656.51245}
+  m_SizeDelta: {x: 1112.2, y: 187.575}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2070219236
 MonoBehaviour:
@@ -69887,7 +69890,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -132, y: 0.050004}
-  m_SizeDelta: {x: 0, y: 73.4}
+  m_SizeDelta: {x: 218.80962, y: 73.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &8763049174075338703
 RectTransform:
@@ -70023,7 +70026,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &8828465463280678533
 GameObject:
   m_ObjectHideFlags: 0

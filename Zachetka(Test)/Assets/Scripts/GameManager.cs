@@ -65,7 +65,10 @@ public class GameManager : MonoBehaviour
 				}
 				else
 				{
-					avatar.GetComponent<UMACustomizer>().LoadRecipe();
+					if (avatar)
+					{
+						avatar.GetComponent<UMACustomizer>().LoadRecipe();
+					}
 				}
 			}
 			else if (playerData.race == "HumanFemaleDCS")
@@ -208,7 +211,6 @@ public class GameManager : MonoBehaviour
 				Debug.Log("Continue");
 				Time.timeScale = 1;
 				break;
-
 		}
 	}
 
