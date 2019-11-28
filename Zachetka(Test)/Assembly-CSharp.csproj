@@ -72,7 +72,6 @@
      <Compile Include="Assets\Character Creator UI\Scripts\UMAChangeColor.cs" />
      <Compile Include="Assets\Character Creator UI\Scripts\UMACustomizer.cs" />
      <Compile Include="Assets\Character Creator UI\Scripts\UMADnaSlider.cs" />
-     <Compile Include="Assets\cubeMovier.cs" />
      <Compile Include="Assets\FedinaPart\GamePrefabs\SetTargetFramerate.cs" />
      <Compile Include="Assets\FedinaPart\Scenes\ARCollaborationData\CollaborationNetworkingIndicator.cs" />
      <Compile Include="Assets\FedinaPart\Scenes\ARCollaborationData\CollaborativeSession.cs" />
@@ -221,10 +220,11 @@
      <Compile Include="Assets\LunarConsole\Scripts\Utils\Log.cs" />
      <Compile Include="Assets\LunarConsole\Scripts\Utils\ReflectionUtils.cs" />
      <Compile Include="Assets\LunarConsole\Scripts\Utils\StringUtils.cs" />
-     <Compile Include="Assets\ProfileHandler.cs" />
+     <Compile Include="Assets\Scripts\cubeMovier.cs" />
      <Compile Include="Assets\Scripts\FirebaseClass.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\JsonFileReader.cs" />
+     <Compile Include="Assets\Scripts\ProfileHandler.cs" />
      <Compile Include="Assets\Scripts\UserDataControl.cs" />
      <Compile Include="Assets\Scripts\VolumeSettings.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />

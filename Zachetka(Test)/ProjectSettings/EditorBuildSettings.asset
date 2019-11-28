@@ -14,19 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CharacterRoom.unity
     guid: 22e35d2f5240aef4bad9056c205fbf9e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/GyroRoom.unity
     guid: 64f5d5c54ac2f5745a1484ff15bdf92b
-  - enabled: 0
-    path: Assets/Scenes/StackRoom.unity
-    guid: f7986950493b8cd4f819524e2b1d416f
   - enabled: 1
-    path: Assets/Scenes/ArStackRoom.unity
+    path: Assets/Scenes/StackRoom.unity
     guid: 6f3c9ac02e63c1f419d9d4fe9cd30522
-  - enabled: 0
-    path: Assets/FedinaPart/Scenes_F/Zachetka.unity
-    guid: ca4569f2c4312dd4d8cd5e472d3008fd
-  - enabled: 0
-    path: Assets/FedinaPart/Scenes/SimpleAR/SimpleAR.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}

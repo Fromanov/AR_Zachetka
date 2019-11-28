@@ -40,15 +40,16 @@ public class TheStackGame : MonoBehaviour
 	public Music mus;
 	public GameObject clicker;
 	public Ray ray;
-	public RaycastHit hit;
-	//public Text txt;
+	public RaycastHit hit;	
 	public GameObject panelfail;
 	public GameObject panelpause;
+	public float speed = 65; 
+
 	// Start is called before the first frame update
 	void Start()
 	{
 		PlayerPrefs.SetInt("pause", 0);
-	
+
 		counter = 0;
 		hiz = hiz_degeri;
 		stack_uzunlugu = transform.childCount;
@@ -64,7 +65,6 @@ public class TheStackGame : MonoBehaviour
 			{
 				go_stack[i].GetComponent<Renderer>().material.color = Color.white;
 				go_stack[i].GetComponent<Renderer>().material.SetTexture("_MainTex", Zachetka);
-
 			}
 			if (PlayerPrefs.GetInt("Textur") == 2)
 			{
@@ -86,17 +86,8 @@ public class TheStackGame : MonoBehaviour
 				go_stack[i].GetComponent<Renderer>().material.color = Color.white;
 				go_stack[i].GetComponent<Renderer>().material.SetTexture("_MainTex", Rock);
 			}
-
-
-
-
-
-
-
-
 		}
 		stack_index = stack_uzunlugu - 1;
-
 	}
 
 	// Update is called once per frame
@@ -104,14 +95,14 @@ public class TheStackGame : MonoBehaviour
 	{
 		if (!dead)
 		{
-			if (Input.GetMouseButtonDown(0) &&	(PlayerPrefs.GetInt("pause") == 0))
+			if (Input.GetMouseButtonDown(0) && (PlayerPrefs.GetInt("pause") == 0))
 			{
 				a++;
 				ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
 				if (Physics.Raycast(ray, out hit))
 				{
-					if(hit.collider.gameObject.GetComponent<TextMenu>())
+					if (hit.collider.gameObject.GetComponent<TextMenu>())
 					{
 						Paus();
 					}
@@ -144,13 +135,12 @@ public class TheStackGame : MonoBehaviour
 							{
 								PlayerPrefs.SetInt("max", counter);
 							}
-
 						}
-					}					
+					}
 				}
-				else if(PlayerPrefs.GetInt("pause") == 0)
+				else if (PlayerPrefs.GetInt("pause") == 0)
 				{
-					
+
 					if (Stack_Kontrol())
 					{
 						mus.Click();
@@ -178,18 +168,10 @@ public class TheStackGame : MonoBehaviour
 						{
 							PlayerPrefs.SetInt("max", counter);
 						}
-
 					}
-
 				}
-					
-
-
-
 			}
-			Hareketlendir();
-
-			//transform.position = Vector3.Lerp(transform.position, new Vector3(0, 4, 0), 0.1f);
+			Hareketlendir();			
 		}
 		text.text = counter.ToString();
 	}
@@ -254,7 +236,8 @@ public class TheStackGame : MonoBehaviour
 			{
 				hiz = hiz_degeri;
 			}
-			go_stack[stack_index].transform.localPosition += new Vector3(hiz, 0, 0);
+			
+			go_stack[stack_index].transform.Translate(new Vector3(hiz, 0, 0) * Time.deltaTime * speed);
 		}
 		else
 		{
@@ -271,7 +254,8 @@ public class TheStackGame : MonoBehaviour
 			{
 				hiz = hiz_degeri;
 			}
-			go_stack[stack_index].transform.localPosition += new Vector3(0, 0, hiz);
+			
+			go_stack[stack_index].transform.Translate(new Vector3(0, 0, hiz) * Time.deltaTime * speed);
 		}
 	}
 
@@ -285,6 +269,7 @@ public class TheStackGame : MonoBehaviour
 			{
 				return false;
 			}
+
 			go_stack[stack_index].transform.localScale = new Vector3(stack_boyut.x, 0.07f, stack_boyut.y);
 			float mid = go_stack[stack_index].transform.localPosition.x / 2 + eski_stack_pos.x / 2;
 			go_stack[stack_index].transform.localPosition = new Vector3(mid, count, eski_stack_pos.z);
@@ -294,10 +279,12 @@ public class TheStackGame : MonoBehaviour
 		{
 			float fark = eski_stack_pos.z - go_stack[stack_index].transform.localPosition.z;
 			stack_boyut.y -= Mathf.Abs(fark);
+
 			if (stack_boyut.y < 0)
 			{
 				return false;
 			}
+
 			go_stack[stack_index].transform.localScale = new Vector3(stack_boyut.x, 0.07f, stack_boyut.y);
 			float mid = go_stack[stack_index].transform.localPosition.z / 2 + eski_stack_pos.z / 2;
 			go_stack[stack_index].transform.localPosition = new Vector3(eski_stack_pos.x, count, mid);
@@ -310,8 +297,7 @@ public class TheStackGame : MonoBehaviour
 	{
 		dead = true;
 		go_stack[stack_index].AddComponent<Rigidbody>();
-		panelfail.SetActive(true);
-		//txt.enabled = false;
+		panelfail.SetActive(true);		
 	}
 
 	private bool IsMouseOverUI()
@@ -330,26 +316,15 @@ public class TheStackGame : MonoBehaviour
 	}
 
 	public void Continue()
-	{
-		//objtwo.SetActive(false);
-		panelpause.SetActive(false);
-		//PlayerPrefs.SetInt("pause", 0);
-		//txt.enabled = true;
+	{		
+		panelpause.SetActive(false);		
 		Time.timeScale = 1;
 	}
 
 	public void Paus()
-	{
-		//PlayerPrefs.SetInt("pause", 1);
-		//objtwo.SetActive(true);
-		//Cont.SetActive(true);
-		//txt.enabled = false;
+	{		
 		Debug.Log("Pause");
 		panelpause.SetActive(true);
 		Time.timeScale = 0;
-
 	}
-
-
-
 }

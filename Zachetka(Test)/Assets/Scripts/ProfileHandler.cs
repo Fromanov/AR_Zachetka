@@ -20,16 +20,25 @@ public class ProfileHandler : MonoBehaviour
 
 	public void Start()
 	{
-		firebase = GameObject.Find("Firebase").GetComponent<FirebaseClass>();
-		firebase.GetCoinsDataFromDB();
-		firebase.GetHoursDataFromDB();		
+		firebase = GameObject.Find("Firebase").GetComponent<FirebaseClass>();			
 
 		Debug.Log(firebase.dataHoursJson);				
 		Debug.Log(firebase.dataCoinsJson);
 
-		userRank.GetComponent<UnityEngine.UI.Text>().text = GetRank(System.Convert.ToInt32(firebase.dataHoursJson));
-		userCoinValue.GetComponent<UnityEngine.UI.Text>().text = (firebase.dataCoinsJson);
-		userHours.GetComponent<UnityEngine.UI.Text>().text = firebase.dataHoursJson + " ч.";		
+		if(userRank)
+		{
+			userRank.GetComponent<UnityEngine.UI.Text>().text = GetRank(System.Convert.ToInt32(firebase.dataHoursJson));
+		}
+
+		if (userCoinValue)
+		{
+			userCoinValue.GetComponent<UnityEngine.UI.Text>().text = (firebase.dataCoinsJson);
+		}
+
+		if (userHours)
+		{
+			userHours.GetComponent<UnityEngine.UI.Text>().text = firebase.dataHoursJson + " ч.";
+		}				
 	}
 
 	public string GetRank(int hours)

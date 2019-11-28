@@ -92,6 +92,7 @@ public class FirebaseClass : MonoBehaviour
 				newUser = authTask.Result;
 				gameManager.LoadLevel("MainMenu");
 				GetHoursDataFromDB();
+				GetCoinsDataFromDB();
 			}
 		});
 	}

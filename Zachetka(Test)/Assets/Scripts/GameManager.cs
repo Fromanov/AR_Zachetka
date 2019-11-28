@@ -24,8 +24,7 @@ public class GameManager : MonoBehaviour
 	public GameObject menuPanelObject;
 	public GameObject mainStacker;
 	public GameObject skinsStacker;
-	public GameObject instructionStacker;
-	public GameObject salesStacker;
+	public GameObject instructionStacker;	
 
 	[Header("Uma stuff")]
 	public GameObject genderSwitch;
@@ -161,36 +160,31 @@ public class GameManager : MonoBehaviour
 				SceneManager.LoadScene("StackRoom");
 				break;
 
-			case "Skins Button":
-				salesStacker.SetActive(false);
+			case "Skins Button":				
 				mainStacker.SetActive(false);
 				skinsStacker.SetActive(true);
 				instructionStacker.SetActive(false);	
 				break;
 
-			case "Sales Button":
-				salesStacker.SetActive(true);
+			case "Sales Button":				
 				mainStacker.SetActive(false);
 				skinsStacker.SetActive(false);
 				instructionStacker.SetActive(false);
 				break;
 
-			case "Instruction Button":
-				salesStacker.SetActive(false);
+			case "Instruction Button":				
 				mainStacker.SetActive(false);
 				skinsStacker.SetActive(false);
 				instructionStacker.SetActive(true);
 				break;
 
-			case "AR Stack Game":
-				salesStacker.SetActive(false);
+			case "AR Stack Game":				
 				mainStacker.SetActive(true);
 				skinsStacker.SetActive(false);
 				instructionStacker.SetActive(false);				
 				break;
 
-			case "Back Button":
-				salesStacker.SetActive(false);
+			case "Back Button":				
 				mainStacker.SetActive(true);
 				skinsStacker.SetActive(false);
 				instructionStacker.SetActive(false);				
