@@ -116,6 +116,7 @@
      <Compile Include="Assets\FedinaPart\Scripts\TestDepthImage.cs" />
      <Compile Include="Assets\FedinaPart\Scripts\UX\FadePlaneOnBoundaryChange.cs" />
      <Compile Include="Assets\FedinaPart\Scripts\UX\UIManager.cs" />
+     <Compile Include="Assets\FedinaPart\Scriptsforgame\Count.cs" />
      <Compile Include="Assets\FedinaPart\Scriptsforgame\Instruction.cs" />
      <Compile Include="Assets\FedinaPart\Scriptsforgame\Music.cs" />
      <Compile Include="Assets\FedinaPart\Scriptsforgame\Opisanie.cs" />

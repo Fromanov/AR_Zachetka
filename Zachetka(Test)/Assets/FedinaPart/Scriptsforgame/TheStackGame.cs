@@ -48,6 +48,7 @@ public class TheStackGame : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+		Time.timeScale = 1;
 		PlayerPrefs.SetInt("pause", 0);
 
 		counter = 0;
@@ -95,79 +96,21 @@ public class TheStackGame : MonoBehaviour
 	{
 		if (!dead)
 		{
-			if (Input.GetMouseButtonDown(0) && (PlayerPrefs.GetInt("pause") == 0))
+			if ((Input.GetMouseButtonDown(0)) && (Time.timeScale != 0))
 			{
-				a++;
 				ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+				RaycastHit hitInfo;
 
-				if (Physics.Raycast(ray, out hit))
+				if (Physics.Raycast(ray, out hitInfo))
 				{
-					if (hit.collider.gameObject.GetComponent<TextMenu>())
+					var rig = hitInfo.collider.GetComponent<Button>();
+					if (rig != null)
 					{
 						Paus();
 					}
 					else
 					{
-						if (Stack_Kontrol())
-						{
-							mus.Click();
-							Stack_Al_Koy();
-							count += 0.07f;
-							counter++;
-							max_value += counter;
-							if (b != 2)
-							{
-								b++;
-							}
-							if (a > 7)
-								transform.position -= new Vector3(0, 0.07f, 0);
-
-						}
-						else
-						{
-							if (b == 1)
-							{
-								PlayerPrefs.SetInt("max", max_value);
-							}
-							Bitir();
-
-							if (counter >= PlayerPrefs.GetInt("max"))
-							{
-								PlayerPrefs.SetInt("max", counter);
-							}
-						}
-					}
-				}
-				else if (PlayerPrefs.GetInt("pause") == 0)
-				{
-
-					if (Stack_Kontrol())
-					{
-						mus.Click();
-						Stack_Al_Koy();
-						count += 0.07f;
-						counter++;
-						max_value += counter;
-						if (b != 2)
-						{
-							b++;
-						}
-						if (a > 7)
-							transform.position -= new Vector3(0, 0.07f, 0);
-					}
-					else
-					{
-						if (b == 1)
-						{
-							PlayerPrefs.SetInt("max", max_value);
-						}
-						Bitir();
-						Debug.Log("Fail");
-						panelfail.SetActive(true);
-						if (counter >= PlayerPrefs.GetInt("max"))
-						{
-							PlayerPrefs.SetInt("max", counter);
-						}
+						Stack_Mover();
 					}
 				}
 			}
@@ -307,12 +250,12 @@ public class TheStackGame : MonoBehaviour
 
 	public void Retry()
 	{
-		SceneManager.LoadScene(1);
+		SceneManager.LoadScene("StackRoom");
 	}
 
 	public void Menu()
 	{
-		SceneManager.LoadScene(0);
+		SceneManager.LoadScene("MainMenu");
 	}
 
 	public void Continue()
@@ -322,9 +265,85 @@ public class TheStackGame : MonoBehaviour
 	}
 
 	public void Paus()
-	{		
-		Debug.Log("Pause");
-		panelpause.SetActive(true);
+	{
 		Time.timeScale = 0;
+		Debug.Log("Pause");
+		panelpause.SetActive(true);		
+	}
+
+	public void Stack_Mover()
+	{
+		a++;
+		/*ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+		if (Physics.Raycast(ray, out hit))
+		{
+			if (hit.collider.gameObject.GetComponent<Button>())
+			{
+				Debug.Log("Pause");
+				Paus();				
+			}
+			else
+			{*/
+				if (Stack_Kontrol())
+				{
+					mus.Click();
+					Stack_Al_Koy();
+					count += 0.07f;
+					counter++;
+					max_value += counter;
+					if (b != 2)
+					{
+						b++;
+					}
+					if (a > 7)
+						transform.position -= new Vector3(0, 0.07f, 0);
+				}
+				else
+				{
+					if (b == 1)
+					{
+						PlayerPrefs.SetInt("max", max_value);
+					}
+					Bitir();
+
+					if (counter >= PlayerPrefs.GetInt("max"))
+					{
+						PlayerPrefs.SetInt("max", counter);
+					}
+				}
+			//}
+		//}
+		if (PlayerPrefs.GetInt("pause") == 0)
+		{
+			if (Stack_Kontrol())
+			{
+				mus.Click();
+				Stack_Al_Koy();
+				count += 0.07f;
+				counter++;
+				max_value += counter;
+				if (b != 2)
+				{
+					b++;
+				}
+				if (a > 7)
+					transform.position -= new Vector3(0, 0.07f, 0);
+			}
+			else
+			{
+				if (b == 1)
+				{
+					PlayerPrefs.SetInt("max", max_value);
+				}
+				Bitir();
+				Debug.Log("Fail");
+				panelfail.SetActive(true);
+				if (counter >= PlayerPrefs.GetInt("max"))
+				{
+					PlayerPrefs.SetInt("max", counter);
+				}
+			}
+		}
 	}
 }

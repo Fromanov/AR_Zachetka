@@ -7,8 +7,6 @@ using UnityEngine.UI;
 public class Skini : MonoBehaviour
 {
 
-	public GameObject obj;
-	public GameObject objtwo;
 	public GameObject Zachetka;
 	public GameObject Ground;
 	public GameObject Grass;
@@ -84,17 +82,6 @@ public class Skini : MonoBehaviour
 	}
 
 
-	public void Instruc()
-	{
-		obj.SetActive(true);
-		objtwo.SetActive(false);
-	}
-
-	public void Back()
-	{
-		obj.SetActive(false);
-		objtwo.SetActive(true);
-	}
 
 
 	public void None(bool a)
