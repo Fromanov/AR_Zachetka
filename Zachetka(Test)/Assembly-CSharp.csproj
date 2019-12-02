@@ -205,6 +205,7 @@
      <Compile Include="Assets\Hexart UI\Scripts\UIElementInFront.cs" />
      <Compile Include="Assets\Hexart UI\Scripts\UIElementSound.cs" />
      <Compile Include="Assets\Hexart UI\Scripts\UIGradient.cs" />
+     <Compile Include="Assets\Hexart UI\Scripts\User.cs" />
      <Compile Include="Assets\Hexart UI\Scripts\VideoEndCheck.cs" />
      <Compile Include="Assets\LunarConsole\Scripts\Actions\CAction.cs" />
      <Compile Include="Assets\LunarConsole\Scripts\Actions\CRegistry.cs" />

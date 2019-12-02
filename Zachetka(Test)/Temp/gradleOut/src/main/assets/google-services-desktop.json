@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "637164864052",
+    "firebase_url": "https://zachetka-d22be.firebaseio.com",
+    "project_id": "zachetka-d22be",
+    "storage_bucket": "zachetka-d22be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637164864052:android:40349677b3e082619e4061",
+        "android_client_info": {
+          "package_name": "com.vrlabdev.ZachetkaTest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637164864052-8fudt9o7u54gjn5bckpf98fhnt270t1q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC30zaAFTXnaGxkpLeU7VyVrs-GGDKoGTo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "637164864052-8fudt9o7u54gjn5bckpf98fhnt270t1q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

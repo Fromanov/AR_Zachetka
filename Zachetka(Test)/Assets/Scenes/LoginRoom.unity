@@ -1740,7 +1740,7 @@ GameObject:
   - component: {fileID: 479483193}
   - component: {fileID: 479483194}
   m_Layer: 5
-  m_Name: Input Field
+  m_Name: Input_Field_Phone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2848,6 +2848,7 @@ MonoBehaviour:
   password_login: {fileID: 157112921}
   email_register: {fileID: 1957425997}
   password_register: {fileID: 1604111195}
+  phone_register: {fileID: 479483196}
   dataHoursJson: 
   dataCoinsJson: 
 --- !u!4 &676429462
@@ -3243,6 +3244,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1149451663}
     m_Modifications:
+    - target: {fileID: 1641497459837156, guid: e33c8a796aa45e6429e2e23b566bc0f4, type: 3}
+      propertyPath: m_Name
+      value: Toggle
+      objectReference: {fileID: 0}
     - target: {fileID: 224029827336346606, guid: e33c8a796aa45e6429e2e23b566bc0f4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3347,10 +3352,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.99965006
-      objectReference: {fileID: 0}
-    - target: {fileID: 1641497459837156, guid: e33c8a796aa45e6429e2e23b566bc0f4, type: 3}
-      propertyPath: m_Name
-      value: Toggle
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e33c8a796aa45e6429e2e23b566bc0f4, type: 3}
@@ -4890,6 +4891,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1528510088}
     m_Modifications:
+    - target: {fileID: 1610791996549698, guid: 47fb105ab7e4b8d489afc29949d25815, type: 3}
+      propertyPath: m_Name
+      value: CA Button
+      objectReference: {fileID: 0}
     - target: {fileID: 224884411979733372, guid: 47fb105ab7e4b8d489afc29949d25815,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4994,10 +4999,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.99965006
-      objectReference: {fileID: 0}
-    - target: {fileID: 1610791996549698, guid: 47fb105ab7e4b8d489afc29949d25815, type: 3}
-      propertyPath: m_Name
-      value: CA Button
       objectReference: {fileID: 0}
     - target: {fileID: 114183576027845178, guid: 47fb105ab7e4b8d489afc29949d25815,
         type: 3}
@@ -5554,6 +5555,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 844770454}
     m_Modifications:
+    - target: {fileID: 1978280929365378, guid: 61360d91a907219469ec2d15f8257a1c, type: 3}
+      propertyPath: m_Name
+      value: Input Field
+      objectReference: {fileID: 0}
     - target: {fileID: 224164113465068424, guid: 61360d91a907219469ec2d15f8257a1c,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5658,10 +5663,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.99965006
-      objectReference: {fileID: 0}
-    - target: {fileID: 1978280929365378, guid: 61360d91a907219469ec2d15f8257a1c, type: 3}
-      propertyPath: m_Name
-      value: Input Field
       objectReference: {fileID: 0}
     - target: {fileID: 114107761907538756, guid: 61360d91a907219469ec2d15f8257a1c,
         type: 3}
@@ -6199,7 +6200,7 @@ PrefabInstance:
     - target: {fileID: 224817365734490408, guid: e68bbafa47ecad145aa3ba20763fb387,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -7.200012
+      value: -7.199951
       objectReference: {fileID: 0}
     - target: {fileID: 224817365734490408, guid: e68bbafa47ecad145aa3ba20763fb387,
         type: 3}

@@ -27,5 +27,10 @@ namespace Michsky.UI.Hexart
         {
             return WWW.EscapeURL(url).Replace("+", "%20");
         }
+
+		public void YClients()
+		{
+			Application.OpenURL("https://n20853.yclients.com/");
+		}
     }
 }

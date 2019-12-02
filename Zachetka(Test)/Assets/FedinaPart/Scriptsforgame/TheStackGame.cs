@@ -48,6 +48,7 @@ public class TheStackGame : MonoBehaviour
 	// Start is called before the first frame update
 	void Start()
 	{
+		LunarConsolePlugin.LunarConsole.Show();
 		Time.timeScale = 1;
 		PlayerPrefs.SetInt("pause", 0);
 
@@ -110,8 +111,10 @@ public class TheStackGame : MonoBehaviour
 					}
 					else
 					{
+						Debug.Log("Click");
 						Stack_Mover();
 					}
+					//Hareketlendir();
 				}
 			}
 			Hareketlendir();			
@@ -274,76 +277,33 @@ public class TheStackGame : MonoBehaviour
 	public void Stack_Mover()
 	{
 		a++;
-		/*ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-		if (Physics.Raycast(ray, out hit))
+		if (Stack_Kontrol())
 		{
-			if (hit.collider.gameObject.GetComponent<Button>())
+			mus.Click();
+			Stack_Al_Koy();
+			count += 0.07f;
+			counter++;
+			max_value += counter;
+			if (b != 2)
 			{
-				Debug.Log("Pause");
-				Paus();				
+				b++;
 			}
-			else
-			{*/
-				if (Stack_Kontrol())
-				{
-					mus.Click();
-					Stack_Al_Koy();
-					count += 0.07f;
-					counter++;
-					max_value += counter;
-					if (b != 2)
-					{
-						b++;
-					}
-					if (a > 7)
-						transform.position -= new Vector3(0, 0.07f, 0);
-				}
-				else
-				{
-					if (b == 1)
-					{
-						PlayerPrefs.SetInt("max", max_value);
-					}
-					Bitir();
-
-					if (counter >= PlayerPrefs.GetInt("max"))
-					{
-						PlayerPrefs.SetInt("max", counter);
-					}
-				}
-			//}
-		//}
-		if (PlayerPrefs.GetInt("pause") == 0)
-		{
-			if (Stack_Kontrol())
-			{
-				mus.Click();
-				Stack_Al_Koy();
-				count += 0.07f;
-				counter++;
-				max_value += counter;
-				if (b != 2)
-				{
-					b++;
-				}
-				if (a > 7)
-					transform.position -= new Vector3(0, 0.07f, 0);
-			}
-			else
-			{
-				if (b == 1)
-				{
-					PlayerPrefs.SetInt("max", max_value);
-				}
-				Bitir();
-				Debug.Log("Fail");
-				panelfail.SetActive(true);
-				if (counter >= PlayerPrefs.GetInt("max"))
-				{
-					PlayerPrefs.SetInt("max", counter);
-				}
-			}
+			if (a > 7)
+				transform.position -= new Vector3(0, 0.07f, 0);
 		}
+		else
+		{
+			if (b == 1)
+			{
+				PlayerPrefs.SetInt("max", max_value);
+			}
+			Bitir();
+
+			if (counter >= PlayerPrefs.GetInt("max"))
+			{
+				PlayerPrefs.SetInt("max", counter);
+			}
+		}		
 	}
 }

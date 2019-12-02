@@ -1,0 +1,20 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\VrlabdvDev1\\Desktop\\Froman\\AR_Zachetka\\Zachetka(Test)\\Temp\\gradleOut\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v14\\values-v14.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\VrlabdvDev1\\.gradle\\caches\\transforms-2\\files-2.1\\343f1fb56fdb610628ee36c2de48f0cf\\res\\values-v14\\values-v14.xml",
+                    "from": {
+                        "startLines": "2,5,8",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,229,414",
+                        "endLines": "4,7,10",
+                        "endColumns": "12,12,12",
+                        "endOffsets": "224,409,579"
+                    }
+                }
+            ]
+        }
+    ]
+}

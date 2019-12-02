@@ -31,6 +31,8 @@ public class FirebaseClass : MonoBehaviour
 	private InputField email_register;
 	[SerializeField]
 	private InputField password_register;
+	[SerializeField]
+	private InputField phone_register;
 
 	private GameManager gameManager;
 	public delegate void MethodContainer();
@@ -52,25 +54,86 @@ public class FirebaseClass : MonoBehaviour
 		}
 	}
 
+	//public void Register()
+	//{
+	//	auth.CreateUserWithEmailAndPasswordAsync(email_register.text, password_register.text).ContinueWith(task =>
+	//	{
+	//		if (task.IsCanceled)
+	//		{
+	//			Debug.LogError("CreateUserWithEmailAndPasswordAsync was canceled.");
+	//			return;
+	//		}
+	//		if (task.IsFaulted)
+	//		{
+	//			Debug.LogError("CreateUserWithEmailAndPasswordAsync encountered an error: " + task.Exception);
+	//			return;
+	//		}
+
+	//		// Firebase user has been created.
+	//		Firebase.Auth.FirebaseUser newUser = task.Result;
+	//		Debug.LogFormat("Firebase user created successfully: {0} ({1})",
+	//			newUser.DisplayName, newUser.UserId);
+	//	});
+	//}
+
 	public void Register()
 	{
-		auth.CreateUserWithEmailAndPasswordAsync(email_register.text, password_register.text).ContinueWith(task => {
-			if (task.IsCanceled)
+		if (phone_register.text.Length != 11)
+		{
+			Debug.Log("Неверно введен номер телефона");
+			return;
+		}
+
+		User user = new User();
+		user.Email = email_register.text;
+		user.Password = password_register.text;
+		user.Phone_number = phone_register.text;
+		Debug.Log(email_register.text);
+		Debug.Log(password_register.text);
+
+		auth.CreateUserWithEmailAndPasswordAsync(email_register.text, password_register.text).ContinueWith(createUserTask =>
+		{
+			if (createUserTask.IsCanceled)
 			{
 				Debug.LogError("CreateUserWithEmailAndPasswordAsync was canceled.");
 				return;
 			}
-			if (task.IsFaulted)
+			if (createUserTask.IsFaulted)
 			{
-				Debug.LogError("CreateUserWithEmailAndPasswordAsync encountered an error: " + task.Exception);
+				Debug.LogError("CreateUserWithEmailAndPasswordAsync encountered an error: " + createUserTask.Exception);
 				return;
 			}
 
 			// Firebase user has been created.
-			Firebase.Auth.FirebaseUser newUser = task.Result;
+			Firebase.Auth.FirebaseUser newUser = createUserTask.Result;
 			Debug.LogFormat("Firebase user created successfully: {0} ({1})",
 				newUser.DisplayName, newUser.UserId);
+
+
+
+			IDictionary<string, object> updatedFields = new Dictionary<string, object>{
+				{"Email", user.Email},
+				{"Password", user.Password},
+				{"Phone number", user.Phone_number},
+				{"Id", newUser.UserId}
+					   		};
+
+			reference.Child("users").Child(newUser.UserId).UpdateChildrenAsync(updatedFields).ContinueWithOnMainThread(task =>
+			{
+				if (task.IsFaulted)
+				{
+					Debug.Log("Error " + task.Exception);
+
+				}
+				else if (task.IsCompleted)
+				{
+					Debug.Log("User's data was successfully updated");
+				}
+			});
+
 		});
+
+
 	}
 
 	public void Signin()
