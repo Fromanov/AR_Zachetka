@@ -8,6 +8,9 @@ public class ProfileHandler : MonoBehaviour
 	public GameObject userHours;
 	public GameObject userRank;
 	public GameObject userCoinValue;
+	public GameObject userRankProfileAvatar;
+	public GameObject userCoinValueProfileAvatar;
+
 	public static UserProfileData userProfileData = new UserProfileData();
 
 	private FirebaseClass firebase;	
@@ -28,11 +31,13 @@ public class ProfileHandler : MonoBehaviour
 		if(userRank)
 		{
 			userRank.GetComponent<UnityEngine.UI.Text>().text = GetRank(System.Convert.ToInt32(firebase.dataHoursJson));
+			userRankProfileAvatar.GetComponent<UnityEngine.UI.Text>().text = GetRank(System.Convert.ToInt32(firebase.dataHoursJson));
 		}
 
 		if (userCoinValue)
 		{
 			userCoinValue.GetComponent<UnityEngine.UI.Text>().text = (firebase.dataCoinsJson);
+			userCoinValueProfileAvatar.GetComponent<UnityEngine.UI.Text>().text = (firebase.dataCoinsJson);
 		}
 
 		if (userHours)
