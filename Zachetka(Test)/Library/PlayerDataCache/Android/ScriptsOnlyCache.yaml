@@ -1,22 +1,35 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
-    - FirebaseClass
+    - Count
     - GameManager
-    - LoginManager
-    - Michsky.UI.FieldCompleteMainMenu.ChatUIManager
-    - Michsky.UI.FieldCompleteMainMenu.ExitToSystem
-    - Michsky.UI.FieldCompleteMainMenu.ObjectDisableHelper
-    - Michsky.UI.FieldCompleteMainMenu.SettingsManager
-    - Michsky.UI.FieldCompleteMainMenu.SplashScreenManager
-    - Michsky.UI.FieldCompleteMainMenu.SwitchToMainPanels
-    - Michsky.UI.FieldCompleteMainMenu.TooltipManager
-    - Michsky.UI.FieldCompleteMainMenu.TopPanelManager
-    - Michsky.UI.FieldCompleteMainMenu.UIElementSound
-    - Michsky.UI.Hexart.CustomInputField
+    - LunarConsolePlugin.LunarConsole
+    - Michsky.UI.FieldCompleteMainMenu.SwitchManager
+    - Michsky.UI.Hexart.BlurManager
+    - Michsky.UI.Hexart.ExitToSystem
+    - Michsky.UI.Hexart.FeedbackSystem
+    - Michsky.UI.Hexart.HorizontalSelector
+    - Michsky.UI.Hexart.LayoutGroupPositionFix
+    - Michsky.UI.Hexart.ListTabsManager
+    - Michsky.UI.Hexart.LoadScene
     - Michsky.UI.Hexart.LoadingScreen
+    - Michsky.UI.Hexart.LoadingStyle
+    - Michsky.UI.Hexart.PressKey
+    - Michsky.UI.Hexart.SettingsTabManager
+    - Michsky.UI.Hexart.SliderManager
+    - Michsky.UI.Hexart.SplashScreenManager
+    - Michsky.UI.Hexart.SwitchAnim
+    - Michsky.UI.Hexart.TimedAction
     - Michsky.UI.Hexart.ToggleAnim
+    - Michsky.UI.Hexart.TopPanelButton
+    - Michsky.UI.Hexart.UIElementSound
     - Michsky.UI.Hexart.VideoEndCheck
+    - Music
+    - PlaceOnPlane
+    - ProfileHandler
+    - SessionReloader
+    - Skini
+    - TheStackGame
     - UMA.BlendshapeDNAConverterPlugin
     - UMA.BonePoseDNAConverterPlugin
     - UMA.CapsuleColliderSlotScript
@@ -51,6 +64,8 @@ ScriptsOnlyBuild:
     - UMA.UMARendererAsset
     - UMA.UMATextRecipe
     - UMA.UmaTPose
+    - UnityEngine.UI.UIGradient
+    - VolumeSettings
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -63,17 +78,30 @@ ScriptsOnlyBuild:
     - TMPro.TMP_Settings
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
+    Unity.XR.ARFoundation.dll:
+    - UnityEngine.XR.ARFoundation.ARCameraBackground
+    - UnityEngine.XR.ARFoundation.ARCameraManager
+    - UnityEngine.XR.ARFoundation.ARInputManager
+    - UnityEngine.XR.ARFoundation.ARPlane
+    - UnityEngine.XR.ARFoundation.ARPlaneManager
+    - UnityEngine.XR.ARFoundation.ARPlaneMeshVisualizer
+    - UnityEngine.XR.ARFoundation.ARPointCloud
+    - UnityEngine.XR.ARFoundation.ARPointCloudManager
+    - UnityEngine.XR.ARFoundation.ARPointCloudParticleVisualizer
+    - UnityEngine.XR.ARFoundation.ARRaycastManager
+    - UnityEngine.XR.ARFoundation.ARSession
+    - UnityEngine.XR.ARFoundation.ARSessionOrigin
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
+    UnityEngine.SpatialTracking.dll:
+    - UnityEngine.SpatialTracking.TrackedPoseDriver
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.EventTrigger
@@ -82,18 +110,20 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.ContentSizeFitter
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.HorizontalLayoutGroup
     - UnityEngine.UI.Image
-    - UnityEngine.UI.InputField
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
     - UnityEngine.UI.RawImage
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Slider
     - UnityEngine.UI.Text
     - UnityEngine.UI.Toggle
-    com.unity.multiplayer-hlapi.Runtime.dll:
-    - UnityEngine.Networking.NetworkCallbacks
+    - UnityEngine.UI.ToggleGroup
+    - UnityEngine.UI.VerticalLayoutGroup
   sceneClasses:
-    Assets/Scenes/LoginRoom.unity:
+    Assets/Scenes/MainMenu.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -118,8 +148,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
-    - Class: 82
-      Script: {instanceID: 0}
     - Class: 83
       Script: {instanceID: 0}
     - Class: 84
@@ -130,14 +158,16 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
-    - Class: 108
-      Script: {instanceID: 0}
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 10230}
+    - Class: 114
       Script: {instanceID: 10254}
     - Class: 114
-      Script: {instanceID: 10384}
+      Script: {instanceID: 10314}
+    - Class: 114
+      Script: {instanceID: 10382}
     - Class: 114
       Script: {instanceID: 10594}
     - Class: 114
@@ -155,11 +185,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10736}
     - Class: 114
+      Script: {instanceID: 10808}
+    - Class: 114
       Script: {instanceID: 10902}
+    - Class: 114
+      Script: {instanceID: 10914}
     - Class: 114
       Script: {instanceID: 10950}
     - Class: 114
+      Script: {instanceID: 10958}
+    - Class: 114
+      Script: {instanceID: 11060}
+    - Class: 114
       Script: {instanceID: 11098}
+    - Class: 114
+      Script: {instanceID: 11194}
     - Class: 114
       Script: {instanceID: 11214}
     - Class: 114
@@ -167,9 +207,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11290}
     - Class: 114
+      Script: {instanceID: 11302}
+    - Class: 114
       Script: {instanceID: 11306}
     - Class: 114
       Script: {instanceID: 11364}
+    - Class: 114
+      Script: {instanceID: 11400}
     - Class: 114
       Script: {instanceID: 11436}
     - Class: 114
@@ -177,7 +221,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11554}
     - Class: 114
-      Script: {instanceID: 11616}
+      Script: {instanceID: 11594}
     - Class: 114
       Script: {instanceID: 11622}
     - Class: 114
@@ -187,23 +231,27 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11872}
     - Class: 114
-      Script: {instanceID: 12002}
-    - Class: 114
-      Script: {instanceID: 12036}
+      Script: {instanceID: 12150}
     - Class: 114
       Script: {instanceID: 12206}
     - Class: 114
       Script: {instanceID: 12214}
     - Class: 114
-      Script: {instanceID: 12256}
+      Script: {instanceID: 12232}
+    - Class: 114
+      Script: {instanceID: 12250}
     - Class: 114
       Script: {instanceID: 12336}
     - Class: 114
-      Script: {instanceID: 12374}
+      Script: {instanceID: 12354}
+    - Class: 114
+      Script: {instanceID: 12364}
     - Class: 114
       Script: {instanceID: 12378}
     - Class: 114
-      Script: {instanceID: 12502}
+      Script: {instanceID: 12428}
+    - Class: 114
+      Script: {instanceID: 12462}
     - Class: 114
       Script: {instanceID: 12598}
     - Class: 114
@@ -213,15 +261,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12680}
     - Class: 114
-      Script: {instanceID: 12856}
+      Script: {instanceID: 12866}
     - Class: 114
       Script: {instanceID: 12956}
     - Class: 114
-      Script: {instanceID: 12990}
-    - Class: 114
       Script: {instanceID: 12998}
     - Class: 114
-      Script: {instanceID: 13078}
+      Script: {instanceID: 13044}
+    - Class: 114
+      Script: {instanceID: 13060}
     - Class: 114
       Script: {instanceID: 13140}
     - Class: 114
@@ -232,6 +280,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 13264}
     - Class: 114
       Script: {instanceID: 13276}
+    - Class: 114
+      Script: {instanceID: 13320}
+    - Class: 114
+      Script: {instanceID: 13400}
     - Class: 114
       Script: {instanceID: 13426}
     - Class: 114
@@ -245,21 +297,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 13878}
     - Class: 114
-      Script: {instanceID: 14034}
-    - Class: 114
       Script: {instanceID: 14050}
     - Class: 114
       Script: {instanceID: 14052}
     - Class: 114
       Script: {instanceID: 14072}
     - Class: 114
+      Script: {instanceID: 14080}
+    - Class: 114
+      Script: {instanceID: 14124}
+    - Class: 114
       Script: {instanceID: 14272}
     - Class: 114
       Script: {instanceID: 14318}
     - Class: 114
       Script: {instanceID: 14346}
-    - Class: 114
-      Script: {instanceID: 14370}
     - Class: 114
       Script: {instanceID: 14414}
     - Class: 114
@@ -271,12 +323,12 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14614}
     - Class: 114
-      Script: {instanceID: 14644}
+      Script: {instanceID: 14648}
+    - Class: 114
+      Script: {instanceID: 14692}
     - Class: 114
       Script: {instanceID: 14744}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 124
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
@@ -298,11 +350,128 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 245
       Script: {instanceID: 0}
-    - Class: 258
-      Script: {instanceID: 0}
     - Class: 328
       Script: {instanceID: 0}
     - Class: 329
+      Script: {instanceID: 0}
+    Assets/Scenes/StackRoom.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 10254}
+    - Class: 114
+      Script: {instanceID: 10592}
+    - Class: 114
+      Script: {instanceID: 10616}
+    - Class: 114
+      Script: {instanceID: 10694}
+    - Class: 114
+      Script: {instanceID: 10760}
+    - Class: 114
+      Script: {instanceID: 11032}
+    - Class: 114
+      Script: {instanceID: 11060}
+    - Class: 114
+      Script: {instanceID: 11104}
+    - Class: 114
+      Script: {instanceID: 11364}
+    - Class: 114
+      Script: {instanceID: 11416}
+    - Class: 114
+      Script: {instanceID: 11492}
+    - Class: 114
+      Script: {instanceID: 11622}
+    - Class: 114
+      Script: {instanceID: 11942}
+    - Class: 114
+      Script: {instanceID: 12054}
+    - Class: 114
+      Script: {instanceID: 12250}
+    - Class: 114
+      Script: {instanceID: 12458}
+    - Class: 114
+      Script: {instanceID: 12642}
+    - Class: 114
+      Script: {instanceID: 13004}
+    - Class: 114
+      Script: {instanceID: 13122}
+    - Class: 114
+      Script: {instanceID: 13304}
+    - Class: 114
+      Script: {instanceID: 13498}
+    - Class: 114
+      Script: {instanceID: 13638}
+    - Class: 114
+      Script: {instanceID: 13710}
+    - Class: 114
+      Script: {instanceID: 13762}
+    - Class: 114
+      Script: {instanceID: 14096}
+    - Class: 114
+      Script: {instanceID: 14366}
+    - Class: 114
+      Script: {instanceID: 14584}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 120
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    - Class: 258
       Script: {instanceID: 0}
   scriptHashData:
   - hash:
@@ -3211,5 +3380,6 @@ ScriptsOnlyBuild:
     className: DynamicDNAConverterBehaviour
   platform: 13
   scenePathNames:
-  - Assets/Scenes/LoginRoom.unity
+  - Assets/Scenes/MainMenu.unity
+  - Assets/Scenes/StackRoom.unity
   playerPath: C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/APK/test.apk
