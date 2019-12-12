@@ -32,6 +32,11 @@ public class GameManager : MonoBehaviour
 	public string recipeFilePath;
 
 
+	[SerializeField]
+	public List<GameObject> Panels;
+
+	private FirebaseClass firebase;
+
 	void Awake()
 	{
 
@@ -94,10 +99,10 @@ public class GameManager : MonoBehaviour
 	{
 		if (loadingObject)
 		{
-			loadingObject.SetActive(false);
+			ShowLoading(false);
 		}
 
-		LunarConsolePlugin.LunarConsole.Show();
+		firebase = GameObject.Find("Firebase").GetComponent<FirebaseClass>();
 	}
 
 
@@ -124,7 +129,7 @@ public class GameManager : MonoBehaviour
 		{
 			case "Character Button":
 				menuPanelObject.SetActive(false);
-				loadingObject.SetActive(true);				
+				ShowLoading(true);				
 				LoadLevel("CharacterRoom");
 				break;
 
@@ -237,4 +242,25 @@ public class GameManager : MonoBehaviour
 	{
 		public string race;
 	}
+
+	public void ShowLoading(bool show)
+	{
+		Debug.Log(loadingObject == null);
+		if (show)
+		{
+			loadingObject.SetActive(true);
+		} else
+		{
+			loadingObject.SetActive(false);
+		}
+	}
+
+
+	public void SignOut()
+	{
+		if (firebase == null)
+			firebase = GameObject.Find("Firebase").GetComponent<FirebaseClass>();
+		firebase.SignOut();
+	}
+
 }

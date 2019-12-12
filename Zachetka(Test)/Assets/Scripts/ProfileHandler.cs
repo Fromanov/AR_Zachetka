@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class ProfileHandler : MonoBehaviour
 {
+
 	public GameObject userHours;
 	public GameObject userRank;
 	public GameObject userCoinValue;
 	public GameObject userRankProfileAvatar;
 	public GameObject userCoinValueProfileAvatar;
-
 	public static UserProfileData userProfileData = new UserProfileData();
 
 	private FirebaseClass firebase;	
@@ -25,25 +25,7 @@ public class ProfileHandler : MonoBehaviour
 	{
 		firebase = GameObject.Find("Firebase").GetComponent<FirebaseClass>();			
 
-		Debug.Log(firebase.dataHoursJson);				
-		Debug.Log(firebase.dataCoinsJson);
-
-		if(userRank)
-		{
-			userRank.GetComponent<UnityEngine.UI.Text>().text = GetRank(System.Convert.ToInt32(firebase.dataHoursJson));
-			userRankProfileAvatar.GetComponent<UnityEngine.UI.Text>().text = GetRank(System.Convert.ToInt32(firebase.dataHoursJson));
-		}
-
-		if (userCoinValue)
-		{
-			userCoinValue.GetComponent<UnityEngine.UI.Text>().text = (firebase.dataCoinsJson);
-			userCoinValueProfileAvatar.GetComponent<UnityEngine.UI.Text>().text = (firebase.dataCoinsJson);
-		}
-
-		if (userHours)
-		{
-			userHours.GetComponent<UnityEngine.UI.Text>().text = firebase.dataHoursJson + " ч.";
-		}				
+		UpdateUserStats();			
 	}
 
 	public string GetRank(int hours)
@@ -108,5 +90,18 @@ public class ProfileHandler : MonoBehaviour
 	{
 		public int hoursInVR { get; set; }
 		public int vrCoin;
+	}
+
+
+
+
+	public void UpdateUserStats()
+	{
+		userRank.GetComponent<UnityEngine.UI.Text>().text = GetRank(PlayerPrefs.GetInt(PrefsKey.Hours));
+		userCoinValueProfileAvatar.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetInt(PrefsKey.Coin).ToString();
+
+		userRankProfileAvatar.GetComponent<UnityEngine.UI.Text>().text = GetRank(PlayerPrefs.GetInt(PrefsKey.Hours));
+		userCoinValue.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetInt(PrefsKey.Coin).ToString();
+		userHours.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetInt(PrefsKey.Hours) + " ч.";
 	}
 }

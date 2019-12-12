@@ -1,25 +1,32 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using Dobro.Text.RegularExpressions;
 using Firebase;
+using Firebase.Auth;
 using Firebase.Database;
-using Firebase.Unity.Editor;
-using System.Threading;
 using Firebase.Extensions;
-using UMA;
-using UMA.CharacterSystem;
+using Firebase.Unity.Editor;
+using FullSerializer;
 using Michsky.UI.CCUI;
+using System;
+using System.Collections.Generic;
+using System.Text;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using Apxfly.Verificator;
+
 
 public class FirebaseClass : MonoBehaviour
 {
 
 	private string TAG = "FIrebaseAuth";
-	private Firebase.Auth.FirebaseAuth auth;
-	private Firebase.Auth.FirebaseUser user;
-	private Firebase.Auth.FirebaseUser newUser;
-	DatabaseReference reference;
+	private Firebase.Auth.FirebaseAuth Auth;
+	private Firebase.Auth.FirebaseUser User;
+	private PhoneAuthProvider Provider;
+	DatabaseReference Reference;
 	private bool Loading = false;
+
+	private const string projectId = "zachetka-d22be"; // You can find this in your Firebase project settings
+	private static readonly string databaseURL = $"https://{projectId}.firebaseio.com/";
 
 
 	[SerializeField]
@@ -34,146 +41,334 @@ public class FirebaseClass : MonoBehaviour
 	[SerializeField]
 	private InputField phone_register;
 
+	[SerializeField]
+	private InputField phone_SMS_code;
+
 	private GameManager gameManager;
 	public delegate void MethodContainer();
 
 	public event MethodContainer onCount;
 
-	public string dataHoursJson;
-	public string dataCoinsJson;
+	private string Email;
+	private string Password;
+	private string Phone_Number;
 
-	public void Awake()
+	private fsSerializer serializer = new fsSerializer();
+
+	private UserStatsFromFirebase User_Stats = new UserStatsFromFirebase();
+	private ProfileHandler profileHandler;
+
+	private string verificationId;
+	private string verificationCode;
+
+	public GameObject rememberMeToggle;
+	public GameObject tremsOfUseToggle;
+	public GameObject labaRulesToggle;
+
+
+
+	private void Start()
 	{
 		InitializeFirebase();
-		DontDestroyOnLoad(this);		
-		
+		DontDestroyOnLoad(this);
+
+		gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+		if (gameManager == null)
+			Debug.Log(TAG + "Game Manager is NULL");
+
+		Auth.StateChanged += AuthStateChanged;
+		AuthStateChanged(this, null);
+
+		SceneManager.activeSceneChanged += OnSceneLoaded;
+
+		email_login.text = PlayerPrefs.GetString(PrefsKey.RememberEmail) != null ? PlayerPrefs.GetString(PrefsKey.RememberEmail) : "";
+		password_login.text = PlayerPrefs.GetString(PrefsKey.RememberPass) != null ? PlayerPrefs.GetString(PrefsKey.RememberPass) : "";
+
+	}
+
+	void OnSceneLoaded(Scene current, Scene next)
+	{
 		gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
 		if (gameManager == null)
 		{
 			Debug.Log(TAG + "Game Manager is NULL");
 		}
-	}
 
-	//public void Register()
-	//{
-	//	auth.CreateUserWithEmailAndPasswordAsync(email_register.text, password_register.text).ContinueWith(task =>
-	//	{
-	//		if (task.IsCanceled)
-	//		{
-	//			Debug.LogError("CreateUserWithEmailAndPasswordAsync was canceled.");
-	//			return;
-	//		}
-	//		if (task.IsFaulted)
-	//		{
-	//			Debug.LogError("CreateUserWithEmailAndPasswordAsync encountered an error: " + task.Exception);
-	//			return;
-	//		}
-
-	//		// Firebase user has been created.
-	//		Firebase.Auth.FirebaseUser newUser = task.Result;
-	//		Debug.LogFormat("Firebase user created successfully: {0} ({1})",
-	//			newUser.DisplayName, newUser.UserId);
-	//	});
-	//}
-
-	public void Register()
-	{
-		if (phone_register.text.Length != 11)
+		if (next.name.Equals("MainMenu"))
 		{
-			Debug.Log("Неверно введен номер телефона");
-			return;
+			profileHandler = GameObject.Find("Profie Panel").GetComponent<ProfileHandler>();
+
 		}
-
-		User user = new User();
-		user.Email = email_register.text;
-		user.Password = password_register.text;
-		user.Phone_number = phone_register.text;
-		Debug.Log(email_register.text);
-		Debug.Log(password_register.text);
-
-		auth.CreateUserWithEmailAndPasswordAsync(email_register.text, password_register.text).ContinueWith(createUserTask =>
+		else if (!next.name.Equals("MainMenu"))
 		{
-			if (createUserTask.IsCanceled)
-			{
-				Debug.LogError("CreateUserWithEmailAndPasswordAsync was canceled.");
-				return;
-			}
-			if (createUserTask.IsFaulted)
-			{
-				Debug.LogError("CreateUserWithEmailAndPasswordAsync encountered an error: " + createUserTask.Exception);
-				return;
-			}
-
-			// Firebase user has been created.
-			Firebase.Auth.FirebaseUser newUser = createUserTask.Result;
-			Debug.LogFormat("Firebase user created successfully: {0} ({1})",
-				newUser.DisplayName, newUser.UserId);
-
-
-
-			IDictionary<string, object> updatedFields = new Dictionary<string, object>{
-				{"Email", user.Email},
-				{"Password", user.Password},
-				{"Phone number", user.Phone_number},
-				{"Id", newUser.UserId}
-					   		};
-
-			reference.Child("users").Child(newUser.UserId).UpdateChildrenAsync(updatedFields).ContinueWithOnMainThread(task =>
-			{
-				if (task.IsFaulted)
-				{
-					Debug.Log("Error " + task.Exception);
-
-				}
-				else if (task.IsCompleted)
-				{
-					Debug.Log("User's data was successfully updated");
-				}
-			});
-
-		});
-
-
+		}
 	}
+
+
 
 	public void Signin()
 	{
-		auth.SignInWithEmailAndPasswordAsync(email_login.text, password_login.text).ContinueWithOnMainThread(authTask =>
+		Signin(email_login.text, password_login.text);
+	}
+
+
+	private void Signin(string email, string pass)
+	{
+
+		if (!TestEmail.IsEmail(email_login.text))
+		{
+			Debug.Log("Неверно введен Email");
+			return;
+		}
+		if (password_login.text.Length < 6)
+		{
+			Debug.Log("Пароль должен быть больше 6-ти символов");
+			return;
+		}
+		gameManager.ShowLoading(true);
+		Debug.Log("we are here");
+		Email = email;
+		Password = pass;
+		Auth.SignInWithEmailAndPasswordAsync(email, pass).ContinueWithOnMainThread(authTask =>
 		{
 			if (authTask.IsCanceled)
 			{
 				Debug.LogError("SignInWithEmailAndPasswordAsync was canceled.");
+				gameManager.ShowLoading(false);
 				return;
 			}
 			if (authTask.IsFaulted)
 			{
 				Debug.LogError("SignInWithEmailAndPasswordAsync encountered an error: " + authTask.Exception);
+				gameManager.ShowLoading(false);
 				return;
 			}
 			if (authTask.IsCompleted && authTask.Result != null)
 			{
-				newUser = authTask.Result;
-				gameManager.LoadLevel("MainMenu");
-				GetHoursDataFromDB();
-				GetCoinsDataFromDB();
+				User = authTask.Result;
 			}
 		});
+	}
+
+
+	private void HandleValueChanged(object sender, ChildChangedEventArgs args)
+	{
+
+		if (args.DatabaseError != null)
+		{
+			Debug.LogError(args.DatabaseError.Message);
+			return;
+		}
+
+		Debug.Log("Changed");
+		switch (args.Snapshot.Key)
+		{
+			case "PreviousHighScore":
+				string PrevHS = args.Snapshot.GetRawJsonValue();
+				User_Stats.PreviousHighScore = Convert.ToInt32(PrevHS);
+				PlayerPrefs.SetInt(PrefsKey.OldHS, Convert.ToInt32(PrevHS));
+				return;
+			case "HighScore":
+				string NewHS = args.Snapshot.GetRawJsonValue();
+				User_Stats.HighScore = Convert.ToInt32(NewHS);
+				PlayerPrefs.SetInt(PrefsKey.NewHS, Convert.ToInt32(NewHS));
+				return;
+			case "Hours":
+				Debug.Log("Changed hours");
+				string dataHours = args.Snapshot.GetRawJsonValue();
+				PlayerPrefs.SetInt(PrefsKey.Hours, Convert.ToInt32(dataHours));
+				profileHandler.UpdateUserStats();
+
+				return;
+			case "Coin":
+				Debug.Log("Changed coin");
+				string dataCoins = args.Snapshot.GetRawJsonValue();
+				PlayerPrefs.SetInt(PrefsKey.Coin, Convert.ToInt32(dataCoins));
+				profileHandler.UpdateUserStats();
+				return;
+		}
+
+
+	}
+
+	private void Update()
+	{
+		if (Input.GetKeyDown(KeyCode.Space))
+		{
+			SignOut();
+			Debug.Log(gameManager == null);
+		}
+	}
+
+	public void NewRegister()
+	{
+		if (tremsOfUseToggle.GetComponentInChildren<Toggle>().isOn && labaRulesToggle.GetComponentInChildren<Toggle>().isOn)
+		{
+			string number = Verificator.IsValidPhoneNumber(phone_register.text);
+			if (number == null)
+			{
+				Debug.Log("Неверно введен номер телефона");
+				return;
+			}
+			if (!TestEmail.IsEmail(email_register.text))
+			{
+				Debug.Log("Неверно введен Email");
+				return;
+			}
+			if (password_register.text.Length < 6)
+			{
+				Debug.Log("Пароль должен быть больше 6-ти символов");
+				return;
+			}
+
+			Email = email_register.text;
+			Password = password_register.text;
+			Phone_Number = number;
+			gameManager.ShowLoading(true);
+
+			uint phoneAuthTimeoutMs = 60 * 1000;
+			Provider = PhoneAuthProvider.GetInstance(Auth);
+			Provider.VerifyPhoneNumber(Phone_Number, phoneAuthTimeoutMs, null,
+				verificationCompleted: (credential) =>
+				{
+					Debug.Log("Completed");
+					SignInAndUpdate(credential);
+				},
+				verificationFailed: (error) =>
+				{
+					Debug.Log("error");
+					Debug.Log(error);
+					gameManager.ShowLoading(false);
+
+				},
+				codeSent: (id, token) =>
+				{
+					Debug.Log(id);
+					verificationId = id;
+					gameManager.Panels[1].GetComponent<Animator>().Play("SSCR Fade-out");
+					gameManager.Panels[2].GetComponent<Animator>().Play("SSCR Fade-in");
+					gameManager.ShowLoading(false);
+
+				},
+				codeAutoRetrievalTimeOut: (id) =>
+				{
+					Debug.Log("Phone Auth, auto-verification timed out");
+					gameManager.ShowLoading(false);
+
+				});
+		}
+	}
+
+	public void SubmitSMSCode()
+	{
+		verificationCode = phone_SMS_code.text;
+
+		Credential credential = Provider.GetCredential(verificationId, verificationCode);
+		SignInAndUpdate(credential);
+
+	}
+
+	private void SignInAndUpdate(Credential credential)
+	{
+		Debug.Log("We are here");
+		gameManager.ShowLoading(true);
+		Auth.SignInWithCredentialAsync(credential).ContinueWith(task =>
+		{
+			if (task.IsFaulted)
+			{
+				Debug.LogError("SignInWithCredentialAsync encountered an error: " +
+							   task.Exception);
+				return;
+			}
+
+			User = task.Result;
+
+			Debug.Log("User signed in successfully");
+			Firebase.Auth.Credential credentialUpdate = Firebase.Auth.EmailAuthProvider.GetCredential(Email, Password);
+			User.LinkWithCredentialAsync(credentialUpdate).ContinueWith(UpdateCredentialTask =>
+			{
+				if (UpdateCredentialTask.IsCanceled)
+				{
+					Debug.LogError("LinkWithCredentialAsync was canceled.");
+					return;
+				}
+				if (UpdateCredentialTask.IsFaulted)
+				{
+					Debug.LogError("LinkWithCredentialAsync encountered an error: " + UpdateCredentialTask.Exception);
+					return;
+				}
+
+				User = UpdateCredentialTask.Result;
+				Debug.LogFormat("Credentials successfully linked to Firebase user: {0} ({1})",
+					User.Email);
+			});
+
+			IDictionary<string, object> updatedFields = new Dictionary<string, object>{
+				{"Email", Email},
+				{"Password", Password},
+				{"Phone Number", Phone_Number},
+				{"Id", User.UserId}
+					   		};
+
+			Reference.Child("users").Child(User.UserId).UpdateChildrenAsync(updatedFields).ContinueWithOnMainThread(UpdateTask =>
+			{
+				if (UpdateTask.IsFaulted)
+				{
+					Debug.Log("Error " + UpdateTask.Exception);
+
+				}
+				else if (UpdateTask.IsCompleted)
+				{
+
+					gameManager.Panels[2].GetComponent<Animator>().Play("SSCR Fade-out");
+
+					Signin(Email, Password);
+					Debug.Log("User's data was successfully updated");
+					PlayerPrefs.SetString(PrefsKey.RememberEmail, Email);
+					PlayerPrefs.SetString(PrefsKey.RememberPass, Password);
+					Reference.Child("users").Child(User.UserId).ChildChanged += HandleValueChanged;
+
+					GetData();
+				}
+			});
+
+		});
+		gameManager.ShowLoading(false);
 	}
 
 	// Track state changes of the auth object.
 	void AuthStateChanged(object sender, System.EventArgs eventArgs)
 	{
-		if (auth.CurrentUser != user)
+		if (Auth.CurrentUser != User)
 		{
-			bool signedIn = user != auth.CurrentUser && auth.CurrentUser != null;
-			if (!signedIn && user != null)
+			bool signedIn = User != Auth.CurrentUser && Auth.CurrentUser != null;
+			if (!signedIn && User != null)
 			{
-				Debug.Log("Signed out " + user.UserId);
+				Debug.Log("Signed out " + User.UserId);
+				Reference.Child("users").Child(User.UserId).ChildChanged -= HandleValueChanged;
+				User = null;
+				gameManager.LoadLevel("LoginRoom");
 			}
-			user = auth.CurrentUser;
+			User = Auth.CurrentUser;
 			if (signedIn)
 			{
-				Debug.Log("Signed in " + user.UserId);
+				Debug.Log("Signed in " + User.UserId);
+
+				if (tremsOfUseToggle.GetComponentInChildren<Toggle>().isOn)
+				{
+					PlayerPrefs.SetString(PrefsKey.RememberEmail, Email);
+					PlayerPrefs.SetString(PrefsKey.RememberPass, Password);
+				}
+				else
+				{
+					PlayerPrefs.SetString(PrefsKey.RememberEmail, "");
+					PlayerPrefs.SetString(PrefsKey.RememberPass, "");
+				}
+
+				gameManager.LoadLevel("MainMenu");
+				Reference.Child("users").Child(User.UserId).ChildChanged += HandleValueChanged;
+
+				GetData();
 			}
 		}
 	}
@@ -181,24 +376,55 @@ public class FirebaseClass : MonoBehaviour
 	private void InitializeFirebase()
 	{
 		Debug.Log("Setting up Firebase Auth");
-		auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
-		auth.StateChanged += AuthStateChanged;
-		AuthStateChanged(this, null);
-		FirebaseApp.DefaultInstance.SetEditorDatabaseUrl("https://zachetka-d22be.firebaseio.com/");
-		reference = FirebaseDatabase.DefaultInstance.RootReference;
+		Auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
+		FirebaseApp.DefaultInstance.SetEditorDatabaseUrl(databaseURL);
+		Reference = FirebaseDatabase.DefaultInstance.RootReference;
 	}
 
 	public void WriteDataInDB(string avatarData)
 	{
 		Debug.Log(avatarData);
-		reference.Child("users").Child(user.UserId).Child("Avatar").SetRawJsonValueAsync(avatarData);
-		//reference.Child("users").Child(user.UserId).Child("hoursinvr").SetRawJsonValueAsync(data); 
-		//reference.Child("users").Child(user.UserId).Child("vrcoin").SetRawJsonValueAsync(data);
+		Reference.Child("users").Child(User.UserId).Child("Avatar").SetRawJsonValueAsync(avatarData);
+
 	}
 
-	public void GetDataFromDB()
+	public void GetData()
 	{
-		reference.Child("users").Child(user.UserId).Child("Avatar").GetValueAsync().ContinueWithOnMainThread(dataTask =>
+		Reference.Child("users").Child(User.UserId).GetValueAsync().ContinueWithOnMainThread(dataTask =>
+		{
+			if (dataTask.IsCanceled)
+			{
+				Debug.LogError("Loading data from Firebase was canceled.");
+				return;
+			}
+			if (dataTask.IsFaulted)
+			{
+				Debug.LogError("Loading data from Firebase encountered an error: " + dataTask.Exception);
+				return;
+			}
+			if (dataTask.IsCompleted && dataTask.Result != null)
+			{
+				string json = dataTask.Result.GetRawJsonValue();
+
+				Debug.Log(json);
+
+				var data = fsJsonParser.Parse(json);
+				object deserialized = null;
+				serializer.TryDeserialize(data, typeof(UserStatsFromFirebase), ref deserialized);
+
+				User_Stats = deserialized as UserStatsFromFirebase;
+
+				PlayerPrefs.SetInt(PrefsKey.Hours, Convert.ToInt32(User_Stats.Hours));
+				PlayerPrefs.SetInt(PrefsKey.Coin, Convert.ToInt32(User_Stats.Coin));
+				PlayerPrefs.SetInt(PrefsKey.OldHS, Convert.ToInt32(User_Stats.PreviousHighScore));
+				PlayerPrefs.SetInt(PrefsKey.NewHS, Convert.ToInt32(User_Stats.HighScore));
+			}
+		});
+	}
+
+	public void GetRecipeFromDB()
+	{
+		Reference.Child("users").Child(User.UserId).Child("Avatar").GetValueAsync().ContinueWithOnMainThread(dataTask =>
 		{
 			if (dataTask.IsCanceled)
 			{
@@ -213,65 +439,49 @@ public class FirebaseClass : MonoBehaviour
 			if (dataTask.IsCompleted && dataTask.Result != null)
 			{
 				Debug.Log(dataTask.Result.GetRawJsonValue());
-				GameObject.Find("UMA Character Avatar").GetComponent<UMACustomizer>().LoadAvatar(dataTask.Result.GetRawJsonValue());				
-			}
-		});		
-	}
-
-	public void GetHoursDataFromDB()
-	{
-		reference.Child("users").Child(user.UserId).Child("hoursinvr").GetValueAsync().ContinueWithOnMainThread(dataTask =>
-		{
-			if (dataTask.IsCanceled)
-			{
-				Debug.LogError("Loading data from Firebase was canceled.");
-				return;
-			}
-			if (dataTask.IsFaulted)
-			{
-				Debug.LogError("Loading data from Firebase encountered an error: " + dataTask.Exception);
-				return;
-			}
-			if (dataTask.IsCompleted && dataTask.Result != null)
-			{
-				dataHoursJson = dataTask.Result.GetRawJsonValue();
-			}
-		});		
-	}
-
-	public void GetCoinsDataFromDB()
-	{
-		reference.Child("users").Child(user.UserId).Child("vrcoin").GetValueAsync().ContinueWithOnMainThread(dataTask =>
-		{
-			if (dataTask.IsCanceled)
-			{
-				Debug.LogError("Loading data from Firebase was canceled.");
-				return;
-			}
-			if (dataTask.IsFaulted)
-			{
-				Debug.LogError("Loading data from Firebase encountered an error: " + dataTask.Exception);
-				return;
-			}
-			if (dataTask.IsCompleted && dataTask.Result != null)
-			{
-				dataCoinsJson = dataTask.Result.GetRawJsonValue();				
+				GameObject.Find("UMA Character Avatar").GetComponent<UMACustomizer>().LoadAvatar(dataTask.Result.GetRawJsonValue());
 			}
 		});
 	}
 
+
 	void OnDestroy()
 	{
-		auth.StateChanged -= AuthStateChanged;
-		auth.SignOut();
-		auth = null;
+		Auth.StateChanged -= AuthStateChanged;
+		Reference.Child("users").Child(User.UserId).ChildChanged -= HandleValueChanged;
+		//Auth.SignOut();
+		Auth = null;
 	}
 
-	private void OnApplicationQuit()
+
+	public void SignOut()
 	{
-		if (auth != null)
-		{
-			auth.SignOut();
-		}
+		Auth.SignOut();
 	}
+
+
+	public void SignInWithCredit(string googleIdToken, string googleAccessToken)
+	{
+		Firebase.Auth.Credential credential =
+	Firebase.Auth.GoogleAuthProvider.GetCredential(googleIdToken, googleAccessToken);
+		Auth.SignInWithCredentialAsync(credential).ContinueWith(task =>
+		{
+			if (task.IsCanceled)
+			{
+				Debug.LogError("SignInWithCredentialAsync was canceled.");
+				return;
+			}
+			if (task.IsFaulted)
+			{
+				Debug.LogError("SignInWithCredentialAsync encountered an error: " + task.Exception);
+				return;
+			}
+
+			User = task.Result;
+			Debug.LogFormat("User signed in successfully: {0} ({1})",
+				User.DisplayName, User.UserId);
+		});
+	}
+
+
 }

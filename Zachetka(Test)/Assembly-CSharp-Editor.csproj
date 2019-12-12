@@ -56,6 +56,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Character Creator UI\Editor\InitCCUI.cs" />
+     <Compile Include="Assets\FullSerializer\Source\Aot\Editor\fsAotConfigurationEditor.cs" />
      <Compile Include="Assets\Hexart UI\Editor\InitHexUI.cs" />
      <Compile Include="Assets\LunarConsole\Editor\AndroidPlugin.cs" />
      <Compile Include="Assets\LunarConsole\Editor\Autorun.cs" />

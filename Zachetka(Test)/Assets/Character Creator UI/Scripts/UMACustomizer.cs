@@ -408,7 +408,7 @@ namespace Michsky.UI.CCUI
         public void LoadRecipe()
         {
 
-			firebase.GetDataFromDB();
+			firebase.GetRecipeFromDB();
 
             //myRecipe = File.ReadAllText(Application.persistentDataPath + "/CharacterRecipes/" + saveName + ".txt");
             //avatar.ClearSlots();

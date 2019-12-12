@@ -115,7 +115,11 @@ public class VolumeSettings : MonoBehaviour
 			SoundFx_Value = soundFx;
 		}
 
-		public Settings() { }
+		public Settings() {
+			Master_Value = 100f;
+			Music_Value = 50f;
+			SoundFx_Value = 50f;
+		}
 	}
 
 	
@@ -131,6 +135,11 @@ public class VolumeSettings : MonoBehaviour
 	{
 		Debug.Log("Settings saved to: " + SAVE_PATH);
 		string jsonSettings = JsonUtility.ToJson(currentSettings);
+		if (jsonSettings.Length < 1)
+		{
+			jsonSettings = JsonUtility.ToJson(new Settings());
+		}
+		Debug.Log(jsonSettings); 
 
 		using (TextWriter writer = new StreamWriter(SAVE_PATH, false))
 		{
