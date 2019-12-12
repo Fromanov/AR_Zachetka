@@ -277,6 +277,7 @@
      <Compile Include="Assets\LunarConsole\Scripts\Utils\Log.cs" />
      <Compile Include="Assets\LunarConsole\Scripts\Utils\ReflectionUtils.cs" />
      <Compile Include="Assets\LunarConsole\Scripts\Utils\StringUtils.cs" />
+     <Compile Include="Assets\PanelsHandler.cs" />
      <Compile Include="Assets\Scripts\cubeMovier.cs" />
      <Compile Include="Assets\Scripts\FirebaseClass.cs" />
      <Compile Include="Assets\Scripts\FirebaseSms.cs" />
