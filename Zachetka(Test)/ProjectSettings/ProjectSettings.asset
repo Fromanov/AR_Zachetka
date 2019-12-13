@@ -259,7 +259,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: "E:/Zachetka(Test) (\u0421\u0430\u043D\u044F)/vrlab.keystore"
+  AndroidKeystoreName: '{inproject}: vrlab.keystore'
   AndroidKeyaliasName: vrlab
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1

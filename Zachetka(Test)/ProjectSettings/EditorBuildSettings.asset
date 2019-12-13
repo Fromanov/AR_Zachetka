@@ -20,4 +20,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/StackRoom.unity
     guid: f7986950493b8cd4f819524e2b1d416f
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: dc9fab5ca659c1c408f5ac6102aec77c,
+      type: 2}

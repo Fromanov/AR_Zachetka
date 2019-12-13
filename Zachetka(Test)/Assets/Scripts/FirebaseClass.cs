@@ -40,6 +40,14 @@ public class FirebaseClass : MonoBehaviour
 	private InputField password_register;
 	[SerializeField]
 	private InputField phone_register;
+	[SerializeField]
+	private InputField name_register;
+	[SerializeField]
+	private InputField lastName_register;
+	[SerializeField]
+	private InputField patronymic_register;
+	[SerializeField]
+	private Dropdown[] birthday_register ;
 
 	[SerializeField]
 	private InputField phone_SMS_code;
@@ -52,6 +60,10 @@ public class FirebaseClass : MonoBehaviour
 	private string Email;
 	private string Password;
 	private string Phone_Number;
+	private string Name;
+	private string LastName;
+	private string Patronymic;
+	private string Birthday;
 
 	private fsSerializer serializer = new fsSerializer();
 
@@ -195,8 +207,9 @@ public class FirebaseClass : MonoBehaviour
 	{
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
-			SignOut();
-			Debug.Log(gameManager == null);
+			Debug.Log(birthday_register[2].options[birthday_register[2].value].text);
+			
+			
 		}
 	}
 
@@ -215,15 +228,37 @@ public class FirebaseClass : MonoBehaviour
 				Debug.Log("Неверно введен Email");
 				return;
 			}
-			if (password_register.text.Length < 6)
+			if (password_register.text.Trim().Length < 6)
 			{
 				Debug.Log("Пароль должен быть больше 6-ти символов");
 				return;
 			}
+			if (name_register.text.Trim().Length < 2)
+			{
+				Debug.Log("Введите Имя");
+				return;
+			}
+			if (lastName_register.text.Trim().Length < 1)
+			{
+				Debug.Log("Введите Фамилию");
+				return;
+			}
+			if (patronymic_register.text.Trim().Length < 2)
+			{
+				Debug.Log("Введите Отчество");
+				return;
+			}
+			
 
 			Email = email_register.text;
 			Password = password_register.text;
 			Phone_Number = number;
+			Name = name_register.text;
+			LastName = lastName_register.text;
+			Patronymic = patronymic_register.text;
+			Birthday = "" + birthday_register[0].options[birthday_register[0].value].text + "/" 
+				+ birthday_register[1].options[birthday_register[1].value].text + "/" 
+				+ birthday_register[2].options[birthday_register[2].value].text;
 			gameManager.ShowLoading(true);
 
 			uint phoneAuthTimeoutMs = 60 * 1000;
@@ -307,7 +342,11 @@ public class FirebaseClass : MonoBehaviour
 				{"Email", Email},
 				{"Password", Password},
 				{"Phone Number", Phone_Number},
-				{"Id", User.UserId}
+				{"Id", User.UserId},
+				{"Name", Name},
+				{"LastName", LastName},
+				{"Patronymic", Patronymic},
+				{"Birthday", Birthday},
 					   		};
 
 			Reference.Child("users").Child(User.UserId).UpdateChildrenAsync(updatedFields).ContinueWithOnMainThread(UpdateTask =>
@@ -418,6 +457,11 @@ public class FirebaseClass : MonoBehaviour
 				PlayerPrefs.SetInt(PrefsKey.Coin, Convert.ToInt32(User_Stats.Coin));
 				PlayerPrefs.SetInt(PrefsKey.OldHS, Convert.ToInt32(User_Stats.PreviousHighScore));
 				PlayerPrefs.SetInt(PrefsKey.NewHS, Convert.ToInt32(User_Stats.HighScore));
+				PlayerPrefs.SetString(PrefsKey.Name, User_Stats.Name);
+				PlayerPrefs.SetString(PrefsKey.LastName, User_Stats.LastName);
+				PlayerPrefs.SetString(PrefsKey.Patronymic, User_Stats.Patronymic);
+				PlayerPrefs.SetString(PrefsKey.Birthday, User_Stats.Birthday);
+				
 			}
 		});
 	}

@@ -11,5 +11,9 @@ public class UserStatsFromFirebase
 	public int Coin { get; set; }
 	public int HighScore { get; set; }
 	public int PreviousHighScore { get; set; }
+	public string Name { get; set; }
+	public string LastName { get; set; }
+	public string Patronymic { get; set; }
+	public string Birthday { get; set; }
 
 }
