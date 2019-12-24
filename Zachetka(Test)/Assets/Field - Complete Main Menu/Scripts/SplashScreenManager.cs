@@ -25,7 +25,7 @@ namespace Michsky.UI.FieldCompleteMainMenu
 
 		void Awake()
 		{
-			string json = File.ReadAllText(recipeFilePath + '\\' + "Settings.json");
+			//string json = File.ReadAllText(recipeFilePath + '\\' + "Settings.json");
 		}
 
         void Start()

@@ -163,16 +163,31 @@ public class ProfileHandler : MonoBehaviour
 	public void UpdateUserStats()
 	{
 		Debug.Log("Updating Stats");
-		userRank.GetComponent<UnityEngine.UI.Text>().text = GetRank(PlayerPrefs.GetInt(PrefsKey.Hours));
 		Debug.Log(PlayerPrefs.GetInt(PrefsKey.Hours));
 		userCoinValueProfileAvatar.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetInt(PrefsKey.Coin).ToString();
 
 		userRankProfileAvatar.GetComponent<UnityEngine.UI.Text>().text = GetRank(PlayerPrefs.GetInt(PrefsKey.Hours));
 		userCoinValue.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetInt(PrefsKey.Coin).ToString();
-		userHours.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetInt(PrefsKey.Hours) + " ч.";
-		userDiscount.GetComponent<UnityEngine.UI.Text>().text = GetDiscount(PlayerPrefs.GetInt(PrefsKey.Hours)) + " %";
 
-		userName.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetString(PrefsKey.Name);
-		userSurName.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetString(PrefsKey.LastName);
+		if (userRank)
+		{
+			userRank.GetComponent<UnityEngine.UI.Text>().text = GetRank(PlayerPrefs.GetInt(PrefsKey.Hours));
+		}
+		if (userHours)
+		{
+			userHours.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetInt(PrefsKey.Hours) + " ч.";
+		}
+		if (userDiscount)
+		{
+			userDiscount.GetComponent<UnityEngine.UI.Text>().text = GetDiscount(PlayerPrefs.GetInt(PrefsKey.Hours)) + " %";
+		}
+		if (userName)
+		{
+			userName.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetString(PrefsKey.Name);
+		}
+		if (userSurName)
+		{
+			userSurName.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetString(PrefsKey.LastName);
+		}		
 	}
 }
