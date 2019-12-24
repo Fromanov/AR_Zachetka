@@ -1,0 +1,6849 @@
+fileFormatVersion: 2
+guid: d31e6bfa79551b0449e2bfe38b6ba8f2
+ModelImporter:
+  serializedVersion: 26
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: ' light switch 1'
+  - first:
+      1: 100002
+    second: ' light switch 2'
+  - first:
+      1: 100004
+    second: ' light switch 3'
+  - first:
+      1: 100006
+    second: ' light switch 4'
+  - first:
+      1: 100008
+    second: ' light switch button 1'
+  - first:
+      1: 100010
+    second: ' light switch button 2'
+  - first:
+      1: 100012
+    second: ' light switch button 3'
+  - first:
+      1: 100014
+    second: ' light switch button 4'
+  - first:
+      1: 100016
+    second: 2x multiplugs 1
+  - first:
+      1: 100018
+    second: 2x multiplugs 10
+  - first:
+      1: 100020
+    second: 2x multiplugs 11
+  - first:
+      1: 100022
+    second: 2x multiplugs 12
+  - first:
+      1: 100024
+    second: 2x multiplugs 13
+  - first:
+      1: 100026
+    second: 2x multiplugs 14
+  - first:
+      1: 100028
+    second: 2x multiplugs 15
+  - first:
+      1: 100030
+    second: 2x multiplugs 16
+  - first:
+      1: 100032
+    second: 2x multiplugs 17
+  - first:
+      1: 100034
+    second: 2x multiplugs 18
+  - first:
+      1: 100036
+    second: 2x multiplugs 19
+  - first:
+      1: 100038
+    second: 2x multiplugs 2
+  - first:
+      1: 100040
+    second: 2x multiplugs 20
+  - first:
+      1: 100042
+    second: 2x multiplugs 3
+  - first:
+      1: 100044
+    second: 2x multiplugs 4
+  - first:
+      1: 100046
+    second: 2x multiplugs 5
+  - first:
+      1: 100048
+    second: 2x multiplugs 6
+  - first:
+      1: 100050
+    second: 2x multiplugs 7
+  - first:
+      1: 100052
+    second: 2x multiplugs 8
+  - first:
+      1: 100054
+    second: 2x multiplugs 9
+  - first:
+      1: 100056
+    second: Administration desk blackpanels
+  - first:
+      1: 100058
+    second: Administration desk diod tape
+  - first:
+      1: 100060
+    second: Administration desk white panels
+  - first:
+      1: 100062
+    second: autosimulator black matt metal
+  - first:
+      1: 100064
+    second: autosimulator car seat
+  - first:
+      1: 100066
+    second: autosimulator carseat plastic
+  - first:
+      1: 100068
+    second: autosimulator dark glass table
+  - first:
+      1: 100070
+    second: autosimulator footstage with pedals
+  - first:
+      1: 100072
+    second: autosimulator pedali chases
+  - first:
+      1: 100074
+    second: autosimulator steering wheel
+  - first:
+      1: 100076
+    second: autosimulator steering wheel buttons
+  - first:
+      1: 100078
+    second: autosimulator steering wheel chases
+  - first:
+      1: 100080
+    second: autosimulator steering wheel chases buttons
+  - first:
+      1: 100082
+    second: autosimulator steering wheel joystick
+  - first:
+      1: 100084
+    second: autosimulator steering wheel pivot
+  - first:
+      1: 100086
+    second: banner
+  - first:
+      1: 100088
+    second: Banner 2 black wood frame
+  - first:
+      1: 100090
+    second: Banner black wood frame
+  - first:
+      1: 100092
+    second: banner2
+  - first:
+      1: 100094
+    second: Dahai despenser
+  - first:
+      1: 100096
+    second: Dahai faucet 1
+  - first:
+      1: 100098
+    second: Dahai faucet 2
+  - first:
+      1: 100100
+    second: Dahai water bottle
+  - first:
+      1: 100102
+    second: diploma's A4 frame
+  - first:
+      1: 100104
+    second: diplomas A4
+  - first:
+      1: 100106
+    second: Door1
+  - first:
+      1: 100108
+    second: Door2
+  - first:
+      1: 100110
+    second: doorbox005
+  - first:
+      1: 100112
+    second: doorbox006
+  - first:
+      1: 100114
+    second: doorbox1
+  - first:
+      1: 100116
+    second: doorbox2
+  - first:
+      1: 100118
+    second: Doorhandle 1
+  - first:
+      1: 100120
+    second: Doorhandle 2
+  - first:
+      1: 100122
+    second: Doorhandle base 1
+  - first:
+      1: 100124
+    second: Doorhandle base 2
+  - first:
+      1: 100126
+    second: Entrance glass with print
+  - first:
+      1: 100128
+    second: Entrance sign base
+  - first:
+      1: 100130
+    second: Entrance sign plate
+  - first:
+      1: 100132
+    second: Hallway celing
+  - first:
+      1: 100134
+    second: Ikea table 1
+  - first:
+      1: 100136
+    second: Ikea table 2
+  - first:
+      1: 100138
+    second: Ikea table 3
+  - first:
+      1: 100140
+    second: Ikea table 4
+  - first:
+      1: 100142
+    second: Ikea table 5
+  - first:
+      1: 100144
+    second: Ikea table 6
+  - first:
+      1: 100146
+    second: Ikea table short
+  - first:
+      1: 100148
+    second: Inner door
+  - first:
+      1: 100150
+    second: Inner door handle
+  - first:
+      1: 100152
+    second: Inner door lock
+  - first:
+      1: 100154
+    second: Inner door lock hole matt metal
+  - first:
+      1: 100156
+    second: Inner door main pivot base and glass fixture matt grey metal
+  - first:
+      1: 100158
+    second: Inner door main pivot plane
+  - first:
+      1: 100160
+    second: Inner door pivot
+  - first:
+      1: 100162
+    second: Kitchen
+  - first:
+      1: 100164
+    second: Kitchen ceiling
+  - first:
+      1: 100166
+    second: Kitchen floor
+  - first:
+      1: 100168
+    second: kolonna1
+  - first:
+      1: 100170
+    second: kolonna2
+  - first:
+      1: 100172
+    second: kolonna3
+  - first:
+      1: 100174
+    second: kolonna4
+  - first:
+      1: 100176
+    second: kolonna5
+  - first:
+      1: 100178
+    second: kolonna6
+  - first:
+      1: 100180
+    second: kolonna7
+  - first:
+      1: 100182
+    second: komorka
+  - first:
+      1: 100184
+    second: komorka pol
+  - first:
+      1: 100186
+    second: koridor
+  - first:
+      1: 100188
+    second: koridor pol
+  - first:
+      1: 100190
+    second: Mirror 1
+  - first:
+      1: 100192
+    second: Mirror 10
+  - first:
+      1: 100194
+    second: Mirror 2
+  - first:
+      1: 100196
+    second: Mirror 3
+  - first:
+      1: 100198
+    second: Mirror 4
+  - first:
+      1: 100200
+    second: Mirror 5
+  - first:
+      1: 100202
+    second: Mirror 6
+  - first:
+      1: 100204
+    second: Mirror 7
+  - first:
+      1: 100206
+    second: Mirror 8
+  - first:
+      1: 100208
+    second: Mirror 9
+  - first:
+      1: 100210
+    second: Mirror oval
+  - first:
+      1: 100212
+    second: Net filter 1
+  - first:
+      1: 100214
+    second: Net filter 2
+  - first:
+      1: 100216
+    second: Net filter 3
+  - first:
+      1: 100218
+    second: Net filter 4
+  - first:
+      1: 100220
+    second: Net filter 5
+  - first:
+      1: 100222
+    second: Outer door
+  - first:
+      1: 100224
+    second: Outer door handle
+  - first:
+      1: 100226
+    second: Outer door main pivot plane matt metal
+  - first:
+      1: 100228
+    second: Outer door pivot
+  - first:
+      1: 100230
+    second: Oval Mirror LED_tape
+  - first:
+      1: 100232
+    second: Pandus
+  - first:
+      1: 100234
+    second: PapeLlight 1
+  - first:
+      1: 100236
+    second: PapeLlight 2
+  - first:
+      1: 100238
+    second: PapeLlight 3
+  - first:
+      1: 100240
+    second: PapeLlight base 1
+  - first:
+      1: 100242
+    second: PapeLlight base 2
+  - first:
+      1: 100244
+    second: PapeLlight base 3
+  - first:
+      1: 100246
+    second: PC Block 1
+  - first:
+      1: 100248
+    second: PC Block 2
+  - first:
+      1: 100250
+    second: PC Block 3
+  - first:
+      1: 100252
+    second: PC Block 4
+  - first:
+      1: 100254
+    second: PC Block 5
+  - first:
+      1: 100256
+    second: PC Block 6
+  - first:
+      1: 100258
+    second: PC Block 7
+  - first:
+      1: 100260
+    second: PC Block 8
+  - first:
+      1: 100262
+    second: PC cables 1
+  - first:
+      1: 100264
+    second: PC cables 2
+  - first:
+      1: 100266
+    second: PC cables 3
+  - first:
+      1: 100268
+    second: PC cables 4
+  - first:
+      1: 100270
+    second: PC cables 5
+  - first:
+      1: 100272
+    second: PC cables 6
+  - first:
+      1: 100274
+    second: PC cables 7
+  - first:
+      1: 100276
+    second: PC cables 8
+  - first:
+      1: 100278
+    second: PC Coolant pipes 1
+  - first:
+      1: 100280
+    second: PC Coolant pipes 2
+  - first:
+      1: 100282
+    second: PC Coolant pipes 3
+  - first:
+      1: 100284
+    second: PC Coolant pipes 4
+  - first:
+      1: 100286
+    second: PC Coolant pipes 5
+  - first:
+      1: 100288
+    second: PC Coolant pipes 6
+  - first:
+      1: 100290
+    second: PC Coolant pipes 7
+  - first:
+      1: 100292
+    second: PC Coolant pipes 8
+  - first:
+      1: 100294
+    second: PC Nojki 1
+  - first:
+      1: 100296
+    second: PC Nojki 2
+  - first:
+      1: 100298
+    second: PC Nojki 3
+  - first:
+      1: 100300
+    second: PC Nojki 4
+  - first:
+      1: 100302
+    second: PC Nojki 5
+  - first:
+      1: 100304
+    second: PC Nojki 6
+  - first:
+      1: 100306
+    second: PC Nojki 7
+  - first:
+      1: 100308
+    second: PC Nojki 8
+  - first:
+      1: 100310
+    second: PC Thermaltake glass 1
+  - first:
+      1: 100312
+    second: PC Thermaltake glass 2
+  - first:
+      1: 100314
+    second: PC Thermaltake glass 3
+  - first:
+      1: 100316
+    second: PC Thermaltake glass 4
+  - first:
+      1: 100318
+    second: PC Thermaltake glass 5
+  - first:
+      1: 100320
+    second: PC Thermaltake glass 6
+  - first:
+      1: 100322
+    second: PC Thermaltake glass 7
+  - first:
+      1: 100324
+    second: PC Thermaltake glass 8
+  - first:
+      1: 100326
+    second: Petli1
+  - first:
+      1: 100328
+    second: Petli2
+  - first:
+      1: 100330
+    second: Photoscreen
+  - first:
+      1: 100332
+    second: pod podokonnikom 1-2
+  - first:
+      1: 100334
+    second: pod podokonnikom 2-3
+  - first:
+      1: 100336
+    second: pod podokonnikom 3-4
+  - first:
+      1: 100338
+    second: pod podokonnikom 5-6
+  - first:
+      1: 100340
+    second: pod podokonnikom 6-7
+  - first:
+      1: 100342
+    second: pod_podokonnikom_4-5
+  - first:
+      1: 100344
+    second: podokonnik 1-2
+  - first:
+      1: 100346
+    second: podokonnik 2-3
+  - first:
+      1: 100348
+    second: podokonnik 3-4
+  - first:
+      1: 100350
+    second: podokonnik 5-6
+  - first:
+      1: 100352
+    second: podokonnik 6-7
+  - first:
+      1: 100354
+    second: Polochka pod PC chrome 1
+  - first:
+      1: 100356
+    second: Polochka pod PC chrome 2
+  - first:
+      1: 100358
+    second: Polochka pod PC chrome 3
+  - first:
+      1: 100360
+    second: Polochka pod PC chrome 4
+  - first:
+      1: 100362
+    second: Polochka pod PC chrome 5
+  - first:
+      1: 100364
+    second: Polochka pod PC chrome 6
+  - first:
+      1: 100366
+    second: Polochka pod PC chrome 7
+  - first:
+      1: 100368
+    second: Polochka pod PC chrome 8
+  - first:
+      1: 100370
+    second: Polochka pod PC dark metal 1
+  - first:
+      1: 100372
+    second: Polochka pod PC dark metal 2
+  - first:
+      1: 100374
+    second: Polochka pod PC dark metal 3
+  - first:
+      1: 100376
+    second: Polochka pod PC dark metal 4
+  - first:
+      1: 100378
+    second: Polochka pod PC dark metal 5
+  - first:
+      1: 100380
+    second: Polochka pod PC dark metal 6
+  - first:
+      1: 100382
+    second: Polochka pod PC dark metal 7
+  - first:
+      1: 100384
+    second: Polochka pod PC dark metal 8
+  - first:
+      1: 100386
+    second: Polochla_pod_kompami 1
+  - first:
+      1: 100388
+    second: Polochla_pod_kompami 2
+  - first:
+      1: 100390
+    second: Polochla_pod_kompami 3
+  - first:
+      1: 100392
+    second: Polochla_pod_kompami 4
+  - first:
+      1: 100394
+    second: Polochla_pod_kompami 5
+  - first:
+      1: 100396
+    second: Polochla_pod_kompami 6
+  - first:
+      1: 100398
+    second: Polochla_pod_kompami 7
+  - first:
+      1: 100400
+    second: Polochla_pod_kompami 8
+  - first:
+      1: 100402
+    second: quad perforated metal line
+  - first:
+      1: 100404
+    second: Radiator L 1
+  - first:
+      1: 100406
+    second: Radiator L 2
+  - first:
+      1: 100408
+    second: Radiator L 3
+  - first:
+      1: 100410
+    second: Radiator L 4
+  - first:
+      1: 100412
+    second: Radiator L 5
+  - first:
+      1: 100414
+    second: Radiator L 6
+  - first:
+      1: 100416
+    second: Radiator R 1
+  - first:
+      1: 100418
+    second: Radiator R 2
+  - first:
+      1: 100420
+    second: rama 1
+  - first:
+      1: 100422
+    second: rama 10
+  - first:
+      1: 100424
+    second: rama 11
+  - first:
+      1: 100426
+    second: rama 12
+  - first:
+      1: 100428
+    second: rama 13
+  - first:
+      1: 100430
+    second: rama 2
+  - first:
+      1: 100432
+    second: rama 3
+  - first:
+      1: 100434
+    second: rama 4
+  - first:
+      1: 100436
+    second: rama 5
+  - first:
+      1: 100438
+    second: rama 6
+  - first:
+      1: 100440
+    second: rama 7
+  - first:
+      1: 100442
+    second: rama 8
+  - first:
+      1: 100444
+    second: rama 9
+  - first:
+      1: 100446
+    second: Refregerator chases
+  - first:
+      1: 100448
+    second: Refregerator door
+  - first:
+      1: 100450
+    second: Refregerator door pivot
+  - first:
+      1: 100452
+    second: Refregerator inner glass
+  - first:
+      1: 100454
+    second: Refregerator outer glass
+  - first:
+      1: 100456
+    second: Refregerator radiator
+  - first:
+      1: 100458
+    second: Refregerator shelves
+  - first:
+      1: 100460
+    second: smoke detector 1
+  - first:
+      1: 100462
+    second: smoke detector 2
+  - first:
+      1: 100464
+    second: smoke detector 3
+  - first:
+      1: 100466
+    second: smoke detector 4
+  - first:
+      1: 100468
+    second: smoke detector 5
+  - first:
+      1: 100470
+    second: smoke detector 6
+  - first:
+      1: 100472
+    second: smoke detector 7
+  - first:
+      1: 100474
+    second: Toilet ceiling
+  - first:
+      1: 100476
+    second: Toilet pol attachment
+  - first:
+      1: 100478
+    second: Toilet walls
+  - first:
+      1: 100480
+    second: Tolet floor
+  - first:
+      1: 100482
+    second: Unicum coffee beans
+  - first:
+      1: 100484
+    second: Unicum coffee box
+  - first:
+      1: 100486
+    second: Unicum coffee set base door
+  - first:
+      1: 100488
+    second: Unicum coffee set base door handle
+  - first:
+      1: 100490
+    second: Unicum coffee set base lower stage
+  - first:
+      1: 100492
+    second: Unicum coffee set base main box
+  - first:
+      1: 100494
+    second: Unicum coffee set base upper shelf
+  - first:
+      1: 100496
+    second: unicum door
+  - first:
+      1: 100498
+    second: unicum main box
+  - first:
+      1: 100500
+    second: unicum_handles
+  - first:
+      1: 100502
+    second: Vitrina 1
+  - first:
+      1: 100504
+    second: Vitrina 1-2
+  - first:
+      1: 100506
+    second: Vitrina 2
+  - first:
+      1: 100508
+    second: Vitrina 2-3
+  - first:
+      1: 100510
+    second: Vitrina 3
+  - first:
+      1: 100512
+    second: Vitrina 3-4
+  - first:
+      1: 100514
+    second: Vitrina 4
+  - first:
+      1: 100516
+    second: Vitrina 4-5
+  - first:
+      1: 100518
+    second: Vitrina 5
+  - first:
+      1: 100520
+    second: Vitrina 5-6
+  - first:
+      1: 100522
+    second: Vitrina 6
+  - first:
+      1: 100524
+    second: Vitrina 6-7
+  - first:
+      1: 100526
+    second: Vitrina 7
+  - first:
+      1: 100528
+    second: Vitrina Glass 1
+  - first:
+      1: 100530
+    second: Vitrina Glass 2
+  - first:
+      1: 100532
+    second: Vitrina Glass 3
+  - first:
+      1: 100534
+    second: Vitrina Glass 4
+  - first:
+      1: 100536
+    second: Vitrina Glass 5
+  - first:
+      1: 100538
+    second: Vitrina light 1
+  - first:
+      1: 100540
+    second: Vitrina light 2
+  - first:
+      1: 100542
+    second: Vitrina light 3
+  - first:
+      1: 100544
+    second: Vitrina light 4
+  - first:
+      1: 100546
+    second: Vitrina light 5
+  - first:
+      1: 100548
+    second: Vitrina pol
+  - first:
+      1: 100550
+    second: Vive sensor 1
+  - first:
+      1: 100552
+    second: Vive sensor 10
+  - first:
+      1: 100554
+    second: Vive sensor 11
+  - first:
+      1: 100556
+    second: Vive sensor 2
+  - first:
+      1: 100558
+    second: Vive sensor 3
+  - first:
+      1: 100560
+    second: Vive sensor 4
+  - first:
+      1: 100562
+    second: Vive sensor 5
+  - first:
+      1: 100564
+    second: Vive sensor 6
+  - first:
+      1: 100566
+    second: Vive sensor 7
+  - first:
+      1: 100568
+    second: Vive sensor 8
+  - first:
+      1: 100570
+    second: Vive sensor 9
+  - first:
+      1: 100572
+    second: Vive sensor main mount black matt plastic 1
+  - first:
+      1: 100574
+    second: Vive sensor main mount black matt plastic 1 1
+  - first:
+      1: 100576
+    second: Vive sensor main mount black matt plastic 10
+  - first:
+      1: 100578
+    second: Vive sensor main mount black matt plastic 10 1
+  - first:
+      1: 100580
+    second: Vive sensor main mount black matt plastic 11
+  - first:
+      1: 100582
+    second: Vive sensor main mount black matt plastic 11 1
+  - first:
+      1: 100584
+    second: Vive sensor main mount black matt plastic 2
+  - first:
+      1: 100586
+    second: Vive sensor main mount black matt plastic 2 1
+  - first:
+      1: 100588
+    second: Vive sensor main mount black matt plastic 3
+  - first:
+      1: 100590
+    second: Vive sensor main mount black matt plastic 3 1
+  - first:
+      1: 100592
+    second: Vive sensor main mount black matt plastic 4
+  - first:
+      1: 100594
+    second: Vive sensor main mount black matt plastic 4 1
+  - first:
+      1: 100596
+    second: Vive sensor main mount black matt plastic 5
+  - first:
+      1: 100598
+    second: Vive sensor main mount black matt plastic 5 1
+  - first:
+      1: 100600
+    second: Vive sensor main mount black matt plastic 6
+  - first:
+      1: 100602
+    second: Vive sensor main mount black matt plastic 6 1
+  - first:
+      1: 100604
+    second: Vive sensor main mount black matt plastic 7
+  - first:
+      1: 100606
+    second: Vive sensor main mount black matt plastic 7 1
+  - first:
+      1: 100608
+    second: Vive sensor main mount black matt plastic 8
+  - first:
+      1: 100610
+    second: Vive sensor main mount black matt plastic 8 1
+  - first:
+      1: 100612
+    second: Vive sensor main mount black matt plastic 9
+  - first:
+      1: 100614
+    second: Vive sensor main mount black matt plastic 9 1
+  - first:
+      1: 100616
+    second: Vive sensor main mount chrome 1
+  - first:
+      1: 100618
+    second: Vive sensor main mount chrome 10
+  - first:
+      1: 100620
+    second: Vive sensor main mount chrome 11
+  - first:
+      1: 100622
+    second: Vive sensor main mount chrome 2
+  - first:
+      1: 100624
+    second: Vive sensor main mount chrome 3
+  - first:
+      1: 100626
+    second: Vive sensor main mount chrome 4
+  - first:
+      1: 100628
+    second: Vive sensor main mount chrome 5
+  - first:
+      1: 100630
+    second: Vive sensor main mount chrome 6
+  - first:
+      1: 100632
+    second: Vive sensor main mount chrome 7
+  - first:
+      1: 100634
+    second: Vive sensor main mount chrome 8
+  - first:
+      1: 100636
+    second: Vive sensor main mount chrome 9
+  - first:
+      1: 100638
+    second: vneshnik001
+  - first:
+      1: 100640
+    second: //RootNode
+  - first:
+      1: 100642
+    second: zal 1 Samsung TV 1
+  - first:
+      1: 100644
+    second: zal1 cable chanel
+  - first:
+      1: 100646
+    second: zal1 carpet 1
+  - first:
+      1: 100648
+    second: zal1 carpet 2
+  - first:
+      1: 100650
+    second: zal1 carpet 3
+  - first:
+      1: 100652
+    second: zal1 carpet 4
+  - first:
+      1: 100654
+    second: zal1 carpet 5
+  - first:
+      1: 100656
+    second: zal1 ceiling
+  - first:
+      1: 100658
+    second: zal1 divan 1
+  - first:
+      1: 100660
+    second: zal1 divan 2
+  - first:
+      1: 100662
+    second: zal1 divan 3
+  - first:
+      1: 100664
+    second: zal1 Kronshtein 1
+  - first:
+      1: 100666
+    second: zal1 Kronshtein 2
+  - first:
+      1: 100668
+    second: zal1 Kronshtein 3
+  - first:
+      1: 100670
+    second: zal1 Kronshtein 4
+  - first:
+      1: 100672
+    second: zal1 podvenoi potolok
+  - first:
+      1: 100674
+    second: Zal1 Projectorlight 1
+  - first:
+      1: 100676
+    second: Zal1 Projectorlight 2
+  - first:
+      1: 100678
+    second: zal1 Samsung TV 2
+  - first:
+      1: 100680
+    second: zal1 Samsung TV 3
+  - first:
+      1: 100682
+    second: zal1 Samsung TV 4
+  - first:
+      1: 100684
+    second: zal1 Samsung TV 5
+  - first:
+      1: 100686
+    second: zal1 soffit 1
+  - first:
+      1: 100688
+    second: zal1 soffit 2
+  - first:
+      1: 100690
+    second: zal1 soffit 3
+  - first:
+      1: 100692
+    second: zal1 soffit 4
+  - first:
+      1: 100694
+    second: zal1 soffit 5
+  - first:
+      1: 100696
+    second: zal1 soffit 6
+  - first:
+      1: 100698
+    second: zal1 soffit 7
+  - first:
+      1: 100700
+    second: zal1 Wallmount 1
+  - first:
+      1: 100702
+    second: zal1 Wallmount 2
+  - first:
+      1: 100704
+    second: zal1 Wallmount 3 (unique)
+  - first:
+      1: 100706
+    second: zal1 Wallmount 4
+  - first:
+      1: 100708
+    second: zal1 Wallmount 5
+  - first:
+      1: 100710
+    second: zal1 window 1
+  - first:
+      1: 100712
+    second: zal1 window 2
+  - first:
+      1: 100714
+    second: zal1 window 3
+  - first:
+      1: 100716
+    second: zal1 window 4
+  - first:
+      1: 100718
+    second: zal1 window 5
+  - first:
+      1: 100720
+    second: Zal1_pol001
+  - first:
+      1: 100722
+    second: zal1_stena1
+  - first:
+      1: 100724
+    second: zal2 cable chanel long corrugated 1
+  - first:
+      1: 100726
+    second: zal2 cable chanel long corrugated 2
+  - first:
+      1: 100728
+    second: zal2 cable chanel short corrugated
+  - first:
+      1: 100730
+    second: zal2 cable chanel short corrugated 1
+  - first:
+      1: 100732
+    second: zal2 cable chanel short corrugated 2
+  - first:
+      1: 100734
+    second: zal2 cable chanel short corrugated 3
+  - first:
+      1: 100736
+    second: zal2 cable chanel short corrugated 4
+  - first:
+      1: 100738
+    second: zal2 cable chanel short corrugated 5
+  - first:
+      1: 100740
+    second: zal2 cable chanel short corrugated 6
+  - first:
+      1: 100742
+    second: zal2 cable chanel short corrugated 7
+  - first:
+      1: 100744
+    second: zal2 ceiling
+  - first:
+      1: 100746
+    second: zal2 cornice
+  - first:
+      1: 100748
+    second: Zal2 curtain
+  - first:
+      1: 100750
+    second: zal2 divan 1
+  - first:
+      1: 100752
+    second: zal2 divan 2
+  - first:
+      1: 100754
+    second: zal2 divan 3
+  - first:
+      1: 100756
+    second: zal2 floor
+  - first:
+      1: 100758
+    second: zal2 light switch
+  - first:
+      1: 100760
+    second: zal2 light switch main button
+  - first:
+      1: 100762
+    second: zal2 light switch power controller
+  - first:
+      1: 100764
+    second: zal2 lustra 1
+  - first:
+      1: 100766
+    second: zal2 lustra 2
+  - first:
+      1: 100768
+    second: zal2 lustra 3
+  - first:
+      1: 100770
+    second: zal2 lustra 4
+  - first:
+      1: 100772
+    second: zal2 lustra 5
+  - first:
+      1: 100774
+    second: zal2 lustra 6
+  - first:
+      1: 100776
+    second: zal2 lustra 7
+  - first:
+      1: 100778
+    second: zal2 lustra 8
+  - first:
+      1: 100780
+    second: zal2 plastic tube
+  - first:
+      1: 100782
+    second: zal2 podvesnoi potolok 1
+  - first:
+      1: 100784
+    second: zal2 podvesnoi potolok 2
+  - first:
+      1: 100786
+    second: zal2 Samsung TV 1
+  - first:
+      1: 100788
+    second: zal2 Samsung TV 2
+  - first:
+      1: 100790
+    second: zal2 Samsung TV 3
+  - first:
+      1: 100792
+    second: zal2 Samsung TV 4
+  - first:
+      1: 100794
+    second: zal2 SPK-710
+  - first:
+      1: 100796
+    second: zal2 SPK-710 buttons black plactic
+  - first:
+      1: 100798
+    second: zal2 wall1
+  - first:
+      1: 100800
+    second: zal2 Wallmount 1
+  - first:
+      1: 100802
+    second: zal2 Wallmount 2
+  - first:
+      1: 100804
+    second: zal2 Wallmount 3
+  - first:
+      1: 100806
+    second: zal2 Wallmount 4
+  - first:
+      4: 400000
+    second: ' light switch 1'
+  - first:
+      4: 400002
+    second: ' light switch 2'
+  - first:
+      4: 400004
+    second: ' light switch 3'
+  - first:
+      4: 400006
+    second: ' light switch 4'
+  - first:
+      4: 400008
+    second: ' light switch button 1'
+  - first:
+      4: 400010
+    second: ' light switch button 2'
+  - first:
+      4: 400012
+    second: ' light switch button 3'
+  - first:
+      4: 400014
+    second: ' light switch button 4'
+  - first:
+      4: 400016
+    second: 2x multiplugs 1
+  - first:
+      4: 400018
+    second: 2x multiplugs 10
+  - first:
+      4: 400020
+    second: 2x multiplugs 11
+  - first:
+      4: 400022
+    second: 2x multiplugs 12
+  - first:
+      4: 400024
+    second: 2x multiplugs 13
+  - first:
+      4: 400026
+    second: 2x multiplugs 14
+  - first:
+      4: 400028
+    second: 2x multiplugs 15
+  - first:
+      4: 400030
+    second: 2x multiplugs 16
+  - first:
+      4: 400032
+    second: 2x multiplugs 17
+  - first:
+      4: 400034
+    second: 2x multiplugs 18
+  - first:
+      4: 400036
+    second: 2x multiplugs 19
+  - first:
+      4: 400038
+    second: 2x multiplugs 2
+  - first:
+      4: 400040
+    second: 2x multiplugs 20
+  - first:
+      4: 400042
+    second: 2x multiplugs 3
+  - first:
+      4: 400044
+    second: 2x multiplugs 4
+  - first:
+      4: 400046
+    second: 2x multiplugs 5
+  - first:
+      4: 400048
+    second: 2x multiplugs 6
+  - first:
+      4: 400050
+    second: 2x multiplugs 7
+  - first:
+      4: 400052
+    second: 2x multiplugs 8
+  - first:
+      4: 400054
+    second: 2x multiplugs 9
+  - first:
+      4: 400056
+    second: Administration desk blackpanels
+  - first:
+      4: 400058
+    second: Administration desk diod tape
+  - first:
+      4: 400060
+    second: Administration desk white panels
+  - first:
+      4: 400062
+    second: autosimulator black matt metal
+  - first:
+      4: 400064
+    second: autosimulator car seat
+  - first:
+      4: 400066
+    second: autosimulator carseat plastic
+  - first:
+      4: 400068
+    second: autosimulator dark glass table
+  - first:
+      4: 400070
+    second: autosimulator footstage with pedals
+  - first:
+      4: 400072
+    second: autosimulator pedali chases
+  - first:
+      4: 400074
+    second: autosimulator steering wheel
+  - first:
+      4: 400076
+    second: autosimulator steering wheel buttons
+  - first:
+      4: 400078
+    second: autosimulator steering wheel chases
+  - first:
+      4: 400080
+    second: autosimulator steering wheel chases buttons
+  - first:
+      4: 400082
+    second: autosimulator steering wheel joystick
+  - first:
+      4: 400084
+    second: autosimulator steering wheel pivot
+  - first:
+      4: 400086
+    second: banner
+  - first:
+      4: 400088
+    second: Banner 2 black wood frame
+  - first:
+      4: 400090
+    second: Banner black wood frame
+  - first:
+      4: 400092
+    second: banner2
+  - first:
+      4: 400094
+    second: Dahai despenser
+  - first:
+      4: 400096
+    second: Dahai faucet 1
+  - first:
+      4: 400098
+    second: Dahai faucet 2
+  - first:
+      4: 400100
+    second: Dahai water bottle
+  - first:
+      4: 400102
+    second: diploma's A4 frame
+  - first:
+      4: 400104
+    second: diplomas A4
+  - first:
+      4: 400106
+    second: Door1
+  - first:
+      4: 400108
+    second: Door2
+  - first:
+      4: 400110
+    second: doorbox005
+  - first:
+      4: 400112
+    second: doorbox006
+  - first:
+      4: 400114
+    second: doorbox1
+  - first:
+      4: 400116
+    second: doorbox2
+  - first:
+      4: 400118
+    second: Doorhandle 1
+  - first:
+      4: 400120
+    second: Doorhandle 2
+  - first:
+      4: 400122
+    second: Doorhandle base 1
+  - first:
+      4: 400124
+    second: Doorhandle base 2
+  - first:
+      4: 400126
+    second: Entrance glass with print
+  - first:
+      4: 400128
+    second: Entrance sign base
+  - first:
+      4: 400130
+    second: Entrance sign plate
+  - first:
+      4: 400132
+    second: Hallway celing
+  - first:
+      4: 400134
+    second: Ikea table 1
+  - first:
+      4: 400136
+    second: Ikea table 2
+  - first:
+      4: 400138
+    second: Ikea table 3
+  - first:
+      4: 400140
+    second: Ikea table 4
+  - first:
+      4: 400142
+    second: Ikea table 5
+  - first:
+      4: 400144
+    second: Ikea table 6
+  - first:
+      4: 400146
+    second: Ikea table short
+  - first:
+      4: 400148
+    second: Inner door
+  - first:
+      4: 400150
+    second: Inner door handle
+  - first:
+      4: 400152
+    second: Inner door lock
+  - first:
+      4: 400154
+    second: Inner door lock hole matt metal
+  - first:
+      4: 400156
+    second: Inner door main pivot base and glass fixture matt grey metal
+  - first:
+      4: 400158
+    second: Inner door main pivot plane
+  - first:
+      4: 400160
+    second: Inner door pivot
+  - first:
+      4: 400162
+    second: Kitchen
+  - first:
+      4: 400164
+    second: Kitchen ceiling
+  - first:
+      4: 400166
+    second: Kitchen floor
+  - first:
+      4: 400168
+    second: kolonna1
+  - first:
+      4: 400170
+    second: kolonna2
+  - first:
+      4: 400172
+    second: kolonna3
+  - first:
+      4: 400174
+    second: kolonna4
+  - first:
+      4: 400176
+    second: kolonna5
+  - first:
+      4: 400178
+    second: kolonna6
+  - first:
+      4: 400180
+    second: kolonna7
+  - first:
+      4: 400182
+    second: komorka
+  - first:
+      4: 400184
+    second: komorka pol
+  - first:
+      4: 400186
+    second: koridor
+  - first:
+      4: 400188
+    second: koridor pol
+  - first:
+      4: 400190
+    second: Mirror 1
+  - first:
+      4: 400192
+    second: Mirror 10
+  - first:
+      4: 400194
+    second: Mirror 2
+  - first:
+      4: 400196
+    second: Mirror 3
+  - first:
+      4: 400198
+    second: Mirror 4
+  - first:
+      4: 400200
+    second: Mirror 5
+  - first:
+      4: 400202
+    second: Mirror 6
+  - first:
+      4: 400204
+    second: Mirror 7
+  - first:
+      4: 400206
+    second: Mirror 8
+  - first:
+      4: 400208
+    second: Mirror 9
+  - first:
+      4: 400210
+    second: Mirror oval
+  - first:
+      4: 400212
+    second: Net filter 1
+  - first:
+      4: 400214
+    second: Net filter 2
+  - first:
+      4: 400216
+    second: Net filter 3
+  - first:
+      4: 400218
+    second: Net filter 4
+  - first:
+      4: 400220
+    second: Net filter 5
+  - first:
+      4: 400222
+    second: Outer door
+  - first:
+      4: 400224
+    second: Outer door handle
+  - first:
+      4: 400226
+    second: Outer door main pivot plane matt metal
+  - first:
+      4: 400228
+    second: Outer door pivot
+  - first:
+      4: 400230
+    second: Oval Mirror LED_tape
+  - first:
+      4: 400232
+    second: Pandus
+  - first:
+      4: 400234
+    second: PapeLlight 1
+  - first:
+      4: 400236
+    second: PapeLlight 2
+  - first:
+      4: 400238
+    second: PapeLlight 3
+  - first:
+      4: 400240
+    second: PapeLlight base 1
+  - first:
+      4: 400242
+    second: PapeLlight base 2
+  - first:
+      4: 400244
+    second: PapeLlight base 3
+  - first:
+      4: 400246
+    second: PC Block 1
+  - first:
+      4: 400248
+    second: PC Block 2
+  - first:
+      4: 400250
+    second: PC Block 3
+  - first:
+      4: 400252
+    second: PC Block 4
+  - first:
+      4: 400254
+    second: PC Block 5
+  - first:
+      4: 400256
+    second: PC Block 6
+  - first:
+      4: 400258
+    second: PC Block 7
+  - first:
+      4: 400260
+    second: PC Block 8
+  - first:
+      4: 400262
+    second: PC cables 1
+  - first:
+      4: 400264
+    second: PC cables 2
+  - first:
+      4: 400266
+    second: PC cables 3
+  - first:
+      4: 400268
+    second: PC cables 4
+  - first:
+      4: 400270
+    second: PC cables 5
+  - first:
+      4: 400272
+    second: PC cables 6
+  - first:
+      4: 400274
+    second: PC cables 7
+  - first:
+      4: 400276
+    second: PC cables 8
+  - first:
+      4: 400278
+    second: PC Coolant pipes 1
+  - first:
+      4: 400280
+    second: PC Coolant pipes 2
+  - first:
+      4: 400282
+    second: PC Coolant pipes 3
+  - first:
+      4: 400284
+    second: PC Coolant pipes 4
+  - first:
+      4: 400286
+    second: PC Coolant pipes 5
+  - first:
+      4: 400288
+    second: PC Coolant pipes 6
+  - first:
+      4: 400290
+    second: PC Coolant pipes 7
+  - first:
+      4: 400292
+    second: PC Coolant pipes 8
+  - first:
+      4: 400294
+    second: PC Nojki 1
+  - first:
+      4: 400296
+    second: PC Nojki 2
+  - first:
+      4: 400298
+    second: PC Nojki 3
+  - first:
+      4: 400300
+    second: PC Nojki 4
+  - first:
+      4: 400302
+    second: PC Nojki 5
+  - first:
+      4: 400304
+    second: PC Nojki 6
+  - first:
+      4: 400306
+    second: PC Nojki 7
+  - first:
+      4: 400308
+    second: PC Nojki 8
+  - first:
+      4: 400310
+    second: PC Thermaltake glass 1
+  - first:
+      4: 400312
+    second: PC Thermaltake glass 2
+  - first:
+      4: 400314
+    second: PC Thermaltake glass 3
+  - first:
+      4: 400316
+    second: PC Thermaltake glass 4
+  - first:
+      4: 400318
+    second: PC Thermaltake glass 5
+  - first:
+      4: 400320
+    second: PC Thermaltake glass 6
+  - first:
+      4: 400322
+    second: PC Thermaltake glass 7
+  - first:
+      4: 400324
+    second: PC Thermaltake glass 8
+  - first:
+      4: 400326
+    second: Petli1
+  - first:
+      4: 400328
+    second: Petli2
+  - first:
+      4: 400330
+    second: Photoscreen
+  - first:
+      4: 400332
+    second: pod podokonnikom 1-2
+  - first:
+      4: 400334
+    second: pod podokonnikom 2-3
+  - first:
+      4: 400336
+    second: pod podokonnikom 3-4
+  - first:
+      4: 400338
+    second: pod podokonnikom 5-6
+  - first:
+      4: 400340
+    second: pod podokonnikom 6-7
+  - first:
+      4: 400342
+    second: pod_podokonnikom_4-5
+  - first:
+      4: 400344
+    second: podokonnik 1-2
+  - first:
+      4: 400346
+    second: podokonnik 2-3
+  - first:
+      4: 400348
+    second: podokonnik 3-4
+  - first:
+      4: 400350
+    second: podokonnik 5-6
+  - first:
+      4: 400352
+    second: podokonnik 6-7
+  - first:
+      4: 400354
+    second: Polochka pod PC chrome 1
+  - first:
+      4: 400356
+    second: Polochka pod PC chrome 2
+  - first:
+      4: 400358
+    second: Polochka pod PC chrome 3
+  - first:
+      4: 400360
+    second: Polochka pod PC chrome 4
+  - first:
+      4: 400362
+    second: Polochka pod PC chrome 5
+  - first:
+      4: 400364
+    second: Polochka pod PC chrome 6
+  - first:
+      4: 400366
+    second: Polochka pod PC chrome 7
+  - first:
+      4: 400368
+    second: Polochka pod PC chrome 8
+  - first:
+      4: 400370
+    second: Polochka pod PC dark metal 1
+  - first:
+      4: 400372
+    second: Polochka pod PC dark metal 2
+  - first:
+      4: 400374
+    second: Polochka pod PC dark metal 3
+  - first:
+      4: 400376
+    second: Polochka pod PC dark metal 4
+  - first:
+      4: 400378
+    second: Polochka pod PC dark metal 5
+  - first:
+      4: 400380
+    second: Polochka pod PC dark metal 6
+  - first:
+      4: 400382
+    second: Polochka pod PC dark metal 7
+  - first:
+      4: 400384
+    second: Polochka pod PC dark metal 8
+  - first:
+      4: 400386
+    second: Polochla_pod_kompami 1
+  - first:
+      4: 400388
+    second: Polochla_pod_kompami 2
+  - first:
+      4: 400390
+    second: Polochla_pod_kompami 3
+  - first:
+      4: 400392
+    second: Polochla_pod_kompami 4
+  - first:
+      4: 400394
+    second: Polochla_pod_kompami 5
+  - first:
+      4: 400396
+    second: Polochla_pod_kompami 6
+  - first:
+      4: 400398
+    second: Polochla_pod_kompami 7
+  - first:
+      4: 400400
+    second: Polochla_pod_kompami 8
+  - first:
+      4: 400402
+    second: quad perforated metal line
+  - first:
+      4: 400404
+    second: Radiator L 1
+  - first:
+      4: 400406
+    second: Radiator L 2
+  - first:
+      4: 400408
+    second: Radiator L 3
+  - first:
+      4: 400410
+    second: Radiator L 4
+  - first:
+      4: 400412
+    second: Radiator L 5
+  - first:
+      4: 400414
+    second: Radiator L 6
+  - first:
+      4: 400416
+    second: Radiator R 1
+  - first:
+      4: 400418
+    second: Radiator R 2
+  - first:
+      4: 400420
+    second: rama 1
+  - first:
+      4: 400422
+    second: rama 10
+  - first:
+      4: 400424
+    second: rama 11
+  - first:
+      4: 400426
+    second: rama 12
+  - first:
+      4: 400428
+    second: rama 13
+  - first:
+      4: 400430
+    second: rama 2
+  - first:
+      4: 400432
+    second: rama 3
+  - first:
+      4: 400434
+    second: rama 4
+  - first:
+      4: 400436
+    second: rama 5
+  - first:
+      4: 400438
+    second: rama 6
+  - first:
+      4: 400440
+    second: rama 7
+  - first:
+      4: 400442
+    second: rama 8
+  - first:
+      4: 400444
+    second: rama 9
+  - first:
+      4: 400446
+    second: Refregerator chases
+  - first:
+      4: 400448
+    second: Refregerator door
+  - first:
+      4: 400450
+    second: Refregerator door pivot
+  - first:
+      4: 400452
+    second: Refregerator inner glass
+  - first:
+      4: 400454
+    second: Refregerator outer glass
+  - first:
+      4: 400456
+    second: Refregerator radiator
+  - first:
+      4: 400458
+    second: Refregerator shelves
+  - first:
+      4: 400460
+    second: smoke detector 1
+  - first:
+      4: 400462
+    second: smoke detector 2
+  - first:
+      4: 400464
+    second: smoke detector 3
+  - first:
+      4: 400466
+    second: smoke detector 4
+  - first:
+      4: 400468
+    second: smoke detector 5
+  - first:
+      4: 400470
+    second: smoke detector 6
+  - first:
+      4: 400472
+    second: smoke detector 7
+  - first:
+      4: 400474
+    second: Toilet ceiling
+  - first:
+      4: 400476
+    second: Toilet pol attachment
+  - first:
+      4: 400478
+    second: Toilet walls
+  - first:
+      4: 400480
+    second: Tolet floor
+  - first:
+      4: 400482
+    second: Unicum coffee beans
+  - first:
+      4: 400484
+    second: Unicum coffee box
+  - first:
+      4: 400486
+    second: Unicum coffee set base door
+  - first:
+      4: 400488
+    second: Unicum coffee set base door handle
+  - first:
+      4: 400490
+    second: Unicum coffee set base lower stage
+  - first:
+      4: 400492
+    second: Unicum coffee set base main box
+  - first:
+      4: 400494
+    second: Unicum coffee set base upper shelf
+  - first:
+      4: 400496
+    second: unicum door
+  - first:
+      4: 400498
+    second: unicum main box
+  - first:
+      4: 400500
+    second: unicum_handles
+  - first:
+      4: 400502
+    second: Vitrina 1
+  - first:
+      4: 400504
+    second: Vitrina 1-2
+  - first:
+      4: 400506
+    second: Vitrina 2
+  - first:
+      4: 400508
+    second: Vitrina 2-3
+  - first:
+      4: 400510
+    second: Vitrina 3
+  - first:
+      4: 400512
+    second: Vitrina 3-4
+  - first:
+      4: 400514
+    second: Vitrina 4
+  - first:
+      4: 400516
+    second: Vitrina 4-5
+  - first:
+      4: 400518
+    second: Vitrina 5
+  - first:
+      4: 400520
+    second: Vitrina 5-6
+  - first:
+      4: 400522
+    second: Vitrina 6
+  - first:
+      4: 400524
+    second: Vitrina 6-7
+  - first:
+      4: 400526
+    second: Vitrina 7
+  - first:
+      4: 400528
+    second: Vitrina Glass 1
+  - first:
+      4: 400530
+    second: Vitrina Glass 2
+  - first:
+      4: 400532
+    second: Vitrina Glass 3
+  - first:
+      4: 400534
+    second: Vitrina Glass 4
+  - first:
+      4: 400536
+    second: Vitrina Glass 5
+  - first:
+      4: 400538
+    second: Vitrina light 1
+  - first:
+      4: 400540
+    second: Vitrina light 2
+  - first:
+      4: 400542
+    second: Vitrina light 3
+  - first:
+      4: 400544
+    second: Vitrina light 4
+  - first:
+      4: 400546
+    second: Vitrina light 5
+  - first:
+      4: 400548
+    second: Vitrina pol
+  - first:
+      4: 400550
+    second: Vive sensor 1
+  - first:
+      4: 400552
+    second: Vive sensor 10
+  - first:
+      4: 400554
+    second: Vive sensor 11
+  - first:
+      4: 400556
+    second: Vive sensor 2
+  - first:
+      4: 400558
+    second: Vive sensor 3
+  - first:
+      4: 400560
+    second: Vive sensor 4
+  - first:
+      4: 400562
+    second: Vive sensor 5
+  - first:
+      4: 400564
+    second: Vive sensor 6
+  - first:
+      4: 400566
+    second: Vive sensor 7
+  - first:
+      4: 400568
+    second: Vive sensor 8
+  - first:
+      4: 400570
+    second: Vive sensor 9
+  - first:
+      4: 400572
+    second: Vive sensor main mount black matt plastic 1
+  - first:
+      4: 400574
+    second: Vive sensor main mount black matt plastic 1 1
+  - first:
+      4: 400576
+    second: Vive sensor main mount black matt plastic 10
+  - first:
+      4: 400578
+    second: Vive sensor main mount black matt plastic 10 1
+  - first:
+      4: 400580
+    second: Vive sensor main mount black matt plastic 11
+  - first:
+      4: 400582
+    second: Vive sensor main mount black matt plastic 11 1
+  - first:
+      4: 400584
+    second: Vive sensor main mount black matt plastic 2
+  - first:
+      4: 400586
+    second: Vive sensor main mount black matt plastic 2 1
+  - first:
+      4: 400588
+    second: Vive sensor main mount black matt plastic 3
+  - first:
+      4: 400590
+    second: Vive sensor main mount black matt plastic 3 1
+  - first:
+      4: 400592
+    second: Vive sensor main mount black matt plastic 4
+  - first:
+      4: 400594
+    second: Vive sensor main mount black matt plastic 4 1
+  - first:
+      4: 400596
+    second: Vive sensor main mount black matt plastic 5
+  - first:
+      4: 400598
+    second: Vive sensor main mount black matt plastic 5 1
+  - first:
+      4: 400600
+    second: Vive sensor main mount black matt plastic 6
+  - first:
+      4: 400602
+    second: Vive sensor main mount black matt plastic 6 1
+  - first:
+      4: 400604
+    second: Vive sensor main mount black matt plastic 7
+  - first:
+      4: 400606
+    second: Vive sensor main mount black matt plastic 7 1
+  - first:
+      4: 400608
+    second: Vive sensor main mount black matt plastic 8
+  - first:
+      4: 400610
+    second: Vive sensor main mount black matt plastic 8 1
+  - first:
+      4: 400612
+    second: Vive sensor main mount black matt plastic 9
+  - first:
+      4: 400614
+    second: Vive sensor main mount black matt plastic 9 1
+  - first:
+      4: 400616
+    second: Vive sensor main mount chrome 1
+  - first:
+      4: 400618
+    second: Vive sensor main mount chrome 10
+  - first:
+      4: 400620
+    second: Vive sensor main mount chrome 11
+  - first:
+      4: 400622
+    second: Vive sensor main mount chrome 2
+  - first:
+      4: 400624
+    second: Vive sensor main mount chrome 3
+  - first:
+      4: 400626
+    second: Vive sensor main mount chrome 4
+  - first:
+      4: 400628
+    second: Vive sensor main mount chrome 5
+  - first:
+      4: 400630
+    second: Vive sensor main mount chrome 6
+  - first:
+      4: 400632
+    second: Vive sensor main mount chrome 7
+  - first:
+      4: 400634
+    second: Vive sensor main mount chrome 8
+  - first:
+      4: 400636
+    second: Vive sensor main mount chrome 9
+  - first:
+      4: 400638
+    second: vneshnik001
+  - first:
+      4: 400640
+    second: //RootNode
+  - first:
+      4: 400642
+    second: zal 1 Samsung TV 1
+  - first:
+      4: 400644
+    second: zal1 cable chanel
+  - first:
+      4: 400646
+    second: zal1 carpet 1
+  - first:
+      4: 400648
+    second: zal1 carpet 2
+  - first:
+      4: 400650
+    second: zal1 carpet 3
+  - first:
+      4: 400652
+    second: zal1 carpet 4
+  - first:
+      4: 400654
+    second: zal1 carpet 5
+  - first:
+      4: 400656
+    second: zal1 ceiling
+  - first:
+      4: 400658
+    second: zal1 divan 1
+  - first:
+      4: 400660
+    second: zal1 divan 2
+  - first:
+      4: 400662
+    second: zal1 divan 3
+  - first:
+      4: 400664
+    second: zal1 Kronshtein 1
+  - first:
+      4: 400666
+    second: zal1 Kronshtein 2
+  - first:
+      4: 400668
+    second: zal1 Kronshtein 3
+  - first:
+      4: 400670
+    second: zal1 Kronshtein 4
+  - first:
+      4: 400672
+    second: zal1 podvenoi potolok
+  - first:
+      4: 400674
+    second: Zal1 Projectorlight 1
+  - first:
+      4: 400676
+    second: Zal1 Projectorlight 2
+  - first:
+      4: 400678
+    second: zal1 Samsung TV 2
+  - first:
+      4: 400680
+    second: zal1 Samsung TV 3
+  - first:
+      4: 400682
+    second: zal1 Samsung TV 4
+  - first:
+      4: 400684
+    second: zal1 Samsung TV 5
+  - first:
+      4: 400686
+    second: zal1 soffit 1
+  - first:
+      4: 400688
+    second: zal1 soffit 2
+  - first:
+      4: 400690
+    second: zal1 soffit 3
+  - first:
+      4: 400692
+    second: zal1 soffit 4
+  - first:
+      4: 400694
+    second: zal1 soffit 5
+  - first:
+      4: 400696
+    second: zal1 soffit 6
+  - first:
+      4: 400698
+    second: zal1 soffit 7
+  - first:
+      4: 400700
+    second: zal1 Wallmount 1
+  - first:
+      4: 400702
+    second: zal1 Wallmount 2
+  - first:
+      4: 400704
+    second: zal1 Wallmount 3 (unique)
+  - first:
+      4: 400706
+    second: zal1 Wallmount 4
+  - first:
+      4: 400708
+    second: zal1 Wallmount 5
+  - first:
+      4: 400710
+    second: zal1 window 1
+  - first:
+      4: 400712
+    second: zal1 window 2
+  - first:
+      4: 400714
+    second: zal1 window 3
+  - first:
+      4: 400716
+    second: zal1 window 4
+  - first:
+      4: 400718
+    second: zal1 window 5
+  - first:
+      4: 400720
+    second: Zal1_pol001
+  - first:
+      4: 400722
+    second: zal1_stena1
+  - first:
+      4: 400724
+    second: zal2 cable chanel long corrugated 1
+  - first:
+      4: 400726
+    second: zal2 cable chanel long corrugated 2
+  - first:
+      4: 400728
+    second: zal2 cable chanel short corrugated
+  - first:
+      4: 400730
+    second: zal2 cable chanel short corrugated 1
+  - first:
+      4: 400732
+    second: zal2 cable chanel short corrugated 2
+  - first:
+      4: 400734
+    second: zal2 cable chanel short corrugated 3
+  - first:
+      4: 400736
+    second: zal2 cable chanel short corrugated 4
+  - first:
+      4: 400738
+    second: zal2 cable chanel short corrugated 5
+  - first:
+      4: 400740
+    second: zal2 cable chanel short corrugated 6
+  - first:
+      4: 400742
+    second: zal2 cable chanel short corrugated 7
+  - first:
+      4: 400744
+    second: zal2 ceiling
+  - first:
+      4: 400746
+    second: zal2 cornice
+  - first:
+      4: 400748
+    second: Zal2 curtain
+  - first:
+      4: 400750
+    second: zal2 divan 1
+  - first:
+      4: 400752
+    second: zal2 divan 2
+  - first:
+      4: 400754
+    second: zal2 divan 3
+  - first:
+      4: 400756
+    second: zal2 floor
+  - first:
+      4: 400758
+    second: zal2 light switch
+  - first:
+      4: 400760
+    second: zal2 light switch main button
+  - first:
+      4: 400762
+    second: zal2 light switch power controller
+  - first:
+      4: 400764
+    second: zal2 lustra 1
+  - first:
+      4: 400766
+    second: zal2 lustra 2
+  - first:
+      4: 400768
+    second: zal2 lustra 3
+  - first:
+      4: 400770
+    second: zal2 lustra 4
+  - first:
+      4: 400772
+    second: zal2 lustra 5
+  - first:
+      4: 400774
+    second: zal2 lustra 6
+  - first:
+      4: 400776
+    second: zal2 lustra 7
+  - first:
+      4: 400778
+    second: zal2 lustra 8
+  - first:
+      4: 400780
+    second: zal2 plastic tube
+  - first:
+      4: 400782
+    second: zal2 podvesnoi potolok 1
+  - first:
+      4: 400784
+    second: zal2 podvesnoi potolok 2
+  - first:
+      4: 400786
+    second: zal2 Samsung TV 1
+  - first:
+      4: 400788
+    second: zal2 Samsung TV 2
+  - first:
+      4: 400790
+    second: zal2 Samsung TV 3
+  - first:
+      4: 400792
+    second: zal2 Samsung TV 4
+  - first:
+      4: 400794
+    second: zal2 SPK-710
+  - first:
+      4: 400796
+    second: zal2 SPK-710 buttons black plactic
+  - first:
+      4: 400798
+    second: zal2 wall1
+  - first:
+      4: 400800
+    second: zal2 Wallmount 1
+  - first:
+      4: 400802
+    second: zal2 Wallmount 2
+  - first:
+      4: 400804
+    second: zal2 Wallmount 3
+  - first:
+      4: 400806
+    second: zal2 Wallmount 4
+  - first:
+      21: 2100000
+    second: Autosimulator buttons (Uv albedo)
+  - first:
+      21: 2100002
+    second: black wall tiles
+  - first:
+      21: 2100004
+    second: plaster
+  - first:
+      21: 2100006
+    second: curpet grey
+  - first:
+      21: 2100008
+    second: Plastic black matt
+  - first:
+      21: 2100010
+    second: Photoscreen display (uv albedo)
+  - first:
+      21: 2100012
+    second: Plastic black glossy
+  - first:
+      21: 2100014
+    second: Metall white glossy (enamelled)
+  - first:
+      21: 2100016
+    second: Metal black half matt
+  - first:
+      21: 2100018
+    second: Plastic white glossy
+  - first:
+      21: 2100020
+    second: Banner 1 (UV albedo)
+  - first:
+      21: 2100022
+    second: Wood black
+  - first:
+      21: 2100024
+    second: Banner 2
+  - first:
+      21: 2100026
+    second: administration desk black (UV)
+  - first:
+      21: 2100028
+    second: administration table white desk (UV albedo)
+  - first:
+      21: 2100030
+    second: No Name
+  - first:
+      21: 2100032
+    second: Metal black_
+  - first:
+      21: 2100034
+    second: Divan (UV albedo)
+  - first:
+      21: 2100036
+    second: autosimulator steering wheel chases buttons
+  - first:
+      21: 2100038
+    second: paint black matt_
+  - first:
+      21: 2100040
+    second: koridor walls
+  - first:
+      21: 2100042
+    second: koridor floor
+  - first:
+      21: 2100044
+    second: ceiling
+  - first:
+      21: 2100046
+    second: Carseat (UV albedo)
+  - first:
+      21: 2100048
+    second: kitchen floor
+  - first:
+      21: 2100050
+    second: kitchen walls
+  - first:
+      21: 2100052
+    second: Grass carpet
+  - first:
+      21: 2100054
+    second: Glass
+  - first:
+      21: 2100056
+    second: pandus
+  - first:
+      21: 2100058
+    second: paper light (UV albedo)
+  - first:
+      21: 2100060
+    second: Paperlight base (UV albedo)
+  - first:
+      21: 2100062
+    second: Wood white old
+  - first:
+      21: 2100064
+    second: Toilet floor attachments
+  - first:
+      21: 2100066
+    second: steering wheel leather
+  - first:
+      21: 2100068
+    second: dark glass
+  - first:
+      21: 2100070
+    second: toilet walls
+  - first:
+      21: 2100072
+    second: toilet floor
+  - first:
+      21: 2100074
+    second: Metal grey grainy (half metallness, smothness 0,3)
+  - first:
+      21: 2100076
+    second: plaster black_
+  - first:
+      21: 2100078
+    second: 5x multiplugs (UV albedo)
+  - first:
+      21: 2100080
+    second: chrome
+  - first:
+      21: 2100082
+    second: Projector light glass (UV albedo)
+  - first:
+      21: 2100084
+    second: Soffit (UV albedo)
+  - first:
+      21: 2100086
+    second: 'Material #35'
+  - first:
+      21: 2100088
+    second: 'Material #36'
+  - first:
+      21: 2100090
+    second: 'Material #59'
+  - first:
+      21: 2100092
+    second: Samsung Logo
+  - first:
+      21: 2100094
+    second: Entrance glasses (UV albedo)
+  - first:
+      21: 2100096
+    second: Metal grey grainy (full metallness, smothness 0,7)
+  - first:
+      21: 2100098
+    second: Inner door
+  - first:
+      21: 2100100
+    second: outer door (UV albedo)
+  - first:
+      21: 2100102
+    second: plastic white half transparent
+  - first:
+      21: 2100104
+    second: PC block (uv albedo)
+  - first:
+      21: 2100106
+    second: PC coolant pipes
+  - first:
+      21: 2100108
+    second: PC cables
+  - first:
+      21: 2100110
+    second: Zal2 black curtain
+  - first:
+      21: 2100112
+    second: SPK-710 (UV albedo)
+  - first:
+      21: 2100114
+    second: Vitrina pol
+  - first:
+      21: 2100116
+    second: oval mirror led tape
+  - first:
+      21: 2100118
+    second: Mirrors
+  - first:
+      21: 2100120
+    second: komorka walls
+  - first:
+      21: 2100122
+    second: Vitrina light (UV albedo)
+  - first:
+      21: 2100124
+    second: 2x multiplugs (UV albedo)
+  - first:
+      21: 2100126
+    second: cable chanel corrugated
+  - first:
+      21: 2100128
+    second: autosimularoe pedals
+  - first:
+      21: 2100130
+    second: Diplomas (UV albedo)
+  - first:
+      21: 2100132
+    second: Smoke detector (UV albedo with emission map)
+  - first:
+      21: 2100134
+    second: Exit sign (uv albedo)
+  - first:
+      21: 2100136
+    second: Refregerator outer glass (UV albedo)
+  - first:
+      21: 2100138
+    second: Unicum coffee door button 1
+  - first:
+      21: 2100140
+    second: Unicum coffee door button 2
+  - first:
+      21: 2100142
+    second: Unicum coffee door button 3
+  - first:
+      21: 2100144
+    second: Unicum coffee door button 4
+  - first:
+      21: 2100146
+    second: Unicum coffee door button 5
+  - first:
+      21: 2100148
+    second: Unicum coffee door button 6
+  - first:
+      21: 2100150
+    second: Unicum coffee door button 7
+  - first:
+      21: 2100152
+    second: Unicum coffee door button 8
+  - first:
+      21: 2100154
+    second: Unicum coffee door button 9
+  - first:
+      21: 2100156
+    second: Unicum coffee door button 10
+  - first:
+      21: 2100158
+    second: Unicum coffee beans (UV albedo)
+  - first:
+      21: 2100160
+    second: Dahai despenser (UV albedo)
+  - first:
+      21: 2100162
+    second: Dahai despenser L (UV albedo)
+  - first:
+      21: 2100164
+    second: Dahai despenser water bottle (UV albedo)
+  - first:
+      21: 2100166
+    second: Dahai despenser R (UV albedo)
+  - first:
+      21: 2100168
+    second: zal2 door1 (UV albedo)
+  - first:
+      21: 2100170
+    second: white wall tiles
+  - first:
+      23: 2300000
+    second: ' light switch 1'
+  - first:
+      23: 2300002
+    second: ' light switch 2'
+  - first:
+      23: 2300004
+    second: ' light switch 3'
+  - first:
+      23: 2300006
+    second: ' light switch 4'
+  - first:
+      23: 2300008
+    second: ' light switch button 1'
+  - first:
+      23: 2300010
+    second: ' light switch button 2'
+  - first:
+      23: 2300012
+    second: ' light switch button 3'
+  - first:
+      23: 2300014
+    second: ' light switch button 4'
+  - first:
+      23: 2300016
+    second: 2x multiplugs 1
+  - first:
+      23: 2300018
+    second: 2x multiplugs 10
+  - first:
+      23: 2300020
+    second: 2x multiplugs 11
+  - first:
+      23: 2300022
+    second: 2x multiplugs 12
+  - first:
+      23: 2300024
+    second: 2x multiplugs 13
+  - first:
+      23: 2300026
+    second: 2x multiplugs 14
+  - first:
+      23: 2300028
+    second: 2x multiplugs 15
+  - first:
+      23: 2300030
+    second: 2x multiplugs 16
+  - first:
+      23: 2300032
+    second: 2x multiplugs 17
+  - first:
+      23: 2300034
+    second: 2x multiplugs 18
+  - first:
+      23: 2300036
+    second: 2x multiplugs 19
+  - first:
+      23: 2300038
+    second: 2x multiplugs 2
+  - first:
+      23: 2300040
+    second: 2x multiplugs 20
+  - first:
+      23: 2300042
+    second: 2x multiplugs 3
+  - first:
+      23: 2300044
+    second: 2x multiplugs 4
+  - first:
+      23: 2300046
+    second: 2x multiplugs 5
+  - first:
+      23: 2300048
+    second: 2x multiplugs 6
+  - first:
+      23: 2300050
+    second: 2x multiplugs 7
+  - first:
+      23: 2300052
+    second: 2x multiplugs 8
+  - first:
+      23: 2300054
+    second: 2x multiplugs 9
+  - first:
+      23: 2300056
+    second: Administration desk blackpanels
+  - first:
+      23: 2300058
+    second: Administration desk diod tape
+  - first:
+      23: 2300060
+    second: Administration desk white panels
+  - first:
+      23: 2300062
+    second: autosimulator black matt metal
+  - first:
+      23: 2300064
+    second: autosimulator car seat
+  - first:
+      23: 2300066
+    second: autosimulator carseat plastic
+  - first:
+      23: 2300068
+    second: autosimulator dark glass table
+  - first:
+      23: 2300070
+    second: autosimulator footstage with pedals
+  - first:
+      23: 2300072
+    second: autosimulator pedali chases
+  - first:
+      23: 2300074
+    second: autosimulator steering wheel
+  - first:
+      23: 2300076
+    second: autosimulator steering wheel buttons
+  - first:
+      23: 2300078
+    second: autosimulator steering wheel chases
+  - first:
+      23: 2300080
+    second: autosimulator steering wheel chases buttons
+  - first:
+      23: 2300082
+    second: autosimulator steering wheel joystick
+  - first:
+      23: 2300084
+    second: autosimulator steering wheel pivot
+  - first:
+      23: 2300086
+    second: banner
+  - first:
+      23: 2300088
+    second: Banner 2 black wood frame
+  - first:
+      23: 2300090
+    second: Banner black wood frame
+  - first:
+      23: 2300092
+    second: banner2
+  - first:
+      23: 2300094
+    second: Dahai despenser
+  - first:
+      23: 2300096
+    second: Dahai faucet 1
+  - first:
+      23: 2300098
+    second: Dahai faucet 2
+  - first:
+      23: 2300100
+    second: Dahai water bottle
+  - first:
+      23: 2300102
+    second: diploma's A4 frame
+  - first:
+      23: 2300104
+    second: diplomas A4
+  - first:
+      23: 2300106
+    second: Door1
+  - first:
+      23: 2300108
+    second: Door2
+  - first:
+      23: 2300110
+    second: doorbox005
+  - first:
+      23: 2300112
+    second: doorbox006
+  - first:
+      23: 2300114
+    second: doorbox1
+  - first:
+      23: 2300116
+    second: doorbox2
+  - first:
+      23: 2300118
+    second: Doorhandle 1
+  - first:
+      23: 2300120
+    second: Doorhandle 2
+  - first:
+      23: 2300122
+    second: Doorhandle base 1
+  - first:
+      23: 2300124
+    second: Doorhandle base 2
+  - first:
+      23: 2300126
+    second: Entrance glass with print
+  - first:
+      23: 2300128
+    second: Entrance sign base
+  - first:
+      23: 2300130
+    second: Entrance sign plate
+  - first:
+      23: 2300132
+    second: Hallway celing
+  - first:
+      23: 2300134
+    second: Ikea table 1
+  - first:
+      23: 2300136
+    second: Ikea table 2
+  - first:
+      23: 2300138
+    second: Ikea table 3
+  - first:
+      23: 2300140
+    second: Ikea table 4
+  - first:
+      23: 2300142
+    second: Ikea table 5
+  - first:
+      23: 2300144
+    second: Ikea table 6
+  - first:
+      23: 2300146
+    second: Ikea table short
+  - first:
+      23: 2300148
+    second: Inner door
+  - first:
+      23: 2300150
+    second: Inner door handle
+  - first:
+      23: 2300152
+    second: Inner door lock
+  - first:
+      23: 2300154
+    second: Inner door lock hole matt metal
+  - first:
+      23: 2300156
+    second: Inner door main pivot base and glass fixture matt grey metal
+  - first:
+      23: 2300158
+    second: Inner door main pivot plane
+  - first:
+      23: 2300160
+    second: Inner door pivot
+  - first:
+      23: 2300162
+    second: Kitchen
+  - first:
+      23: 2300164
+    second: Kitchen ceiling
+  - first:
+      23: 2300166
+    second: Kitchen floor
+  - first:
+      23: 2300168
+    second: kolonna1
+  - first:
+      23: 2300170
+    second: kolonna2
+  - first:
+      23: 2300172
+    second: kolonna3
+  - first:
+      23: 2300174
+    second: kolonna4
+  - first:
+      23: 2300176
+    second: kolonna5
+  - first:
+      23: 2300178
+    second: kolonna6
+  - first:
+      23: 2300180
+    second: kolonna7
+  - first:
+      23: 2300182
+    second: komorka
+  - first:
+      23: 2300184
+    second: komorka pol
+  - first:
+      23: 2300186
+    second: koridor
+  - first:
+      23: 2300188
+    second: koridor pol
+  - first:
+      23: 2300190
+    second: Mirror 1
+  - first:
+      23: 2300192
+    second: Mirror 10
+  - first:
+      23: 2300194
+    second: Mirror 2
+  - first:
+      23: 2300196
+    second: Mirror 3
+  - first:
+      23: 2300198
+    second: Mirror 4
+  - first:
+      23: 2300200
+    second: Mirror 5
+  - first:
+      23: 2300202
+    second: Mirror 6
+  - first:
+      23: 2300204
+    second: Mirror 7
+  - first:
+      23: 2300206
+    second: Mirror 8
+  - first:
+      23: 2300208
+    second: Mirror 9
+  - first:
+      23: 2300210
+    second: Mirror oval
+  - first:
+      23: 2300212
+    second: Net filter 1
+  - first:
+      23: 2300214
+    second: Net filter 2
+  - first:
+      23: 2300216
+    second: Net filter 3
+  - first:
+      23: 2300218
+    second: Net filter 4
+  - first:
+      23: 2300220
+    second: Net filter 5
+  - first:
+      23: 2300222
+    second: Outer door
+  - first:
+      23: 2300224
+    second: Outer door handle
+  - first:
+      23: 2300226
+    second: Outer door main pivot plane matt metal
+  - first:
+      23: 2300228
+    second: Outer door pivot
+  - first:
+      23: 2300230
+    second: Oval Mirror LED_tape
+  - first:
+      23: 2300232
+    second: Pandus
+  - first:
+      23: 2300234
+    second: PapeLlight 1
+  - first:
+      23: 2300236
+    second: PapeLlight 2
+  - first:
+      23: 2300238
+    second: PapeLlight 3
+  - first:
+      23: 2300240
+    second: PapeLlight base 1
+  - first:
+      23: 2300242
+    second: PapeLlight base 2
+  - first:
+      23: 2300244
+    second: PapeLlight base 3
+  - first:
+      23: 2300246
+    second: PC Block 1
+  - first:
+      23: 2300248
+    second: PC Block 2
+  - first:
+      23: 2300250
+    second: PC Block 3
+  - first:
+      23: 2300252
+    second: PC Block 4
+  - first:
+      23: 2300254
+    second: PC Block 5
+  - first:
+      23: 2300256
+    second: PC Block 6
+  - first:
+      23: 2300258
+    second: PC Block 7
+  - first:
+      23: 2300260
+    second: PC Block 8
+  - first:
+      23: 2300262
+    second: PC cables 1
+  - first:
+      23: 2300264
+    second: PC cables 2
+  - first:
+      23: 2300266
+    second: PC cables 3
+  - first:
+      23: 2300268
+    second: PC cables 4
+  - first:
+      23: 2300270
+    second: PC cables 5
+  - first:
+      23: 2300272
+    second: PC cables 6
+  - first:
+      23: 2300274
+    second: PC cables 7
+  - first:
+      23: 2300276
+    second: PC cables 8
+  - first:
+      23: 2300278
+    second: PC Coolant pipes 1
+  - first:
+      23: 2300280
+    second: PC Coolant pipes 2
+  - first:
+      23: 2300282
+    second: PC Coolant pipes 3
+  - first:
+      23: 2300284
+    second: PC Coolant pipes 4
+  - first:
+      23: 2300286
+    second: PC Coolant pipes 5
+  - first:
+      23: 2300288
+    second: PC Coolant pipes 6
+  - first:
+      23: 2300290
+    second: PC Coolant pipes 7
+  - first:
+      23: 2300292
+    second: PC Coolant pipes 8
+  - first:
+      23: 2300294
+    second: PC Nojki 1
+  - first:
+      23: 2300296
+    second: PC Nojki 2
+  - first:
+      23: 2300298
+    second: PC Nojki 3
+  - first:
+      23: 2300300
+    second: PC Nojki 4
+  - first:
+      23: 2300302
+    second: PC Nojki 5
+  - first:
+      23: 2300304
+    second: PC Nojki 6
+  - first:
+      23: 2300306
+    second: PC Nojki 7
+  - first:
+      23: 2300308
+    second: PC Nojki 8
+  - first:
+      23: 2300310
+    second: PC Thermaltake glass 1
+  - first:
+      23: 2300312
+    second: PC Thermaltake glass 2
+  - first:
+      23: 2300314
+    second: PC Thermaltake glass 3
+  - first:
+      23: 2300316
+    second: PC Thermaltake glass 4
+  - first:
+      23: 2300318
+    second: PC Thermaltake glass 5
+  - first:
+      23: 2300320
+    second: PC Thermaltake glass 6
+  - first:
+      23: 2300322
+    second: PC Thermaltake glass 7
+  - first:
+      23: 2300324
+    second: PC Thermaltake glass 8
+  - first:
+      23: 2300326
+    second: Petli1
+  - first:
+      23: 2300328
+    second: Petli2
+  - first:
+      23: 2300330
+    second: Photoscreen
+  - first:
+      23: 2300332
+    second: pod podokonnikom 1-2
+  - first:
+      23: 2300334
+    second: pod podokonnikom 2-3
+  - first:
+      23: 2300336
+    second: pod podokonnikom 3-4
+  - first:
+      23: 2300338
+    second: pod podokonnikom 5-6
+  - first:
+      23: 2300340
+    second: pod podokonnikom 6-7
+  - first:
+      23: 2300342
+    second: pod_podokonnikom_4-5
+  - first:
+      23: 2300344
+    second: podokonnik 1-2
+  - first:
+      23: 2300346
+    second: podokonnik 2-3
+  - first:
+      23: 2300348
+    second: podokonnik 3-4
+  - first:
+      23: 2300350
+    second: podokonnik 5-6
+  - first:
+      23: 2300352
+    second: podokonnik 6-7
+  - first:
+      23: 2300354
+    second: Polochka pod PC chrome 1
+  - first:
+      23: 2300356
+    second: Polochka pod PC chrome 2
+  - first:
+      23: 2300358
+    second: Polochka pod PC chrome 3
+  - first:
+      23: 2300360
+    second: Polochka pod PC chrome 4
+  - first:
+      23: 2300362
+    second: Polochka pod PC chrome 5
+  - first:
+      23: 2300364
+    second: Polochka pod PC chrome 6
+  - first:
+      23: 2300366
+    second: Polochka pod PC chrome 7
+  - first:
+      23: 2300368
+    second: Polochka pod PC chrome 8
+  - first:
+      23: 2300370
+    second: Polochka pod PC dark metal 1
+  - first:
+      23: 2300372
+    second: Polochka pod PC dark metal 2
+  - first:
+      23: 2300374
+    second: Polochka pod PC dark metal 3
+  - first:
+      23: 2300376
+    second: Polochka pod PC dark metal 4
+  - first:
+      23: 2300378
+    second: Polochka pod PC dark metal 5
+  - first:
+      23: 2300380
+    second: Polochka pod PC dark metal 6
+  - first:
+      23: 2300382
+    second: Polochka pod PC dark metal 7
+  - first:
+      23: 2300384
+    second: Polochka pod PC dark metal 8
+  - first:
+      23: 2300386
+    second: Polochla_pod_kompami 1
+  - first:
+      23: 2300388
+    second: Polochla_pod_kompami 2
+  - first:
+      23: 2300390
+    second: Polochla_pod_kompami 3
+  - first:
+      23: 2300392
+    second: Polochla_pod_kompami 4
+  - first:
+      23: 2300394
+    second: Polochla_pod_kompami 5
+  - first:
+      23: 2300396
+    second: Polochla_pod_kompami 6
+  - first:
+      23: 2300398
+    second: Polochla_pod_kompami 7
+  - first:
+      23: 2300400
+    second: Polochla_pod_kompami 8
+  - first:
+      23: 2300402
+    second: quad perforated metal line
+  - first:
+      23: 2300404
+    second: Radiator L 1
+  - first:
+      23: 2300406
+    second: Radiator L 2
+  - first:
+      23: 2300408
+    second: Radiator L 3
+  - first:
+      23: 2300410
+    second: Radiator L 4
+  - first:
+      23: 2300412
+    second: Radiator L 5
+  - first:
+      23: 2300414
+    second: Radiator L 6
+  - first:
+      23: 2300416
+    second: Radiator R 1
+  - first:
+      23: 2300418
+    second: Radiator R 2
+  - first:
+      23: 2300420
+    second: rama 1
+  - first:
+      23: 2300422
+    second: rama 10
+  - first:
+      23: 2300424
+    second: rama 11
+  - first:
+      23: 2300426
+    second: rama 12
+  - first:
+      23: 2300428
+    second: rama 13
+  - first:
+      23: 2300430
+    second: rama 2
+  - first:
+      23: 2300432
+    second: rama 3
+  - first:
+      23: 2300434
+    second: rama 4
+  - first:
+      23: 2300436
+    second: rama 5
+  - first:
+      23: 2300438
+    second: rama 6
+  - first:
+      23: 2300440
+    second: rama 7
+  - first:
+      23: 2300442
+    second: rama 8
+  - first:
+      23: 2300444
+    second: rama 9
+  - first:
+      23: 2300446
+    second: Refregerator chases
+  - first:
+      23: 2300448
+    second: Refregerator door
+  - first:
+      23: 2300450
+    second: Refregerator door pivot
+  - first:
+      23: 2300452
+    second: Refregerator inner glass
+  - first:
+      23: 2300454
+    second: Refregerator outer glass
+  - first:
+      23: 2300456
+    second: Refregerator radiator
+  - first:
+      23: 2300458
+    second: Refregerator shelves
+  - first:
+      23: 2300460
+    second: smoke detector 1
+  - first:
+      23: 2300462
+    second: smoke detector 2
+  - first:
+      23: 2300464
+    second: smoke detector 3
+  - first:
+      23: 2300466
+    second: smoke detector 4
+  - first:
+      23: 2300468
+    second: smoke detector 5
+  - first:
+      23: 2300470
+    second: smoke detector 6
+  - first:
+      23: 2300472
+    second: smoke detector 7
+  - first:
+      23: 2300474
+    second: Toilet ceiling
+  - first:
+      23: 2300476
+    second: Toilet pol attachment
+  - first:
+      23: 2300478
+    second: Toilet walls
+  - first:
+      23: 2300480
+    second: Tolet floor
+  - first:
+      23: 2300482
+    second: Unicum coffee beans
+  - first:
+      23: 2300484
+    second: Unicum coffee box
+  - first:
+      23: 2300486
+    second: Unicum coffee set base door
+  - first:
+      23: 2300488
+    second: Unicum coffee set base door handle
+  - first:
+      23: 2300490
+    second: Unicum coffee set base lower stage
+  - first:
+      23: 2300492
+    second: Unicum coffee set base main box
+  - first:
+      23: 2300494
+    second: Unicum coffee set base upper shelf
+  - first:
+      23: 2300496
+    second: unicum door
+  - first:
+      23: 2300498
+    second: unicum main box
+  - first:
+      23: 2300500
+    second: unicum_handles
+  - first:
+      23: 2300502
+    second: Vitrina 1
+  - first:
+      23: 2300504
+    second: Vitrina 1-2
+  - first:
+      23: 2300506
+    second: Vitrina 2
+  - first:
+      23: 2300508
+    second: Vitrina 2-3
+  - first:
+      23: 2300510
+    second: Vitrina 3
+  - first:
+      23: 2300512
+    second: Vitrina 3-4
+  - first:
+      23: 2300514
+    second: Vitrina 4
+  - first:
+      23: 2300516
+    second: Vitrina 4-5
+  - first:
+      23: 2300518
+    second: Vitrina 5
+  - first:
+      23: 2300520
+    second: Vitrina 5-6
+  - first:
+      23: 2300522
+    second: Vitrina 6
+  - first:
+      23: 2300524
+    second: Vitrina 6-7
+  - first:
+      23: 2300526
+    second: Vitrina 7
+  - first:
+      23: 2300528
+    second: Vitrina Glass 1
+  - first:
+      23: 2300530
+    second: Vitrina Glass 2
+  - first:
+      23: 2300532
+    second: Vitrina Glass 3
+  - first:
+      23: 2300534
+    second: Vitrina Glass 4
+  - first:
+      23: 2300536
+    second: Vitrina Glass 5
+  - first:
+      23: 2300538
+    second: Vitrina light 1
+  - first:
+      23: 2300540
+    second: Vitrina light 2
+  - first:
+      23: 2300542
+    second: Vitrina light 3
+  - first:
+      23: 2300544
+    second: Vitrina light 4
+  - first:
+      23: 2300546
+    second: Vitrina light 5
+  - first:
+      23: 2300548
+    second: Vitrina pol
+  - first:
+      23: 2300550
+    second: Vive sensor 1
+  - first:
+      23: 2300552
+    second: Vive sensor 10
+  - first:
+      23: 2300554
+    second: Vive sensor 11
+  - first:
+      23: 2300556
+    second: Vive sensor 2
+  - first:
+      23: 2300558
+    second: Vive sensor 3
+  - first:
+      23: 2300560
+    second: Vive sensor 4
+  - first:
+      23: 2300562
+    second: Vive sensor 5
+  - first:
+      23: 2300564
+    second: Vive sensor 6
+  - first:
+      23: 2300566
+    second: Vive sensor 7
+  - first:
+      23: 2300568
+    second: Vive sensor 8
+  - first:
+      23: 2300570
+    second: Vive sensor 9
+  - first:
+      23: 2300572
+    second: Vive sensor main mount black matt plastic 1
+  - first:
+      23: 2300574
+    second: Vive sensor main mount black matt plastic 1 1
+  - first:
+      23: 2300576
+    second: Vive sensor main mount black matt plastic 10
+  - first:
+      23: 2300578
+    second: Vive sensor main mount black matt plastic 10 1
+  - first:
+      23: 2300580
+    second: Vive sensor main mount black matt plastic 11
+  - first:
+      23: 2300582
+    second: Vive sensor main mount black matt plastic 11 1
+  - first:
+      23: 2300584
+    second: Vive sensor main mount black matt plastic 2
+  - first:
+      23: 2300586
+    second: Vive sensor main mount black matt plastic 2 1
+  - first:
+      23: 2300588
+    second: Vive sensor main mount black matt plastic 3
+  - first:
+      23: 2300590
+    second: Vive sensor main mount black matt plastic 3 1
+  - first:
+      23: 2300592
+    second: Vive sensor main mount black matt plastic 4
+  - first:
+      23: 2300594
+    second: Vive sensor main mount black matt plastic 4 1
+  - first:
+      23: 2300596
+    second: Vive sensor main mount black matt plastic 5
+  - first:
+      23: 2300598
+    second: Vive sensor main mount black matt plastic 5 1
+  - first:
+      23: 2300600
+    second: Vive sensor main mount black matt plastic 6
+  - first:
+      23: 2300602
+    second: Vive sensor main mount black matt plastic 6 1
+  - first:
+      23: 2300604
+    second: Vive sensor main mount black matt plastic 7
+  - first:
+      23: 2300606
+    second: Vive sensor main mount black matt plastic 7 1
+  - first:
+      23: 2300608
+    second: Vive sensor main mount black matt plastic 8
+  - first:
+      23: 2300610
+    second: Vive sensor main mount black matt plastic 8 1
+  - first:
+      23: 2300612
+    second: Vive sensor main mount black matt plastic 9
+  - first:
+      23: 2300614
+    second: Vive sensor main mount black matt plastic 9 1
+  - first:
+      23: 2300616
+    second: Vive sensor main mount chrome 1
+  - first:
+      23: 2300618
+    second: Vive sensor main mount chrome 10
+  - first:
+      23: 2300620
+    second: Vive sensor main mount chrome 11
+  - first:
+      23: 2300622
+    second: Vive sensor main mount chrome 2
+  - first:
+      23: 2300624
+    second: Vive sensor main mount chrome 3
+  - first:
+      23: 2300626
+    second: Vive sensor main mount chrome 4
+  - first:
+      23: 2300628
+    second: Vive sensor main mount chrome 5
+  - first:
+      23: 2300630
+    second: Vive sensor main mount chrome 6
+  - first:
+      23: 2300632
+    second: Vive sensor main mount chrome 7
+  - first:
+      23: 2300634
+    second: Vive sensor main mount chrome 8
+  - first:
+      23: 2300636
+    second: Vive sensor main mount chrome 9
+  - first:
+      23: 2300638
+    second: vneshnik001
+  - first:
+      23: 2300640
+    second: zal 1 Samsung TV 1
+  - first:
+      23: 2300642
+    second: zal1 cable chanel
+  - first:
+      23: 2300644
+    second: zal1 carpet 1
+  - first:
+      23: 2300646
+    second: zal1 carpet 2
+  - first:
+      23: 2300648
+    second: zal1 carpet 3
+  - first:
+      23: 2300650
+    second: zal1 carpet 4
+  - first:
+      23: 2300652
+    second: zal1 carpet 5
+  - first:
+      23: 2300654
+    second: zal1 ceiling
+  - first:
+      23: 2300656
+    second: zal1 divan 1
+  - first:
+      23: 2300658
+    second: zal1 divan 2
+  - first:
+      23: 2300660
+    second: zal1 divan 3
+  - first:
+      23: 2300662
+    second: zal1 Kronshtein 1
+  - first:
+      23: 2300664
+    second: zal1 Kronshtein 2
+  - first:
+      23: 2300666
+    second: zal1 Kronshtein 3
+  - first:
+      23: 2300668
+    second: zal1 Kronshtein 4
+  - first:
+      23: 2300670
+    second: zal1 podvenoi potolok
+  - first:
+      23: 2300672
+    second: Zal1 Projectorlight 1
+  - first:
+      23: 2300674
+    second: Zal1 Projectorlight 2
+  - first:
+      23: 2300676
+    second: zal1 Samsung TV 2
+  - first:
+      23: 2300678
+    second: zal1 Samsung TV 3
+  - first:
+      23: 2300680
+    second: zal1 Samsung TV 4
+  - first:
+      23: 2300682
+    second: zal1 Samsung TV 5
+  - first:
+      23: 2300684
+    second: zal1 soffit 1
+  - first:
+      23: 2300686
+    second: zal1 soffit 2
+  - first:
+      23: 2300688
+    second: zal1 soffit 3
+  - first:
+      23: 2300690
+    second: zal1 soffit 4
+  - first:
+      23: 2300692
+    second: zal1 soffit 5
+  - first:
+      23: 2300694
+    second: zal1 soffit 6
+  - first:
+      23: 2300696
+    second: zal1 soffit 7
+  - first:
+      23: 2300698
+    second: zal1 Wallmount 1
+  - first:
+      23: 2300700
+    second: zal1 Wallmount 2
+  - first:
+      23: 2300702
+    second: zal1 Wallmount 3 (unique)
+  - first:
+      23: 2300704
+    second: zal1 Wallmount 4
+  - first:
+      23: 2300706
+    second: zal1 Wallmount 5
+  - first:
+      23: 2300708
+    second: zal1 window 1
+  - first:
+      23: 2300710
+    second: zal1 window 2
+  - first:
+      23: 2300712
+    second: zal1 window 3
+  - first:
+      23: 2300714
+    second: zal1 window 4
+  - first:
+      23: 2300716
+    second: zal1 window 5
+  - first:
+      23: 2300718
+    second: Zal1_pol001
+  - first:
+      23: 2300720
+    second: zal1_stena1
+  - first:
+      23: 2300722
+    second: zal2 cable chanel long corrugated 1
+  - first:
+      23: 2300724
+    second: zal2 cable chanel long corrugated 2
+  - first:
+      23: 2300726
+    second: zal2 cable chanel short corrugated 1
+  - first:
+      23: 2300728
+    second: zal2 cable chanel short corrugated 2
+  - first:
+      23: 2300730
+    second: zal2 cable chanel short corrugated 3
+  - first:
+      23: 2300732
+    second: zal2 cable chanel short corrugated 4
+  - first:
+      23: 2300734
+    second: zal2 cable chanel short corrugated 5
+  - first:
+      23: 2300736
+    second: zal2 cable chanel short corrugated 6
+  - first:
+      23: 2300738
+    second: zal2 cable chanel short corrugated 7
+  - first:
+      23: 2300740
+    second: zal2 ceiling
+  - first:
+      23: 2300742
+    second: zal2 cornice
+  - first:
+      23: 2300744
+    second: Zal2 curtain
+  - first:
+      23: 2300746
+    second: zal2 divan 1
+  - first:
+      23: 2300748
+    second: zal2 divan 2
+  - first:
+      23: 2300750
+    second: zal2 divan 3
+  - first:
+      23: 2300752
+    second: zal2 floor
+  - first:
+      23: 2300754
+    second: zal2 light switch
+  - first:
+      23: 2300756
+    second: zal2 light switch main button
+  - first:
+      23: 2300758
+    second: zal2 light switch power controller
+  - first:
+      23: 2300760
+    second: zal2 lustra 1
+  - first:
+      23: 2300762
+    second: zal2 lustra 2
+  - first:
+      23: 2300764
+    second: zal2 lustra 3
+  - first:
+      23: 2300766
+    second: zal2 lustra 4
+  - first:
+      23: 2300768
+    second: zal2 lustra 5
+  - first:
+      23: 2300770
+    second: zal2 lustra 6
+  - first:
+      23: 2300772
+    second: zal2 lustra 7
+  - first:
+      23: 2300774
+    second: zal2 lustra 8
+  - first:
+      23: 2300776
+    second: zal2 plastic tube
+  - first:
+      23: 2300778
+    second: zal2 podvesnoi potolok 1
+  - first:
+      23: 2300780
+    second: zal2 podvesnoi potolok 2
+  - first:
+      23: 2300782
+    second: zal2 Samsung TV 1
+  - first:
+      23: 2300784
+    second: zal2 Samsung TV 2
+  - first:
+      23: 2300786
+    second: zal2 Samsung TV 3
+  - first:
+      23: 2300788
+    second: zal2 Samsung TV 4
+  - first:
+      23: 2300790
+    second: zal2 SPK-710
+  - first:
+      23: 2300792
+    second: zal2 SPK-710 buttons black plactic
+  - first:
+      23: 2300794
+    second: zal2 wall1
+  - first:
+      23: 2300796
+    second: zal2 Wallmount 1
+  - first:
+      23: 2300798
+    second: zal2 Wallmount 2
+  - first:
+      23: 2300800
+    second: zal2 Wallmount 3
+  - first:
+      23: 2300802
+    second: zal2 Wallmount 4
+  - first:
+      33: 3300000
+    second: ' light switch 1'
+  - first:
+      33: 3300002
+    second: ' light switch 2'
+  - first:
+      33: 3300004
+    second: ' light switch 3'
+  - first:
+      33: 3300006
+    second: ' light switch 4'
+  - first:
+      33: 3300008
+    second: ' light switch button 1'
+  - first:
+      33: 3300010
+    second: ' light switch button 2'
+  - first:
+      33: 3300012
+    second: ' light switch button 3'
+  - first:
+      33: 3300014
+    second: ' light switch button 4'
+  - first:
+      33: 3300016
+    second: 2x multiplugs 1
+  - first:
+      33: 3300018
+    second: 2x multiplugs 10
+  - first:
+      33: 3300020
+    second: 2x multiplugs 11
+  - first:
+      33: 3300022
+    second: 2x multiplugs 12
+  - first:
+      33: 3300024
+    second: 2x multiplugs 13
+  - first:
+      33: 3300026
+    second: 2x multiplugs 14
+  - first:
+      33: 3300028
+    second: 2x multiplugs 15
+  - first:
+      33: 3300030
+    second: 2x multiplugs 16
+  - first:
+      33: 3300032
+    second: 2x multiplugs 17
+  - first:
+      33: 3300034
+    second: 2x multiplugs 18
+  - first:
+      33: 3300036
+    second: 2x multiplugs 19
+  - first:
+      33: 3300038
+    second: 2x multiplugs 2
+  - first:
+      33: 3300040
+    second: 2x multiplugs 20
+  - first:
+      33: 3300042
+    second: 2x multiplugs 3
+  - first:
+      33: 3300044
+    second: 2x multiplugs 4
+  - first:
+      33: 3300046
+    second: 2x multiplugs 5
+  - first:
+      33: 3300048
+    second: 2x multiplugs 6
+  - first:
+      33: 3300050
+    second: 2x multiplugs 7
+  - first:
+      33: 3300052
+    second: 2x multiplugs 8
+  - first:
+      33: 3300054
+    second: 2x multiplugs 9
+  - first:
+      33: 3300056
+    second: Administration desk blackpanels
+  - first:
+      33: 3300058
+    second: Administration desk diod tape
+  - first:
+      33: 3300060
+    second: Administration desk white panels
+  - first:
+      33: 3300062
+    second: autosimulator black matt metal
+  - first:
+      33: 3300064
+    second: autosimulator car seat
+  - first:
+      33: 3300066
+    second: autosimulator carseat plastic
+  - first:
+      33: 3300068
+    second: autosimulator dark glass table
+  - first:
+      33: 3300070
+    second: autosimulator footstage with pedals
+  - first:
+      33: 3300072
+    second: autosimulator pedali chases
+  - first:
+      33: 3300074
+    second: autosimulator steering wheel
+  - first:
+      33: 3300076
+    second: autosimulator steering wheel buttons
+  - first:
+      33: 3300078
+    second: autosimulator steering wheel chases
+  - first:
+      33: 3300080
+    second: autosimulator steering wheel chases buttons
+  - first:
+      33: 3300082
+    second: autosimulator steering wheel joystick
+  - first:
+      33: 3300084
+    second: autosimulator steering wheel pivot
+  - first:
+      33: 3300086
+    second: banner
+  - first:
+      33: 3300088
+    second: Banner 2 black wood frame
+  - first:
+      33: 3300090
+    second: Banner black wood frame
+  - first:
+      33: 3300092
+    second: banner2
+  - first:
+      33: 3300094
+    second: Dahai despenser
+  - first:
+      33: 3300096
+    second: Dahai faucet 1
+  - first:
+      33: 3300098
+    second: Dahai faucet 2
+  - first:
+      33: 3300100
+    second: Dahai water bottle
+  - first:
+      33: 3300102
+    second: diploma's A4 frame
+  - first:
+      33: 3300104
+    second: diplomas A4
+  - first:
+      33: 3300106
+    second: Door1
+  - first:
+      33: 3300108
+    second: Door2
+  - first:
+      33: 3300110
+    second: doorbox005
+  - first:
+      33: 3300112
+    second: doorbox006
+  - first:
+      33: 3300114
+    second: doorbox1
+  - first:
+      33: 3300116
+    second: doorbox2
+  - first:
+      33: 3300118
+    second: Doorhandle 1
+  - first:
+      33: 3300120
+    second: Doorhandle 2
+  - first:
+      33: 3300122
+    second: Doorhandle base 1
+  - first:
+      33: 3300124
+    second: Doorhandle base 2
+  - first:
+      33: 3300126
+    second: Entrance glass with print
+  - first:
+      33: 3300128
+    second: Entrance sign base
+  - first:
+      33: 3300130
+    second: Entrance sign plate
+  - first:
+      33: 3300132
+    second: Hallway celing
+  - first:
+      33: 3300134
+    second: Ikea table 1
+  - first:
+      33: 3300136
+    second: Ikea table 2
+  - first:
+      33: 3300138
+    second: Ikea table 3
+  - first:
+      33: 3300140
+    second: Ikea table 4
+  - first:
+      33: 3300142
+    second: Ikea table 5
+  - first:
+      33: 3300144
+    second: Ikea table 6
+  - first:
+      33: 3300146
+    second: Ikea table short
+  - first:
+      33: 3300148
+    second: Inner door
+  - first:
+      33: 3300150
+    second: Inner door handle
+  - first:
+      33: 3300152
+    second: Inner door lock
+  - first:
+      33: 3300154
+    second: Inner door lock hole matt metal
+  - first:
+      33: 3300156
+    second: Inner door main pivot base and glass fixture matt grey metal
+  - first:
+      33: 3300158
+    second: Inner door main pivot plane
+  - first:
+      33: 3300160
+    second: Inner door pivot
+  - first:
+      33: 3300162
+    second: Kitchen
+  - first:
+      33: 3300164
+    second: Kitchen ceiling
+  - first:
+      33: 3300166
+    second: Kitchen floor
+  - first:
+      33: 3300168
+    second: kolonna1
+  - first:
+      33: 3300170
+    second: kolonna2
+  - first:
+      33: 3300172
+    second: kolonna3
+  - first:
+      33: 3300174
+    second: kolonna4
+  - first:
+      33: 3300176
+    second: kolonna5
+  - first:
+      33: 3300178
+    second: kolonna6
+  - first:
+      33: 3300180
+    second: kolonna7
+  - first:
+      33: 3300182
+    second: komorka
+  - first:
+      33: 3300184
+    second: komorka pol
+  - first:
+      33: 3300186
+    second: koridor
+  - first:
+      33: 3300188
+    second: koridor pol
+  - first:
+      33: 3300190
+    second: Mirror 1
+  - first:
+      33: 3300192
+    second: Mirror 10
+  - first:
+      33: 3300194
+    second: Mirror 2
+  - first:
+      33: 3300196
+    second: Mirror 3
+  - first:
+      33: 3300198
+    second: Mirror 4
+  - first:
+      33: 3300200
+    second: Mirror 5
+  - first:
+      33: 3300202
+    second: Mirror 6
+  - first:
+      33: 3300204
+    second: Mirror 7
+  - first:
+      33: 3300206
+    second: Mirror 8
+  - first:
+      33: 3300208
+    second: Mirror 9
+  - first:
+      33: 3300210
+    second: Mirror oval
+  - first:
+      33: 3300212
+    second: Net filter 1
+  - first:
+      33: 3300214
+    second: Net filter 2
+  - first:
+      33: 3300216
+    second: Net filter 3
+  - first:
+      33: 3300218
+    second: Net filter 4
+  - first:
+      33: 3300220
+    second: Net filter 5
+  - first:
+      33: 3300222
+    second: Outer door
+  - first:
+      33: 3300224
+    second: Outer door handle
+  - first:
+      33: 3300226
+    second: Outer door main pivot plane matt metal
+  - first:
+      33: 3300228
+    second: Outer door pivot
+  - first:
+      33: 3300230
+    second: Oval Mirror LED_tape
+  - first:
+      33: 3300232
+    second: Pandus
+  - first:
+      33: 3300234
+    second: PapeLlight 1
+  - first:
+      33: 3300236
+    second: PapeLlight 2
+  - first:
+      33: 3300238
+    second: PapeLlight 3
+  - first:
+      33: 3300240
+    second: PapeLlight base 1
+  - first:
+      33: 3300242
+    second: PapeLlight base 2
+  - first:
+      33: 3300244
+    second: PapeLlight base 3
+  - first:
+      33: 3300246
+    second: PC Block 1
+  - first:
+      33: 3300248
+    second: PC Block 2
+  - first:
+      33: 3300250
+    second: PC Block 3
+  - first:
+      33: 3300252
+    second: PC Block 4
+  - first:
+      33: 3300254
+    second: PC Block 5
+  - first:
+      33: 3300256
+    second: PC Block 6
+  - first:
+      33: 3300258
+    second: PC Block 7
+  - first:
+      33: 3300260
+    second: PC Block 8
+  - first:
+      33: 3300262
+    second: PC cables 1
+  - first:
+      33: 3300264
+    second: PC cables 2
+  - first:
+      33: 3300266
+    second: PC cables 3
+  - first:
+      33: 3300268
+    second: PC cables 4
+  - first:
+      33: 3300270
+    second: PC cables 5
+  - first:
+      33: 3300272
+    second: PC cables 6
+  - first:
+      33: 3300274
+    second: PC cables 7
+  - first:
+      33: 3300276
+    second: PC cables 8
+  - first:
+      33: 3300278
+    second: PC Coolant pipes 1
+  - first:
+      33: 3300280
+    second: PC Coolant pipes 2
+  - first:
+      33: 3300282
+    second: PC Coolant pipes 3
+  - first:
+      33: 3300284
+    second: PC Coolant pipes 4
+  - first:
+      33: 3300286
+    second: PC Coolant pipes 5
+  - first:
+      33: 3300288
+    second: PC Coolant pipes 6
+  - first:
+      33: 3300290
+    second: PC Coolant pipes 7
+  - first:
+      33: 3300292
+    second: PC Coolant pipes 8
+  - first:
+      33: 3300294
+    second: PC Nojki 1
+  - first:
+      33: 3300296
+    second: PC Nojki 2
+  - first:
+      33: 3300298
+    second: PC Nojki 3
+  - first:
+      33: 3300300
+    second: PC Nojki 4
+  - first:
+      33: 3300302
+    second: PC Nojki 5
+  - first:
+      33: 3300304
+    second: PC Nojki 6
+  - first:
+      33: 3300306
+    second: PC Nojki 7
+  - first:
+      33: 3300308
+    second: PC Nojki 8
+  - first:
+      33: 3300310
+    second: PC Thermaltake glass 1
+  - first:
+      33: 3300312
+    second: PC Thermaltake glass 2
+  - first:
+      33: 3300314
+    second: PC Thermaltake glass 3
+  - first:
+      33: 3300316
+    second: PC Thermaltake glass 4
+  - first:
+      33: 3300318
+    second: PC Thermaltake glass 5
+  - first:
+      33: 3300320
+    second: PC Thermaltake glass 6
+  - first:
+      33: 3300322
+    second: PC Thermaltake glass 7
+  - first:
+      33: 3300324
+    second: PC Thermaltake glass 8
+  - first:
+      33: 3300326
+    second: Petli1
+  - first:
+      33: 3300328
+    second: Petli2
+  - first:
+      33: 3300330
+    second: Photoscreen
+  - first:
+      33: 3300332
+    second: pod podokonnikom 1-2
+  - first:
+      33: 3300334
+    second: pod podokonnikom 2-3
+  - first:
+      33: 3300336
+    second: pod podokonnikom 3-4
+  - first:
+      33: 3300338
+    second: pod podokonnikom 5-6
+  - first:
+      33: 3300340
+    second: pod podokonnikom 6-7
+  - first:
+      33: 3300342
+    second: pod_podokonnikom_4-5
+  - first:
+      33: 3300344
+    second: podokonnik 1-2
+  - first:
+      33: 3300346
+    second: podokonnik 2-3
+  - first:
+      33: 3300348
+    second: podokonnik 3-4
+  - first:
+      33: 3300350
+    second: podokonnik 5-6
+  - first:
+      33: 3300352
+    second: podokonnik 6-7
+  - first:
+      33: 3300354
+    second: Polochka pod PC chrome 1
+  - first:
+      33: 3300356
+    second: Polochka pod PC chrome 2
+  - first:
+      33: 3300358
+    second: Polochka pod PC chrome 3
+  - first:
+      33: 3300360
+    second: Polochka pod PC chrome 4
+  - first:
+      33: 3300362
+    second: Polochka pod PC chrome 5
+  - first:
+      33: 3300364
+    second: Polochka pod PC chrome 6
+  - first:
+      33: 3300366
+    second: Polochka pod PC chrome 7
+  - first:
+      33: 3300368
+    second: Polochka pod PC chrome 8
+  - first:
+      33: 3300370
+    second: Polochka pod PC dark metal 1
+  - first:
+      33: 3300372
+    second: Polochka pod PC dark metal 2
+  - first:
+      33: 3300374
+    second: Polochka pod PC dark metal 3
+  - first:
+      33: 3300376
+    second: Polochka pod PC dark metal 4
+  - first:
+      33: 3300378
+    second: Polochka pod PC dark metal 5
+  - first:
+      33: 3300380
+    second: Polochka pod PC dark metal 6
+  - first:
+      33: 3300382
+    second: Polochka pod PC dark metal 7
+  - first:
+      33: 3300384
+    second: Polochka pod PC dark metal 8
+  - first:
+      33: 3300386
+    second: Polochla_pod_kompami 1
+  - first:
+      33: 3300388
+    second: Polochla_pod_kompami 2
+  - first:
+      33: 3300390
+    second: Polochla_pod_kompami 3
+  - first:
+      33: 3300392
+    second: Polochla_pod_kompami 4
+  - first:
+      33: 3300394
+    second: Polochla_pod_kompami 5
+  - first:
+      33: 3300396
+    second: Polochla_pod_kompami 6
+  - first:
+      33: 3300398
+    second: Polochla_pod_kompami 7
+  - first:
+      33: 3300400
+    second: Polochla_pod_kompami 8
+  - first:
+      33: 3300402
+    second: quad perforated metal line
+  - first:
+      33: 3300404
+    second: Radiator L 1
+  - first:
+      33: 3300406
+    second: Radiator L 2
+  - first:
+      33: 3300408
+    second: Radiator L 3
+  - first:
+      33: 3300410
+    second: Radiator L 4
+  - first:
+      33: 3300412
+    second: Radiator L 5
+  - first:
+      33: 3300414
+    second: Radiator L 6
+  - first:
+      33: 3300416
+    second: Radiator R 1
+  - first:
+      33: 3300418
+    second: Radiator R 2
+  - first:
+      33: 3300420
+    second: rama 1
+  - first:
+      33: 3300422
+    second: rama 10
+  - first:
+      33: 3300424
+    second: rama 11
+  - first:
+      33: 3300426
+    second: rama 12
+  - first:
+      33: 3300428
+    second: rama 13
+  - first:
+      33: 3300430
+    second: rama 2
+  - first:
+      33: 3300432
+    second: rama 3
+  - first:
+      33: 3300434
+    second: rama 4
+  - first:
+      33: 3300436
+    second: rama 5
+  - first:
+      33: 3300438
+    second: rama 6
+  - first:
+      33: 3300440
+    second: rama 7
+  - first:
+      33: 3300442
+    second: rama 8
+  - first:
+      33: 3300444
+    second: rama 9
+  - first:
+      33: 3300446
+    second: Refregerator chases
+  - first:
+      33: 3300448
+    second: Refregerator door
+  - first:
+      33: 3300450
+    second: Refregerator door pivot
+  - first:
+      33: 3300452
+    second: Refregerator inner glass
+  - first:
+      33: 3300454
+    second: Refregerator outer glass
+  - first:
+      33: 3300456
+    second: Refregerator radiator
+  - first:
+      33: 3300458
+    second: Refregerator shelves
+  - first:
+      33: 3300460
+    second: smoke detector 1
+  - first:
+      33: 3300462
+    second: smoke detector 2
+  - first:
+      33: 3300464
+    second: smoke detector 3
+  - first:
+      33: 3300466
+    second: smoke detector 4
+  - first:
+      33: 3300468
+    second: smoke detector 5
+  - first:
+      33: 3300470
+    second: smoke detector 6
+  - first:
+      33: 3300472
+    second: smoke detector 7
+  - first:
+      33: 3300474
+    second: Toilet ceiling
+  - first:
+      33: 3300476
+    second: Toilet pol attachment
+  - first:
+      33: 3300478
+    second: Toilet walls
+  - first:
+      33: 3300480
+    second: Tolet floor
+  - first:
+      33: 3300482
+    second: Unicum coffee beans
+  - first:
+      33: 3300484
+    second: Unicum coffee box
+  - first:
+      33: 3300486
+    second: Unicum coffee set base door
+  - first:
+      33: 3300488
+    second: Unicum coffee set base door handle
+  - first:
+      33: 3300490
+    second: Unicum coffee set base lower stage
+  - first:
+      33: 3300492
+    second: Unicum coffee set base main box
+  - first:
+      33: 3300494
+    second: Unicum coffee set base upper shelf
+  - first:
+      33: 3300496
+    second: unicum door
+  - first:
+      33: 3300498
+    second: unicum main box
+  - first:
+      33: 3300500
+    second: unicum_handles
+  - first:
+      33: 3300502
+    second: Vitrina 1
+  - first:
+      33: 3300504
+    second: Vitrina 1-2
+  - first:
+      33: 3300506
+    second: Vitrina 2
+  - first:
+      33: 3300508
+    second: Vitrina 2-3
+  - first:
+      33: 3300510
+    second: Vitrina 3
+  - first:
+      33: 3300512
+    second: Vitrina 3-4
+  - first:
+      33: 3300514
+    second: Vitrina 4
+  - first:
+      33: 3300516
+    second: Vitrina 4-5
+  - first:
+      33: 3300518
+    second: Vitrina 5
+  - first:
+      33: 3300520
+    second: Vitrina 5-6
+  - first:
+      33: 3300522
+    second: Vitrina 6
+  - first:
+      33: 3300524
+    second: Vitrina 6-7
+  - first:
+      33: 3300526
+    second: Vitrina 7
+  - first:
+      33: 3300528
+    second: Vitrina Glass 1
+  - first:
+      33: 3300530
+    second: Vitrina Glass 2
+  - first:
+      33: 3300532
+    second: Vitrina Glass 3
+  - first:
+      33: 3300534
+    second: Vitrina Glass 4
+  - first:
+      33: 3300536
+    second: Vitrina Glass 5
+  - first:
+      33: 3300538
+    second: Vitrina light 1
+  - first:
+      33: 3300540
+    second: Vitrina light 2
+  - first:
+      33: 3300542
+    second: Vitrina light 3
+  - first:
+      33: 3300544
+    second: Vitrina light 4
+  - first:
+      33: 3300546
+    second: Vitrina light 5
+  - first:
+      33: 3300548
+    second: Vitrina pol
+  - first:
+      33: 3300550
+    second: Vive sensor 1
+  - first:
+      33: 3300552
+    second: Vive sensor 10
+  - first:
+      33: 3300554
+    second: Vive sensor 11
+  - first:
+      33: 3300556
+    second: Vive sensor 2
+  - first:
+      33: 3300558
+    second: Vive sensor 3
+  - first:
+      33: 3300560
+    second: Vive sensor 4
+  - first:
+      33: 3300562
+    second: Vive sensor 5
+  - first:
+      33: 3300564
+    second: Vive sensor 6
+  - first:
+      33: 3300566
+    second: Vive sensor 7
+  - first:
+      33: 3300568
+    second: Vive sensor 8
+  - first:
+      33: 3300570
+    second: Vive sensor 9
+  - first:
+      33: 3300572
+    second: Vive sensor main mount black matt plastic 1
+  - first:
+      33: 3300574
+    second: Vive sensor main mount black matt plastic 1 1
+  - first:
+      33: 3300576
+    second: Vive sensor main mount black matt plastic 10
+  - first:
+      33: 3300578
+    second: Vive sensor main mount black matt plastic 10 1
+  - first:
+      33: 3300580
+    second: Vive sensor main mount black matt plastic 11
+  - first:
+      33: 3300582
+    second: Vive sensor main mount black matt plastic 11 1
+  - first:
+      33: 3300584
+    second: Vive sensor main mount black matt plastic 2
+  - first:
+      33: 3300586
+    second: Vive sensor main mount black matt plastic 2 1
+  - first:
+      33: 3300588
+    second: Vive sensor main mount black matt plastic 3
+  - first:
+      33: 3300590
+    second: Vive sensor main mount black matt plastic 3 1
+  - first:
+      33: 3300592
+    second: Vive sensor main mount black matt plastic 4
+  - first:
+      33: 3300594
+    second: Vive sensor main mount black matt plastic 4 1
+  - first:
+      33: 3300596
+    second: Vive sensor main mount black matt plastic 5
+  - first:
+      33: 3300598
+    second: Vive sensor main mount black matt plastic 5 1
+  - first:
+      33: 3300600
+    second: Vive sensor main mount black matt plastic 6
+  - first:
+      33: 3300602
+    second: Vive sensor main mount black matt plastic 6 1
+  - first:
+      33: 3300604
+    second: Vive sensor main mount black matt plastic 7
+  - first:
+      33: 3300606
+    second: Vive sensor main mount black matt plastic 7 1
+  - first:
+      33: 3300608
+    second: Vive sensor main mount black matt plastic 8
+  - first:
+      33: 3300610
+    second: Vive sensor main mount black matt plastic 8 1
+  - first:
+      33: 3300612
+    second: Vive sensor main mount black matt plastic 9
+  - first:
+      33: 3300614
+    second: Vive sensor main mount black matt plastic 9 1
+  - first:
+      33: 3300616
+    second: Vive sensor main mount chrome 1
+  - first:
+      33: 3300618
+    second: Vive sensor main mount chrome 10
+  - first:
+      33: 3300620
+    second: Vive sensor main mount chrome 11
+  - first:
+      33: 3300622
+    second: Vive sensor main mount chrome 2
+  - first:
+      33: 3300624
+    second: Vive sensor main mount chrome 3
+  - first:
+      33: 3300626
+    second: Vive sensor main mount chrome 4
+  - first:
+      33: 3300628
+    second: Vive sensor main mount chrome 5
+  - first:
+      33: 3300630
+    second: Vive sensor main mount chrome 6
+  - first:
+      33: 3300632
+    second: Vive sensor main mount chrome 7
+  - first:
+      33: 3300634
+    second: Vive sensor main mount chrome 8
+  - first:
+      33: 3300636
+    second: Vive sensor main mount chrome 9
+  - first:
+      33: 3300638
+    second: vneshnik001
+  - first:
+      33: 3300640
+    second: zal 1 Samsung TV 1
+  - first:
+      33: 3300642
+    second: zal1 cable chanel
+  - first:
+      33: 3300644
+    second: zal1 carpet 1
+  - first:
+      33: 3300646
+    second: zal1 carpet 2
+  - first:
+      33: 3300648
+    second: zal1 carpet 3
+  - first:
+      33: 3300650
+    second: zal1 carpet 4
+  - first:
+      33: 3300652
+    second: zal1 carpet 5
+  - first:
+      33: 3300654
+    second: zal1 ceiling
+  - first:
+      33: 3300656
+    second: zal1 divan 1
+  - first:
+      33: 3300658
+    second: zal1 divan 2
+  - first:
+      33: 3300660
+    second: zal1 divan 3
+  - first:
+      33: 3300662
+    second: zal1 Kronshtein 1
+  - first:
+      33: 3300664
+    second: zal1 Kronshtein 2
+  - first:
+      33: 3300666
+    second: zal1 Kronshtein 3
+  - first:
+      33: 3300668
+    second: zal1 Kronshtein 4
+  - first:
+      33: 3300670
+    second: zal1 podvenoi potolok
+  - first:
+      33: 3300672
+    second: Zal1 Projectorlight 1
+  - first:
+      33: 3300674
+    second: Zal1 Projectorlight 2
+  - first:
+      33: 3300676
+    second: zal1 Samsung TV 2
+  - first:
+      33: 3300678
+    second: zal1 Samsung TV 3
+  - first:
+      33: 3300680
+    second: zal1 Samsung TV 4
+  - first:
+      33: 3300682
+    second: zal1 Samsung TV 5
+  - first:
+      33: 3300684
+    second: zal1 soffit 1
+  - first:
+      33: 3300686
+    second: zal1 soffit 2
+  - first:
+      33: 3300688
+    second: zal1 soffit 3
+  - first:
+      33: 3300690
+    second: zal1 soffit 4
+  - first:
+      33: 3300692
+    second: zal1 soffit 5
+  - first:
+      33: 3300694
+    second: zal1 soffit 6
+  - first:
+      33: 3300696
+    second: zal1 soffit 7
+  - first:
+      33: 3300698
+    second: zal1 Wallmount 1
+  - first:
+      33: 3300700
+    second: zal1 Wallmount 2
+  - first:
+      33: 3300702
+    second: zal1 Wallmount 3 (unique)
+  - first:
+      33: 3300704
+    second: zal1 Wallmount 4
+  - first:
+      33: 3300706
+    second: zal1 Wallmount 5
+  - first:
+      33: 3300708
+    second: zal1 window 1
+  - first:
+      33: 3300710
+    second: zal1 window 2
+  - first:
+      33: 3300712
+    second: zal1 window 3
+  - first:
+      33: 3300714
+    second: zal1 window 4
+  - first:
+      33: 3300716
+    second: zal1 window 5
+  - first:
+      33: 3300718
+    second: Zal1_pol001
+  - first:
+      33: 3300720
+    second: zal1_stena1
+  - first:
+      33: 3300722
+    second: zal2 cable chanel long corrugated 1
+  - first:
+      33: 3300724
+    second: zal2 cable chanel long corrugated 2
+  - first:
+      33: 3300726
+    second: zal2 cable chanel short corrugated 1
+  - first:
+      33: 3300728
+    second: zal2 cable chanel short corrugated 2
+  - first:
+      33: 3300730
+    second: zal2 cable chanel short corrugated 3
+  - first:
+      33: 3300732
+    second: zal2 cable chanel short corrugated 4
+  - first:
+      33: 3300734
+    second: zal2 cable chanel short corrugated 5
+  - first:
+      33: 3300736
+    second: zal2 cable chanel short corrugated 6
+  - first:
+      33: 3300738
+    second: zal2 cable chanel short corrugated 7
+  - first:
+      33: 3300740
+    second: zal2 ceiling
+  - first:
+      33: 3300742
+    second: zal2 cornice
+  - first:
+      33: 3300744
+    second: Zal2 curtain
+  - first:
+      33: 3300746
+    second: zal2 divan 1
+  - first:
+      33: 3300748
+    second: zal2 divan 2
+  - first:
+      33: 3300750
+    second: zal2 divan 3
+  - first:
+      33: 3300752
+    second: zal2 floor
+  - first:
+      33: 3300754
+    second: zal2 light switch
+  - first:
+      33: 3300756
+    second: zal2 light switch main button
+  - first:
+      33: 3300758
+    second: zal2 light switch power controller
+  - first:
+      33: 3300760
+    second: zal2 lustra 1
+  - first:
+      33: 3300762
+    second: zal2 lustra 2
+  - first:
+      33: 3300764
+    second: zal2 lustra 3
+  - first:
+      33: 3300766
+    second: zal2 lustra 4
+  - first:
+      33: 3300768
+    second: zal2 lustra 5
+  - first:
+      33: 3300770
+    second: zal2 lustra 6
+  - first:
+      33: 3300772
+    second: zal2 lustra 7
+  - first:
+      33: 3300774
+    second: zal2 lustra 8
+  - first:
+      33: 3300776
+    second: zal2 plastic tube
+  - first:
+      33: 3300778
+    second: zal2 podvesnoi potolok 1
+  - first:
+      33: 3300780
+    second: zal2 podvesnoi potolok 2
+  - first:
+      33: 3300782
+    second: zal2 Samsung TV 1
+  - first:
+      33: 3300784
+    second: zal2 Samsung TV 2
+  - first:
+      33: 3300786
+    second: zal2 Samsung TV 3
+  - first:
+      33: 3300788
+    second: zal2 Samsung TV 4
+  - first:
+      33: 3300790
+    second: zal2 SPK-710
+  - first:
+      33: 3300792
+    second: zal2 SPK-710 buttons black plactic
+  - first:
+      33: 3300794
+    second: zal2 wall1
+  - first:
+      33: 3300796
+    second: zal2 Wallmount 1
+  - first:
+      33: 3300798
+    second: zal2 Wallmount 2
+  - first:
+      33: 3300800
+    second: zal2 Wallmount 3
+  - first:
+      33: 3300802
+    second: zal2 Wallmount 4
+  - first:
+      43: 4300000
+    second: autosimulator steering wheel buttons
+  - first:
+      43: 4300002
+    second: zal1_stena1
+  - first:
+      43: 4300004
+    second: Zal1_pol001
+  - first:
+      43: 4300006
+    second: Photoscreen
+  - first:
+      43: 4300008
+    second: Radiator L 1
+  - first:
+      43: 4300010
+    second: Radiator L 2
+  - first:
+      43: 4300012
+    second: Radiator L 3
+  - first:
+      43: 4300014
+    second: Radiator L 4
+  - first:
+      43: 4300016
+    second: Radiator R 1
+  - first:
+      43: 4300018
+    second: autosimulator black matt metal
+  - first:
+      43: 4300020
+    second: Ikea table 1
+  - first:
+      43: 4300022
+    second: banner
+  - first:
+      43: 4300024
+    second: Banner black wood frame
+  - first:
+      43: 4300026
+    second: banner2
+  - first:
+      43: 4300028
+    second: Banner 2 black wood frame
+  - first:
+      43: 4300030
+    second: Administration desk blackpanels
+  - first:
+      43: 4300032
+    second: Administration desk white panels
+  - first:
+      43: 4300034
+    second: Administration desk diod tape
+  - first:
+      43: 4300036
+    second: autosimulator steering wheel pivot
+  - first:
+      43: 4300038
+    second: zal1 divan 1
+  - first:
+      43: 4300040
+    second: zal1 divan 2
+  - first:
+      43: 4300042
+    second: zal1 divan 3
+  - first:
+      43: 4300044
+    second: zal2 divan 1
+  - first:
+      43: 4300046
+    second: zal2 divan 2
+  - first:
+      43: 4300048
+    second: zal2 divan 3
+  - first:
+      43: 4300050
+    second: doorbox1
+  - first:
+      43: 4300052
+    second: doorbox005
+  - first:
+      43: 4300054
+    second: doorbox006
+  - first:
+      43: 4300056
+    second: autosimulator steering wheel chases buttons
+  - first:
+      43: 4300058
+    second: kolonna1
+  - first:
+      43: 4300060
+    second: kolonna2
+  - first:
+      43: 4300062
+    second: kolonna3
+  - first:
+      43: 4300064
+    second: kolonna4
+  - first:
+      43: 4300066
+    second: kolonna5
+  - first:
+      43: 4300068
+    second: kolonna6
+  - first:
+      43: 4300070
+    second: kolonna7
+  - first:
+      43: 4300072
+    second: koridor
+  - first:
+      43: 4300074
+    second: koridor pol
+  - first:
+      43: 4300076
+    second: Hallway celing
+  - first:
+      43: 4300078
+    second: autosimulator steering wheel joystick
+  - first:
+      43: 4300080
+    second: autosimulator steering wheel chases
+  - first:
+      43: 4300082
+    second: autosimulator car seat
+  - first:
+      43: 4300084
+    second: Kitchen floor
+  - first:
+      43: 4300086
+    second: Kitchen ceiling
+  - first:
+      43: 4300088
+    second: Kitchen
+  - first:
+      43: 4300090
+    second: zal1 carpet 5
+  - first:
+      43: 4300092
+    second: zal1 window 5
+  - first:
+      43: 4300094
+    second: Pandus
+  - first:
+      43: 4300096
+    second: PapeLlight 1
+  - first:
+      43: 4300098
+    second: PapeLlight base 1
+  - first:
+      43: 4300100
+    second: PapeLlight 2
+  - first:
+      43: 4300102
+    second: PapeLlight base 2
+  - first:
+      43: 4300104
+    second: PapeLlight 3
+  - first:
+      43: 4300106
+    second: PapeLlight base 3
+  - first:
+      43: 4300108
+    second: autosimulator pedali chases
+  - first:
+      43: 4300110
+    second: pod podokonnikom 1-2
+  - first:
+      43: 4300112
+    second: pod podokonnikom 2-3
+  - first:
+      43: 4300114
+    second: pod podokonnikom 3-4
+  - first:
+      43: 4300116
+    second: pod podokonnikom 5-6
+  - first:
+      43: 4300118
+    second: pod podokonnikom 6-7
+  - first:
+      43: 4300120
+    second: podokonnik 1-2
+  - first:
+      43: 4300122
+    second: podokonnik 2-3
+  - first:
+      43: 4300124
+    second: podokonnik 3-4
+  - first:
+      43: 4300126
+    second: podokonnik 5-6
+  - first:
+      43: 4300128
+    second: podokonnik 6-7
+  - first:
+      43: 4300130
+    second: Toilet pol attachment
+  - first:
+      43: 4300132
+    second: autosimulator steering wheel
+  - first:
+      43: 4300134
+    second: autosimulator dark glass table
+  - first:
+      43: 4300136
+    second: Toilet walls
+  - first:
+      43: 4300138
+    second: Tolet floor
+  - first:
+      43: 4300140
+    second: Toilet ceiling
+  - first:
+      43: 4300142
+    second: vneshnik001
+  - first:
+      43: 4300144
+    second: autosimulator carseat plastic
+  - first:
+      43: 4300146
+    second: zal1 podvenoi potolok
+  - first:
+      43: 4300148
+    second: zal1 ceiling
+  - first:
+      43: 4300150
+    second: zal2 podvesnoi potolok 2
+  - first:
+      43: 4300152
+    second: zal2 podvesnoi potolok 1
+  - first:
+      43: 4300154
+    second: zal2 floor
+  - first:
+      43: 4300156
+    second: zal2 ceiling
+  - first:
+      43: 4300158
+    second: zal1 cable chanel
+  - first:
+      43: 4300160
+    second: zal1 Kronshtein 1
+  - first:
+      43: 4300162
+    second: zal1 Kronshtein 2
+  - first:
+      43: 4300164
+    second: zal1 Kronshtein 3
+  - first:
+      43: 4300166
+    second: zal1 Kronshtein 4
+  - first:
+      43: 4300168
+    second: Net filter 1
+  - first:
+      43: 4300170
+    second: Net filter 2
+  - first:
+      43: 4300172
+    second: Net filter 3
+  - first:
+      43: 4300174
+    second: Net filter 4
+  - first:
+      43: 4300176
+    second: Net filter 5
+  - first:
+      43: 4300178
+    second: Polochla_pod_kompami 1
+  - first:
+      43: 4300180
+    second: Polochka pod PC chrome 1
+  - first:
+      43: 4300182
+    second: Polochka pod PC dark metal 1
+  - first:
+      43: 4300184
+    second: Zal1 Projectorlight 1
+  - first:
+      43: 4300186
+    second: Zal1 Projectorlight 2
+  - first:
+      43: 4300188
+    second: zal1 soffit 7
+  - first:
+      43: 4300190
+    second: zal1 Wallmount 4
+  - first:
+      43: 4300192
+    second: zal1 Samsung TV 4
+  - first:
+      43: 4300194
+    second: zal1 Wallmount 1
+  - first:
+      43: 4300196
+    second: zal 1 Samsung TV 1
+  - first:
+      43: 4300198
+    second: zal1 Wallmount 3 (unique)
+  - first:
+      43: 4300200
+    second: zal1 Samsung TV 3
+  - first:
+      43: 4300202
+    second: zal2 Wallmount 1
+  - first:
+      43: 4300204
+    second: zal2 Samsung TV 1
+  - first:
+      43: 4300206
+    second: zal2 Wallmount 2
+  - first:
+      43: 4300208
+    second: zal2 Samsung TV 2
+  - first:
+      43: 4300210
+    second: zal2 Wallmount 3
+  - first:
+      43: 4300212
+    second: zal2 Samsung TV 3
+  - first:
+      43: 4300214
+    second: zal2 Wallmount 4
+  - first:
+      43: 4300216
+    second: zal2 Samsung TV 4
+  - first:
+      43: 4300218
+    second: Entrance glass with print
+  - first:
+      43: 4300220
+    second: Inner door handle
+  - first:
+      43: 4300222
+    second: Inner door
+  - first:
+      43: 4300224
+    second: Inner door lock
+  - first:
+      43: 4300226
+    second: Inner door pivot
+  - first:
+      43: 4300228
+    second: Outer door handle
+  - first:
+      43: 4300230
+    second: Outer door
+  - first:
+      43: 4300232
+    second: Outer door pivot
+  - first:
+      43: 4300234
+    second: zal2 lustra 8
+  - first:
+      43: 4300236
+    second: Inner door lock hole matt metal
+  - first:
+      43: 4300238
+    second: PC Block 1
+  - first:
+      43: 4300240
+    second: PC Coolant pipes 1
+  - first:
+      43: 4300242
+    second: PC Nojki 1
+  - first:
+      43: 4300244
+    second: PC cables 1
+  - first:
+      43: 4300246
+    second: PC Thermaltake glass 1
+  - first:
+      43: 4300248
+    second: PC Block 2
+  - first:
+      43: 4300250
+    second: PC Coolant pipes 2
+  - first:
+      43: 4300252
+    second: PC Nojki 2
+  - first:
+      43: 4300254
+    second: PC cables 2
+  - first:
+      43: 4300256
+    second: PC Thermaltake glass 2
+  - first:
+      43: 4300258
+    second: PC Block 3
+  - first:
+      43: 4300260
+    second: PC Coolant pipes 3
+  - first:
+      43: 4300262
+    second: PC Nojki 3
+  - first:
+      43: 4300264
+    second: PC cables 3
+  - first:
+      43: 4300266
+    second: PC Thermaltake glass 3
+  - first:
+      43: 4300268
+    second: PC Block 4
+  - first:
+      43: 4300270
+    second: PC Coolant pipes 4
+  - first:
+      43: 4300272
+    second: PC Nojki 4
+  - first:
+      43: 4300274
+    second: PC cables 4
+  - first:
+      43: 4300276
+    second: PC Thermaltake glass 4
+  - first:
+      43: 4300278
+    second: PC Block 5
+  - first:
+      43: 4300280
+    second: PC Coolant pipes 5
+  - first:
+      43: 4300282
+    second: PC Nojki 5
+  - first:
+      43: 4300284
+    second: PC cables 5
+  - first:
+      43: 4300286
+    second: PC Thermaltake glass 5
+  - first:
+      43: 4300288
+    second: PC Block 6
+  - first:
+      43: 4300290
+    second: PC Coolant pipes 6
+  - first:
+      43: 4300292
+    second: PC Nojki 6
+  - first:
+      43: 4300294
+    second: PC cables 6
+  - first:
+      43: 4300296
+    second: PC Thermaltake glass 6
+  - first:
+      43: 4300298
+    second: PC Block 7
+  - first:
+      43: 4300300
+    second: PC Coolant pipes 7
+  - first:
+      43: 4300302
+    second: PC Nojki 7
+  - first:
+      43: 4300304
+    second: PC cables 7
+  - first:
+      43: 4300306
+    second: PC Thermaltake glass 7
+  - first:
+      43: 4300308
+    second: PC Block 8
+  - first:
+      43: 4300310
+    second: PC Coolant pipes 8
+  - first:
+      43: 4300312
+    second: PC Nojki 8
+  - first:
+      43: 4300314
+    second: PC cables 8
+  - first:
+      43: 4300316
+    second: PC Thermaltake glass 8
+  - first:
+      43: 4300318
+    second: zal2 cornice
+  - first:
+      43: 4300320
+    second: Zal2 curtain
+  - first:
+      43: 4300322
+    second: zal2 plastic tube
+  - first:
+      43: 4300324
+    second: Radiator R 2
+  - first:
+      43: 4300326
+    second: Radiator L 5
+  - first:
+      43: 4300328
+    second: Radiator L 6
+  - first:
+      43: 4300330
+    second: Outer door main pivot plane matt metal
+  - first:
+      43: 4300332
+    second: Inner door main pivot base and glass fixture matt grey metal
+  - first:
+      43: 4300334
+    second: zal2 light switch
+  - first:
+      43: 4300336
+    second: zal2 light switch main button
+  - first:
+      43: 4300338
+    second: zal2 light switch power controller
+  - first:
+      43: 4300340
+    second: zal2 SPK-710
+  - first:
+      43: 4300342
+    second: Vitrina pol
+  - first:
+      43: 4300344
+    second: Oval Mirror LED_tape
+  - first:
+      43: 4300346
+    second: Mirror 10
+  - first:
+      43: 4300348
+    second: Vive sensor main mount black matt plastic 1
+  - first:
+      43: 4300350
+    second: Vive sensor main mount chrome 1
+  - first:
+      43: 4300352
+    second: Vive sensor main mount black matt plastic 1
+  - first:
+      43: 4300354
+    second: Vive sensor 1
+  - first:
+      43: 4300356
+    second: Vive sensor main mount black matt plastic 2
+  - first:
+      43: 4300358
+    second: Vive sensor main mount chrome 2
+  - first:
+      43: 4300360
+    second: Vive sensor main mount black matt plastic 2
+  - first:
+      43: 4300362
+    second: Vive sensor 2
+  - first:
+      43: 4300364
+    second: Vive sensor main mount black matt plastic 3
+  - first:
+      43: 4300366
+    second: Vive sensor main mount chrome 3
+  - first:
+      43: 4300368
+    second: Vive sensor main mount black matt plastic 3
+  - first:
+      43: 4300370
+    second: Vive sensor 3
+  - first:
+      43: 4300372
+    second: Vive sensor main mount black matt plastic 4
+  - first:
+      43: 4300374
+    second: Vive sensor main mount chrome 4
+  - first:
+      43: 4300376
+    second: Vive sensor main mount black matt plastic 4
+  - first:
+      43: 4300378
+    second: Vive sensor 4
+  - first:
+      43: 4300380
+    second: Vive sensor main mount black matt plastic 5
+  - first:
+      43: 4300382
+    second: Vive sensor main mount black matt plastic 5
+  - first:
+      43: 4300384
+    second: Vive sensor main mount chrome 5
+  - first:
+      43: 4300386
+    second: Vive sensor 5
+  - first:
+      43: 4300388
+    second: Vive sensor main mount black matt plastic 7
+  - first:
+      43: 4300390
+    second: Vive sensor main mount chrome 7
+  - first:
+      43: 4300392
+    second: Vive sensor main mount black matt plastic 7
+  - first:
+      43: 4300394
+    second: Vive sensor 7
+  - first:
+      43: 4300396
+    second: Vive sensor main mount black matt plastic 6
+  - first:
+      43: 4300398
+    second: Vive sensor main mount chrome 6
+  - first:
+      43: 4300400
+    second: Vive sensor main mount black matt plastic 6
+  - first:
+      43: 4300402
+    second: Vive sensor 6
+  - first:
+      43: 4300404
+    second: Vive sensor main mount black matt plastic 11
+  - first:
+      43: 4300406
+    second: Vive sensor main mount chrome 11
+  - first:
+      43: 4300408
+    second: Vive sensor main mount black matt plastic 11
+  - first:
+      43: 4300410
+    second: Vive sensor 11
+  - first:
+      43: 4300412
+    second: Vive sensor main mount black matt plastic 10
+  - first:
+      43: 4300414
+    second: Vive sensor main mount chrome 10
+  - first:
+      43: 4300416
+    second: Vive sensor main mount black matt plastic 10
+  - first:
+      43: 4300418
+    second: Vive sensor 10
+  - first:
+      43: 4300420
+    second: Vive sensor main mount black matt plastic 9
+  - first:
+      43: 4300422
+    second: Vive sensor main mount chrome 9
+  - first:
+      43: 4300424
+    second: Vive sensor main mount black matt plastic 9
+  - first:
+      43: 4300426
+    second: Vive sensor 9
+  - first:
+      43: 4300428
+    second: Vive sensor main mount black matt plastic 8
+  - first:
+      43: 4300430
+    second: Vive sensor main mount chrome 8
+  - first:
+      43: 4300432
+    second: Vive sensor main mount black matt plastic 8
+  - first:
+      43: 4300434
+    second: Vive sensor 8
+  - first:
+      43: 4300436
+    second: komorka pol
+  - first:
+      43: 4300438
+    second: komorka
+  - first:
+      43: 4300440
+    second: Vitrina light 5
+  - first:
+      43: 4300442
+    second: Vitrina 1-2
+  - first:
+      43: 4300444
+    second: Vitrina 2-3
+  - first:
+      43: 4300446
+    second: Vitrina 4-5
+  - first:
+      43: 4300448
+    second: Vitrina 3-4
+  - first:
+      43: 4300450
+    second: Vitrina 5-6
+  - first:
+      43: 4300452
+    second: Vitrina 6-7
+  - first:
+      43: 4300454
+    second: Vitrina 7
+  - first:
+      43: 4300456
+    second: Vitrina 6
+  - first:
+      43: 4300458
+    second: Vitrina 5
+  - first:
+      43: 4300460
+    second: Vitrina 4
+  - first:
+      43: 4300462
+    second: Vitrina 3
+  - first:
+      43: 4300464
+    second: Vitrina 2
+  - first:
+      43: 4300466
+    second: Vitrina 1
+  - first:
+      43: 4300468
+    second: pod_podokonnikom_4-5
+  - first:
+      43: 4300470
+    second: Mirror 1
+  - first:
+      43: 4300472
+    second: Mirror 2
+  - first:
+      43: 4300474
+    second: Mirror 3
+  - first:
+      43: 4300476
+    second: Mirror 4
+  - first:
+      43: 4300478
+    second: Mirror 5
+  - first:
+      43: 4300480
+    second: Mirror 6
+  - first:
+      43: 4300482
+    second: Mirror 7
+  - first:
+      43: 4300484
+    second: Mirror 8
+  - first:
+      43: 4300486
+    second: Mirror 9
+  - first:
+      43: 4300488
+    second: Vitrina Glass 1
+  - first:
+      43: 4300490
+    second: Vitrina Glass 2
+  - first:
+      43: 4300492
+    second: Vitrina Glass 3
+  - first:
+      43: 4300494
+    second: Vitrina Glass 4
+  - first:
+      43: 4300496
+    second: Vitrina Glass 5
+  - first:
+      43: 4300498
+    second: zal1 window 1
+  - first:
+      43: 4300500
+    second: zal1 window 2
+  - first:
+      43: 4300502
+    second: zal1 window 3
+  - first:
+      43: 4300504
+    second: zal1 window 4
+  - first:
+      43: 4300506
+    second: rama 1
+  - first:
+      43: 4300508
+    second: rama 2
+  - first:
+      43: 4300510
+    second: rama 3
+  - first:
+      43: 4300512
+    second: rama 4
+  - first:
+      43: 4300514
+    second: rama 5
+  - first:
+      43: 4300516
+    second: rama 6
+  - first:
+      43: 4300518
+    second: rama 7
+  - first:
+      43: 4300520
+    second: rama 8
+  - first:
+      43: 4300522
+    second: rama 9
+  - first:
+      43: 4300524
+    second: rama 10
+  - first:
+      43: 4300526
+    second: rama 11
+  - first:
+      43: 4300528
+    second: rama 12
+  - first:
+      43: 4300530
+    second: rama 13
+  - first:
+      43: 4300532
+    second: zal2 lustra 1
+  - first:
+      43: 4300534
+    second: zal2 lustra 2
+  - first:
+      43: 4300536
+    second: zal2 lustra 3
+  - first:
+      43: 4300538
+    second: zal2 lustra 4
+  - first:
+      43: 4300540
+    second: zal2 lustra 5
+  - first:
+      43: 4300542
+    second: zal2 lustra 6
+  - first:
+      43: 4300544
+    second: zal2 lustra 7
+  - first:
+      43: 4300546
+    second: 2x multiplugs 1
+  - first:
+      43: 4300548
+    second: 2x multiplugs 2
+  - first:
+      43: 4300550
+    second: 2x multiplugs 3
+  - first:
+      43: 4300552
+    second: 2x multiplugs 4
+  - first:
+      43: 4300554
+    second: 2x multiplugs 5
+  - first:
+      43: 4300556
+    second: 2x multiplugs 6
+  - first:
+      43: 4300558
+    second: 2x multiplugs 7
+  - first:
+      43: 4300560
+    second: 2x multiplugs 8
+  - first:
+      43: 4300562
+    second: 2x multiplugs 9
+  - first:
+      43: 4300564
+    second: 2x multiplugs 10
+  - first:
+      43: 4300566
+    second: 2x multiplugs 11
+  - first:
+      43: 4300568
+    second: 2x multiplugs 12
+  - first:
+      43: 4300570
+    second: 2x multiplugs 13
+  - first:
+      43: 4300572
+    second: 2x multiplugs 14
+  - first:
+      43: 4300574
+    second: 2x multiplugs 15
+  - first:
+      43: 4300576
+    second: 2x multiplugs 16
+  - first:
+      43: 4300578
+    second: 2x multiplugs 17
+  - first:
+      43: 4300580
+    second: 2x multiplugs 18
+  - first:
+      43: 4300582
+    second: 2x multiplugs 19
+  - first:
+      43: 4300584
+    second: 2x multiplugs 20
+  - first:
+      43: 4300586
+    second: ' light switch 1'
+  - first:
+      43: 4300588
+    second: ' light switch button 1'
+  - first:
+      43: 4300590
+    second: ' light switch 2'
+  - first:
+      43: 4300592
+    second: ' light switch button 2'
+  - first:
+      43: 4300594
+    second: ' light switch 3'
+  - first:
+      43: 4300596
+    second: ' light switch button 3'
+  - first:
+      43: 4300598
+    second: ' light switch 4'
+  - first:
+      43: 4300600
+    second: ' light switch button 4'
+  - first:
+      43: 4300602
+    second: Vitrina light 1
+  - first:
+      43: 4300604
+    second: Vitrina light 2
+  - first:
+      43: 4300606
+    second: Vitrina light 3
+  - first:
+      43: 4300608
+    second: Vitrina light 4
+  - first:
+      43: 4300610
+    second: Polochla_pod_kompami 2
+  - first:
+      43: 4300612
+    second: Polochka pod PC chrome 2
+  - first:
+      43: 4300614
+    second: Polochka pod PC dark metal 2
+  - first:
+      43: 4300616
+    second: Polochla_pod_kompami 3
+  - first:
+      43: 4300618
+    second: Polochka pod PC chrome 3
+  - first:
+      43: 4300620
+    second: Polochka pod PC dark metal 3
+  - first:
+      43: 4300622
+    second: Polochla_pod_kompami 4
+  - first:
+      43: 4300624
+    second: Polochka pod PC chrome 4
+  - first:
+      43: 4300626
+    second: Polochka pod PC dark metal 4
+  - first:
+      43: 4300628
+    second: Polochla_pod_kompami 5
+  - first:
+      43: 4300630
+    second: Polochka pod PC chrome 5
+  - first:
+      43: 4300632
+    second: Polochka pod PC dark metal 5
+  - first:
+      43: 4300634
+    second: Polochla_pod_kompami 6
+  - first:
+      43: 4300636
+    second: Polochka pod PC chrome 6
+  - first:
+      43: 4300638
+    second: Polochka pod PC dark metal 6
+  - first:
+      43: 4300640
+    second: Polochla_pod_kompami 7
+  - first:
+      43: 4300642
+    second: Polochka pod PC chrome 7
+  - first:
+      43: 4300644
+    second: Polochka pod PC dark metal 7
+  - first:
+      43: 4300646
+    second: Polochla_pod_kompami 8
+  - first:
+      43: 4300648
+    second: Polochka pod PC chrome 8
+  - first:
+      43: 4300650
+    second: Polochka pod PC dark metal 8
+  - first:
+      43: 4300652
+    second: zal2 cable chanel short corrugated 1
+  - first:
+      43: 4300654
+    second: zal2 cable chanel short corrugated 2
+  - first:
+      43: 4300656
+    second: zal2 cable chanel short corrugated 3
+  - first:
+      43: 4300658
+    second: zal2 cable chanel short corrugated 4
+  - first:
+      43: 4300660
+    second: zal2 cable chanel short corrugated 5
+  - first:
+      43: 4300662
+    second: zal2 cable chanel short corrugated 6
+  - first:
+      43: 4300664
+    second: zal2 cable chanel short corrugated 7
+  - first:
+      43: 4300666
+    second: zal2 cable chanel long corrugated 1
+  - first:
+      43: 4300668
+    second: zal2 cable chanel long corrugated 2
+  - first:
+      43: 4300670
+    second: autosimulator footstage with pedals
+  - first:
+      43: 4300672
+    second: zal1 carpet 1
+  - first:
+      43: 4300674
+    second: zal1 carpet 2
+  - first:
+      43: 4300676
+    second: zal1 carpet 3
+  - first:
+      43: 4300678
+    second: zal1 carpet 4
+  - first:
+      43: 4300680
+    second: diplomas A4
+  - first:
+      43: 4300682
+    second: diploma's A4 frame
+  - first:
+      43: 4300684
+    second: Inner door main pivot plane
+  - first:
+      43: 4300686
+    second: Mirror oval
+  - first:
+      43: 4300688
+    second: zal2 SPK-710 buttons black plactic
+  - first:
+      43: 4300690
+    second: zal1 Wallmount 2
+  - first:
+      43: 4300692
+    second: zal1 Samsung TV 2
+  - first:
+      43: 4300694
+    second: zal1 Wallmount 5
+  - first:
+      43: 4300696
+    second: zal1 Samsung TV 5
+  - first:
+      43: 4300698
+    second: zal1 soffit 1
+  - first:
+      43: 4300700
+    second: zal1 soffit 2
+  - first:
+      43: 4300702
+    second: zal1 soffit 3
+  - first:
+      43: 4300704
+    second: zal1 soffit 4
+  - first:
+      43: 4300706
+    second: zal1 soffit 5
+  - first:
+      43: 4300708
+    second: zal1 soffit 6
+  - first:
+      43: 4300710
+    second: smoke detector 1
+  - first:
+      43: 4300712
+    second: smoke detector 2
+  - first:
+      43: 4300714
+    second: smoke detector 3
+  - first:
+      43: 4300716
+    second: smoke detector 4
+  - first:
+      43: 4300718
+    second: smoke detector 5
+  - first:
+      43: 4300720
+    second: smoke detector 6
+  - first:
+      43: 4300722
+    second: smoke detector 7
+  - first:
+      43: 4300724
+    second: Entrance sign base
+  - first:
+      43: 4300726
+    second: Entrance sign plate
+  - first:
+      43: 4300728
+    second: quad perforated metal line
+  - first:
+      43: 4300730
+    second: Refregerator door
+  - first:
+      43: 4300732
+    second: Refregerator inner glass
+  - first:
+      43: 4300734
+    second: Refregerator outer glass
+  - first:
+      43: 4300736
+    second: Refregerator chases
+  - first:
+      43: 4300738
+    second: Refregerator door pivot
+  - first:
+      43: 4300740
+    second: Refregerator radiator
+  - first:
+      43: 4300742
+    second: Refregerator shelves
+  - first:
+      43: 4300744
+    second: Unicum coffee set base main box
+  - first:
+      43: 4300746
+    second: Unicum coffee set base lower stage
+  - first:
+      43: 4300748
+    second: Unicum coffee set base upper shelf
+  - first:
+      43: 4300750
+    second: Unicum coffee set base door
+  - first:
+      43: 4300752
+    second: Unicum coffee set base door handle
+  - first:
+      43: 4300754
+    second: unicum main box
+  - first:
+      43: 4300756
+    second: unicum door
+  - first:
+      43: 4300758
+    second: Unicum coffee box
+  - first:
+      43: 4300760
+    second: Unicum coffee beans
+  - first:
+      43: 4300762
+    second: unicum_handles
+  - first:
+      43: 4300764
+    second: Dahai despenser
+  - first:
+      43: 4300766
+    second: Dahai faucet 2
+  - first:
+      43: 4300768
+    second: Dahai water bottle
+  - first:
+      43: 4300770
+    second: Dahai faucet 1
+  - first:
+      43: 4300772
+    second: doorbox2
+  - first:
+      43: 4300774
+    second: Doorhandle base 1
+  - first:
+      43: 4300776
+    second: Petli1
+  - first:
+      43: 4300778
+    second: Door1
+  - first:
+      43: 4300780
+    second: Doorhandle 1
+  - first:
+      43: 4300782
+    second: Doorhandle base 2
+  - first:
+      43: 4300784
+    second: Doorhandle 2
+  - first:
+      43: 4300786
+    second: Petli2
+  - first:
+      43: 4300788
+    second: Door2
+  - first:
+      43: 4300790
+    second: Ikea table 4
+  - first:
+      43: 4300792
+    second: Ikea table short
+  - first:
+      43: 4300794
+    second: Ikea table 5
+  - first:
+      43: 4300796
+    second: Ikea table 6
+  - first:
+      43: 4300798
+    second: Ikea table 2
+  - first:
+      43: 4300800
+    second: Ikea table 3
+  - first:
+      43: 4300802
+    second: zal2 wall1
+  - first:
+      74: 7400000
+    second: Take 001
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 2x multiplugs (UV albedo)
+    second: {fileID: 2100000, guid: 438343b958d19024d9f2acc661fde8d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 5x multiplugs (UV albedo)
+    second: {fileID: 2100000, guid: 096510106cca9f34fbf524c78f81c33e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Banner 1 (UV albedo)
+    second: {fileID: 2100000, guid: 31cd3892d252a164da548298abcd1999, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Banner 2
+    second: {fileID: 2100000, guid: 4970e45953b8da944a8131a4e55f8d1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Carseat (UV albedo)
+    second: {fileID: 2100000, guid: 929795c996d236f43b4a89fadf49fd68, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dahai despenser (UV albedo)
+    second: {fileID: 2100000, guid: d3147af275530b647943ecb2fdaa623c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dahai despenser L (UV albedo)
+    second: {fileID: 2100000, guid: 5fd82e2f6ee2710459e0af61795c0c1d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dahai despenser R (UV albedo)
+    second: {fileID: 2100000, guid: 5994bce01d929544e86292a74883a93f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dahai despenser water bottle (UV albedo)
+    second: {fileID: 2100000, guid: 4251a175001b2384394875e3e5b18a90, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Diplomas (UV albedo)
+    second: {fileID: 2100000, guid: 3a3fcf161015d40418e2ba2ebf49d668, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Divan (UV albedo)
+    second: {fileID: 2100000, guid: e7fd17da963f12c46bf0b7e07a005656, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Entrance glasses (UV albedo)
+    second: {fileID: 2100000, guid: e557b5bd7da43804fa17aeb0cb7cad2f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Exit sign (uv albedo)
+    second: {fileID: 2100000, guid: f0b524c834965ba499c1ba9f14fa9b94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: c2acc5f921f5cec4a80c6855cbbddcb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grass carpet
+    second: {fileID: 2100000, guid: 34cbd742b50d10e47b47f431c9f9c754, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Keyboard
+    second: {fileID: 2100000, guid: 9f0d119caad5035489eff1a6c607b6e4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #19'
+    second: {fileID: 2100000, guid: 1239f02fd5ed412408c29315b9303e24, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: 'Material #36'
+    second: {fileID: 2100000, guid: 2d3b78667cee70d4fafca77d53af9caf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal black half matt
+    second: {fileID: 2100000, guid: 85e5a0574072e654ea123aa4bce97353, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal black_
+    second: {fileID: 2100000, guid: 14b069e8178e9c54fab55cb501dcad67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal grey grainy (full metallness, smothness 0,7)
+    second: {fileID: 2100000, guid: a2fa074a65637a74592af831174150f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal grey grainy (half metallness, smothness 0,3)
+    second: {fileID: 2100000, guid: d148b1bf7546a8840946507e6b3d9acb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metallicheskii tros
+    second: {fileID: 2100000, guid: eb155d2122701a54ca1ad491f444c998, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mirrors
+    second: {fileID: 2100000, guid: 3b6a3a91001b0d949a18adc1e94bba49, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: No Name
+    second: {fileID: 2100000, guid: 6e4dfaea1cb16324c80bc45068ae755b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PC block (uv albedo)
+    second: {fileID: 2100000, guid: d8a3c0018902fe54186715f87a299c55, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PC cables
+    second: {fileID: 2100000, guid: 32ab4154ae0383a4cb3ba98c4d104a1b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: PC coolant pipes
+    second: {fileID: 2100000, guid: 56a026e14e3e8e54e8c385dec1cf438b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Photoscreen display (uv albedo)
+    second: {fileID: 2100000, guid: a0bccae36ef92e4419ac3e9dc164e2b0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic black glossy
+    second: {fileID: 2100000, guid: eae4682a87deaf84094746f2e0bfef2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic black matt
+    second: {fileID: 2100000, guid: 10d2804e302aa114886c6d2ae0493cf9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plastic white glossy
+    second: {fileID: 2100000, guid: 46e0f5d569119774386fc23871f606c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Proborki s podstavkoi
+    second: {fileID: 2100000, guid: d2768bae46c9a894389e75bb0fd28e07, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Projector light glass (UV albedo)
+    second: {fileID: 2100000, guid: 2d90960ae50eacc41b3242bb7bbf935b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Refregerator outer glass (UV albedo)
+    second: {fileID: 2100000, guid: 3f85d0efd980bcd45943ff87facff1f2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SPK-710 (UV albedo)
+    second: {fileID: 2100000, guid: 34d4a9180910cee45b4f8e59da470afb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Smoke detector (UV albedo with emission map)
+    second: {fileID: 2100000, guid: f5648d953fe741d4fb4a8002fa4ed0d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Soffit (UV albedo)
+    second: {fileID: 2100000, guid: 91e584dd7b50e3f4d8e290a317e7d520, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Toilet floor attachments
+    second: {fileID: 2100000, guid: 55ac0ac03d44ca441b3a4ea3bc33fa7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Unicum coffee beans (UV albedo)
+    second: {fileID: 2100000, guid: 271a4576f16a2db4f8ddbfc12a10fc3d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Unicum coffee door button 1
+    second: {fileID: 2100000, guid: b3d8ca7ffdc8cfc47af2db323728d6f7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Unicum coffee door button 10
+    second: {fileID: 2100000, guid: 1ce58130d36b5474d8ec4ba5c3ecbf0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Unicum coffee door button 2
+    second: {fileID: 2100000, guid: 88e8dac52bb058941b98c745d6d59bc9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Unicum coffee door button 3
+    second: {fileID: 2100000, guid: 52d2c5441ae22864bb8c597b9db2dec4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Unicum coffee door button 4
+    second: {fileID: 2100000, guid: d53959117aca7a54890daa8827174e20, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Unicum coffee door button 5
+    second: {fileID: 2100000, guid: efd3cc1930166aa48a354597430b9bb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Unicum coffee door button 6
+    second: {fileID: 2100000, guid: c99677b2010081044a956ed259efac29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Unicum coffee door button 7
+    second: {fileID: 2100000, guid: 5190505b655effc468c6b6de4882ba6b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Unicum coffee door button 8
+    second: {fileID: 2100000, guid: 2d32137c583c98e4b8091b00c5b18786, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Unicum coffee door button 9
+    second: {fileID: 2100000, guid: 2249e99b37f1b764b80d29d400b1a795, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Unicum coffee_
+    second: {fileID: 2100000, guid: acee918588d36ce4a884b35b1c788f81, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vedro
+    second: {fileID: 2100000, guid: c6c6cad28665e3f499087fb4440e23af, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vitrina light (UV albedo)
+    second: {fileID: 2100000, guid: 45d8dabef51355d45910b5e721d53d91, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vitrina pol
+    second: {fileID: 2100000, guid: 5c168c3e3bda2ad4e926caedebad3e15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood black
+    second: {fileID: 2100000, guid: b6b5965e8e209f0409d7d722213cc8c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood white old
+    second: {fileID: 2100000, guid: 92b5c12b778489c44929e5fefb65071c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Zal2 black curtain
+    second: {fileID: 2100000, guid: d63cad823101c1b48b4347298a90d33d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: administration desk black (UV)
+    second: {fileID: 2100000, guid: c6491c9095f0c6f4e8c648e746648602, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: black wall tiles
+    second: {fileID: 2100000, guid: 9fcd9d365ebb1ce45bb6fa82b312c88e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cable chanel corrugated
+    second: {fileID: 2100000, guid: bed3bde6d3ec7b04886858624e889aa2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ceiling
+    second: {fileID: 2100000, guid: 08edc0c22abf28b40a0728229c9c8047, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chair wood curtain
+    second: {fileID: 2100000, guid: b1382c532b227fb42a2336fa15072426, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: chrome
+    second: {fileID: 2100000, guid: 89cc0ff28290cb547ab6a127566717d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: curpet grey
+    second: {fileID: 2100000, guid: d91e355a0d5d5474792ffdc8317a28e6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark glass
+    second: {fileID: 2100000, guid: 6460d8271e0780041b425ddc4bab4c2d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dirty glass
+    second: {fileID: 2100000, guid: 1c2d3bc49db326a498745690cf11fc51, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: evacuation plan
+    second: {fileID: 2100000, guid: 3ef568be317ed1d4e99198c5339a3677, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitchen floor
+    second: {fileID: 2100000, guid: a07490873599c3b44802c37efa7551f3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: kitchen walls
+    second: {fileID: 2100000, guid: 8b26e8ac0514d5440baae55e4aa4703b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: komorka walls
+    second: {fileID: 2100000, guid: 3ff96ff28bbec5e43b726c87853ae99c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: koridor floor
+    second: {fileID: 2100000, guid: a3cc8210ae979d04a9cbf6854ff942ad, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: koridor walls
+    second: {fileID: 2100000, guid: 8ddf09a461fd9464bbacd72db7a70790, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: outer door (UV albedo)
+    second: {fileID: 2100000, guid: cee26e6d9e5d85341b177a472f0dea95, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: oval mirror led tape
+    second: {fileID: 2100000, guid: c2ec7f96b8a6e394a8ded09435f48559, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paint black matt_
+    second: {fileID: 2100000, guid: c6a08c1972df8a7478e6b9147030bd94, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pandus
+    second: {fileID: 2100000, guid: c90bc94b10d501646b921ad3789391cb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paper light (UV albedo)
+    second: {fileID: 2100000, guid: 3ae222cf3dda285459fc76c5f793d54f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: photoscreen
+    second: {fileID: 2100000, guid: 307e90aca9c03054492f4f35144f8d0a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plaster
+    second: {fileID: 2100000, guid: 191d1d8b8319d2644a0df38082d0ecb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plaster black_
+    second: {fileID: 2100000, guid: b156900d411d3114b8f9d95405933d35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: radiators
+    second: {fileID: 2100000, guid: b68156c77f442054dabae344a8144e89, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: street road
+    second: {fileID: 2100000, guid: cb0a1991ce83d544585c2832b041f2d2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: toilet floor
+    second: {fileID: 2100000, guid: e44bccaee4611fd4eb8980f89e6cd562, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: toilet walls
+    second: {fileID: 2100000, guid: 3ecb59499a048b149a10544c0476a705, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ugolok potrebitelya
+    second: {fileID: 2100000, guid: 1e06955ae0d833f49bc10fe6916adc56, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: veshalka
+    second: {fileID: 2100000, guid: 544642a8e2567cd4eb1ea8b0190613fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: white wall tiles
+    second: {fileID: 2100000, guid: 86bfabc74e7ede74b8f978b7d60412e7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zal2 door1 (UV albedo)
+    second: {fileID: 2100000, guid: f2fc836d81f84b84f9b6cc8d18e31076, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: zal2_lustra
+    second: {fileID: 2100000, guid: 53532cd63c8e7e94488422b6c4e1b978, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -47,7 +47,7 @@ public class FirebaseClass : MonoBehaviour
 	[SerializeField]
 	private InputField patronymic_register;
 	[SerializeField]
-	private Dropdown[] birthday_register ;
+	private Dropdown[] birthday_register;
 
 	[SerializeField]
 	private InputField phone_SMS_code;
@@ -77,7 +77,7 @@ public class FirebaseClass : MonoBehaviour
 	public GameObject tremsOfUseToggle;
 	public GameObject labaRulesToggle;
 
-
+	public event Action<string> onAvatarDownloaded;
 
 	private void Start()
 	{
@@ -111,18 +111,16 @@ public class FirebaseClass : MonoBehaviour
 			profileHandler = GameObject.Find("Profie Panel").GetComponent<ProfileHandler>();
 
 		}
-		else if (!next.name.Equals("MainMenu"))
+		if (current.name.Equals("StackRoom"))
 		{
+			UpdateScore();
 		}
 	}
-
-
 
 	public void Signin()
 	{
 		Signin(email_login.text, password_login.text);
 	}
-
 
 	private void Signin(string email, string pass)
 	{
@@ -162,7 +160,6 @@ public class FirebaseClass : MonoBehaviour
 		});
 	}
 
-
 	private void HandleValueChanged(object sender, ChildChangedEventArgs args)
 	{
 
@@ -175,16 +172,16 @@ public class FirebaseClass : MonoBehaviour
 		Debug.Log("Changed");
 		switch (args.Snapshot.Key)
 		{
-			case "PreviousHighScore":
-				string PrevHS = args.Snapshot.GetRawJsonValue();
-				User_Stats.PreviousHighScore = Convert.ToInt32(PrevHS);
-				PlayerPrefs.SetInt(PrefsKey.OldHS, Convert.ToInt32(PrevHS));
-				return;
-			case "HighScore":
-				string NewHS = args.Snapshot.GetRawJsonValue();
-				User_Stats.HighScore = Convert.ToInt32(NewHS);
-				PlayerPrefs.SetInt(PrefsKey.NewHS, Convert.ToInt32(NewHS));
-				return;
+			//case "PreviousHighScore":
+			//	string PrevHS = args.Snapshot.GetRawJsonValue();
+			//	User_Stats.PreviousHighScore = Convert.ToInt32(PrevHS);
+			//	PlayerPrefs.SetInt(PrefsKey.OldHS, Convert.ToInt32(PrevHS));
+			//	return;
+			//case "HighScore":
+			//	string NewHS = args.Snapshot.GetRawJsonValue();
+			//	User_Stats.HighScore = Convert.ToInt32(NewHS);
+			//	PlayerPrefs.SetInt(PrefsKey.NewHS, Convert.ToInt32(NewHS));
+			//	return;
 			case "Hours":
 				Debug.Log("Changed hours");
 				string dataHours = args.Snapshot.GetRawJsonValue();
@@ -201,16 +198,6 @@ public class FirebaseClass : MonoBehaviour
 		}
 
 
-	}
-
-	private void Update()
-	{
-		if (Input.GetKeyDown(KeyCode.Space))
-		{
-			Debug.Log(birthday_register[2].options[birthday_register[2].value].text);
-			
-			
-		}
 	}
 
 	public void NewRegister()
@@ -248,7 +235,7 @@ public class FirebaseClass : MonoBehaviour
 				Debug.Log("Введите Отчество");
 				return;
 			}
-			
+
 
 			Email = email_register.text;
 			Password = password_register.text;
@@ -256,8 +243,8 @@ public class FirebaseClass : MonoBehaviour
 			Name = name_register.text;
 			LastName = lastName_register.text;
 			Patronymic = patronymic_register.text;
-			Birthday = "" + birthday_register[0].options[birthday_register[0].value].text + "/" 
-				+ birthday_register[1].options[birthday_register[1].value].text + "/" 
+			Birthday = "" + birthday_register[0].options[birthday_register[0].value].text + "/"
+				+ birthday_register[1].options[birthday_register[1].value].text + "/"
 				+ birthday_register[2].options[birthday_register[2].value].text;
 			gameManager.ShowLoading(true);
 
@@ -341,7 +328,7 @@ public class FirebaseClass : MonoBehaviour
 			IDictionary<string, object> updatedFields = new Dictionary<string, object>{
 				{"Email", Email},
 				{"Password", Password},
-				{"Phone Number", Phone_Number},
+				{"PhoneNumber", Phone_Number},
 				{"Id", User.UserId},
 				{"Name", Name},
 				{"LastName", LastName},
@@ -361,7 +348,7 @@ public class FirebaseClass : MonoBehaviour
 
 					gameManager.Panels[2].GetComponent<Animator>().Play("SSCR Fade-out");
 
-					Signin(Email, Password);
+					//Signin(Email, Password);
 					Debug.Log("User's data was successfully updated");
 					PlayerPrefs.SetString(PrefsKey.RememberEmail, Email);
 					PlayerPrefs.SetString(PrefsKey.RememberPass, Password);
@@ -375,7 +362,6 @@ public class FirebaseClass : MonoBehaviour
 		gameManager.ShowLoading(false);
 	}
 
-	// Track state changes of the auth object.
 	void AuthStateChanged(object sender, System.EventArgs eventArgs)
 	{
 		if (Auth.CurrentUser != User)
@@ -386,7 +372,17 @@ public class FirebaseClass : MonoBehaviour
 				Debug.Log("Signed out " + User.UserId);
 				Reference.Child("users").Child(User.UserId).ChildChanged -= HandleValueChanged;
 				User = null;
+				PlayerPrefs.SetInt(PrefsKey.Hours, 0);
+				PlayerPrefs.SetInt(PrefsKey.Coin, 0);
+				PlayerPrefs.SetInt(PrefsKey.OldHS, 0);
+				PlayerPrefs.SetInt(PrefsKey.NewHS, 0);
+				PlayerPrefs.SetString(PrefsKey.Name, "");
+				PlayerPrefs.SetString(PrefsKey.LastName, "");
+				PlayerPrefs.SetString(PrefsKey.Patronymic, "");
+				PlayerPrefs.SetString(PrefsKey.Birthday, "");
 				gameManager.LoadLevel("LoginRoom");
+				Destroy(this.gameObject);
+
 			}
 			User = Auth.CurrentUser;
 			if (signedIn)
@@ -461,7 +457,8 @@ public class FirebaseClass : MonoBehaviour
 				PlayerPrefs.SetString(PrefsKey.LastName, User_Stats.LastName);
 				PlayerPrefs.SetString(PrefsKey.Patronymic, User_Stats.Patronymic);
 				PlayerPrefs.SetString(PrefsKey.Birthday, User_Stats.Birthday);
-				
+				Debug.Log(PlayerPrefs.GetInt(PrefsKey.Hours));
+
 			}
 		});
 	}
@@ -483,26 +480,24 @@ public class FirebaseClass : MonoBehaviour
 			if (dataTask.IsCompleted && dataTask.Result != null)
 			{
 				Debug.Log(dataTask.Result.GetRawJsonValue());
-				GameObject.Find("UMA Character Avatar").GetComponent<UMACustomizer>().LoadAvatar(dataTask.Result.GetRawJsonValue());
+				string avatarRecipe = dataTask.Result.GetRawJsonValue();
+				onAvatarDownloaded?.Invoke(avatarRecipe);
+				//GameObject.Find("UMA Character Avatar").GetComponent<UMACustomizer>().LoadAvatar(dataTask.Result.GetRawJsonValue());
 			}
 		});
 	}
-
 
 	void OnDestroy()
 	{
 		Auth.StateChanged -= AuthStateChanged;
 		Reference.Child("users").Child(User.UserId).ChildChanged -= HandleValueChanged;
-		//Auth.SignOut();
 		Auth = null;
 	}
-
 
 	public void SignOut()
 	{
 		Auth.SignOut();
 	}
-
 
 	public void SignInWithCredit(string googleIdToken, string googleAccessToken)
 	{
@@ -527,5 +522,33 @@ public class FirebaseClass : MonoBehaviour
 		});
 	}
 
+	public void UpdateScore()
+	{
+		
 
+		IDictionary<string, object> updatedFields = new Dictionary<string, object>{
+				{"HighScore", PlayerPrefs.GetInt("max")},
+				{"PreviousHighScore", PlayerPrefs.GetInt("prevMax")},
+				{"Coin", (PlayerPrefs.GetInt(PrefsKey.Coin) + (PlayerPrefs.GetInt("max") - PlayerPrefs.GetInt("prevMax")))}
+			  		};
+
+		Reference.Child("users").Child(User.UserId).UpdateChildrenAsync(updatedFields).ContinueWithOnMainThread(UpdateTask =>
+		{
+			if (UpdateTask.IsFaulted)
+			{
+				Debug.Log("Error " + UpdateTask.Exception);
+
+			}
+			else if (UpdateTask.IsCompleted)
+			{
+
+				Debug.Log("User's data was successfully updated");
+
+				
+				Reference.Child("users").Child(User.UserId).ChildChanged += HandleValueChanged;
+				gameManager.LoadLevel("MainMenu");
+
+			}
+		});
+	}
 }

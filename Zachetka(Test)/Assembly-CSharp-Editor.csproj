@@ -58,6 +58,7 @@
      <Compile Include="Assets\Character Creator UI\Editor\InitCCUI.cs" />
      <Compile Include="Assets\FullSerializer\Source\Aot\Editor\fsAotConfigurationEditor.cs" />
      <Compile Include="Assets\Hexart UI\Editor\InitHexUI.cs" />
+     <Compile Include="Assets\laba\ProceduralStochasticTexturing\Editor\StandardStochasticShaderGUI.cs" />
      <Compile Include="Assets\LunarConsole\Editor\AndroidPlugin.cs" />
      <Compile Include="Assets\LunarConsole\Editor\Autorun.cs" />
      <Compile Include="Assets\LunarConsole\Editor\BuildPostProcessor.cs" />
@@ -204,106 +205,106 @@
      <None Include="Assets\UMA\Core\Editor\Scripts\Templates\UmaDna_GetTypes_Fragment.cs.txt" />
      <None Include="Assets\Firebase\Editor\DatabaseDependencies.xml" />
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.ARKit.FaceTracking.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.FaceTracking.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.FaceTracking.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.Management">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.ARKit">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Subsystem.Registration">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-hlapi.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.ARSubsystems">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARSubsystems.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.ARSubsystems.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARSubsystems.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.ARCore">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARCore.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.ARFoundation.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARFoundation.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.ARKit.FaceTracking">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.FaceTracking.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.FaceTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.ARFoundation">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARFoundation.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.ARCore.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARCore.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-weaver.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/com.unity.multiplayer-weaver.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.XR.LegacyInputHelpers">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.Management.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Sprite.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.2D.Tilemap.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.SpatialTracking">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.SpatialTracking">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.DataPrivacy">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.XR.LegacyInputHelpers">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="Unity.XR.ARKit.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/Unity.XR.ARKit.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
  <Reference Include="com.unity.multiplayer-hlapi.Runtime">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/ScriptAssemblies/com.unity.multiplayer-hlapi.Runtime.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -501,64 +502,64 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.App">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Auth">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Database">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Firebase.Database.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.Platform">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
  </Reference>
  <Reference Include="Firebase.TaskExtension">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
  </Reference>
  <Reference Include="Google.MiniJson">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Google.MiniJson.dll</HintPath>
  </Reference>
  <Reference Include="Google.Sharpen">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Google.Sharpen.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Assets/Firebase/Plugins/Google.Sharpen.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Compat">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Assets/Parse/Plugins/dotNet45/Unity.Compat.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Tasks">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Assets/Parse/Plugins/dotNet45/Unity.Tasks.dll</HintPath>
  </Reference>
  <Reference Include="Google.IOSResolver_v1.2.130.0">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.130.0.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Assets/PlayServicesResolver/Editor/Google.IOSResolver_v1.2.130.0.dll</HintPath>
  </Reference>
  <Reference Include="Google.JarResolver_v1.2.130.0">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.130.0.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Assets/PlayServicesResolver/Editor/Google.JarResolver_v1.2.130.0.dll</HintPath>
  </Reference>
  <Reference Include="Google.VersionHandler">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Assets/PlayServicesResolver/Editor/Google.VersionHandler.dll</HintPath>
  </Reference>
  <Reference Include="Google.VersionHandlerImpl_v1.2.130.0">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.130.0.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Assets/PlayServicesResolver/Editor/Google.VersionHandlerImpl_v1.2.130.0.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Advertisements">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Editor">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.StandardEvents">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Analytics.Tracker">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.Purchasing">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Users/VrlabdvDev1/Desktop/Froman/AR_Zachetka/Zachetka(Test)/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>D:/AR_Zachetka/Zachetka(Test)/Library/PackageCache/com.unity.ext.nunit@1.0.0/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.2.6f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>

@@ -86,6 +86,7 @@ namespace Michsky.UI.CCUI
 		private void Awake()
 		{
 			firebase = GameObject.Find("Firebase").GetComponent<FirebaseClass>();
+			firebase.onAvatarDownloaded += LoadAvatar;
 		}
 
 		void OnEnable()
@@ -96,7 +97,8 @@ namespace Michsky.UI.CCUI
         void OnDisable()
         {
             avatar.CharacterUpdated.RemoveListener(Updated);
-        }
+			firebase.onAvatarDownloaded -= LoadAvatar;
+		}
 
         public void SwitchGender(bool male)
         {
@@ -416,8 +418,11 @@ namespace Michsky.UI.CCUI
             //Debug.Log("Recipe loaded from: " + Application.persistentDataPath + "/CharacterRecipes/" + saveName + ".txt");
         }
 
-		public void LoadAvatar(string recipe)
+	
+
+		private void LoadAvatar(string recipe)
 		{
+			Debug.Log("Loading Avatar");
 			avatar.ClearSlots();
 			avatar.LoadFromRecipeString(recipe);
 		}

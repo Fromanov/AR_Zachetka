@@ -24,7 +24,8 @@ public class GameManager : MonoBehaviour
 	public GameObject menuPanelObject;
 	public GameObject mainStacker;
 	public GameObject skinsStacker;
-	public GameObject instructionStacker;	
+	public GameObject instructionStacker;
+	public GameObject playerProfile;
 
 	[Header("Uma stuff")]
 	public GameObject genderSwitch;
@@ -49,7 +50,7 @@ public class GameManager : MonoBehaviour
 			Directory.CreateDirectory(recipeFilePath);
 		}		
 
-		if (!File.Exists(recipeFilePath + '/' + "MyCharSet.txt"))
+		if (!File.Exists(recipeFilePath + '/' + "MyCharSet.txt") && avatar != null)
 		{			
 			avatar.GetComponent<UMACustomizer>().ResetClick();
 		}
@@ -97,14 +98,10 @@ public class GameManager : MonoBehaviour
 
 	void Start()
 	{
-		if (loadingObject)
-		{
-			ShowLoading(false);
-		}
-
 		firebase = GameObject.Find("Firebase").GetComponent<FirebaseClass>();
+		LunarConsolePlugin.LunarConsole.Show();
+		ShowLoading(false);
 	}
-
 
 	public void Button(GameObject obj)
 	{
@@ -129,7 +126,8 @@ public class GameManager : MonoBehaviour
 		{
 			case "Character Button":
 				menuPanelObject.SetActive(false);
-				ShowLoading(true);				
+				//loadingObject.SetActive(true);
+				ShowLoading(true);
 				LoadLevel("CharacterRoom");
 				break;
 
@@ -146,7 +144,10 @@ public class GameManager : MonoBehaviour
 		switch (curState)
 		{
 			case "Off":
-				SceneManager.LoadScene("GyroRoom");
+				menuPanelObject.SetActive(false);
+				//loadingObject.SetActive(true);
+				ShowLoading(true);
+				LoadLevel("gyroRoom2");
 				break;
 
 			case "On":
@@ -154,7 +155,7 @@ public class GameManager : MonoBehaviour
 				break;
 		}
 	}
-
+		
 	public void ARStackerButtons(GameObject obj) // AR switcher method
 	{
 		string curState = obj.GetComponentInChildren<Button>().name;
@@ -196,6 +197,7 @@ public class GameManager : MonoBehaviour
 				break;
 		}
 	}
+
 	public void ArStackerPause(GameObject obj)
 	{
 		string curState = obj.GetComponent<Button>().name;
@@ -213,7 +215,53 @@ public class GameManager : MonoBehaviour
 		}
 	}
 
+	public void SocialButtons(GameObject obj)
+	{
+		string curState = obj.GetComponent<Button>().name;
+		switch (curState)
+		{
+			case "Review Button":
+				Application.OpenURL("https://www.vl.ru/laboratoriya-virtualnoj-realnosti-vrlab-dv");
+				break;
 
+			case "Youtube Button":
+				Application.OpenURL("https://www.youtube.com/channel/UCpzY0Au0ZNkA6wvYxdvE0Zw");
+				break;
+
+			case "Tripadvisor Button":
+				Application.OpenURL("https://www.tripadvisor.ru/Attraction_Review-g298496-d12324222-Reviews-Laboratory_of_Virtual_Reality_VRLABDV-Vladivostok_Primorsky_Krai_Far_Eastern_Dis.html");
+				break;
+
+			case "Facebook Button":
+				Application.OpenURL("https://www.facebook.com/vrlab.play/");
+				break;
+
+			case "VK Button":
+				Application.OpenURL("https://vk.com/vrlabdv");
+				break;
+
+			case "Insta play Button":
+				Application.OpenURL("https://www.instagram.com/vrlab.play/");
+				break;
+
+			case "Insta dev Button ":
+				Application.OpenURL("https://www.instagram.com/vrlab.dev/?igshid=1kypfzjhf5cyk");
+				break;
+		}
+	}
+
+	public void ProfileAfatarDisabler()
+	{
+		if(playerProfile.activeSelf)
+		{
+			playerProfile.SetActive(false);
+		}
+		else
+		{
+			playerProfile.SetActive(true);
+		}
+	}
+	
 	public void LoadLevel(string sceneName)
 	{
 		StartCoroutine(LoadAsynchtonously(sceneName));
@@ -244,17 +292,30 @@ public class GameManager : MonoBehaviour
 	}
 
 	public void ShowLoading(bool show)
-	{
-		Debug.Log(loadingObject == null);
-		if (show)
+	{		
+		if (show == true)
 		{
 			loadingObject.SetActive(true);
+			Debug.Log("Loading");
 		} else
 		{
 			loadingObject.SetActive(false);
 		}
 	}
 
+	
+	//void Update()
+	//{
+	//	//Debug.Log("efef");
+
+	//	if (Input.GetKeyDown(KeyCode.Space))
+	//	{
+
+	//		PlayerPrefs.SetInt("prevMax", 10);
+	//		PlayerPrefs.SetInt("max", 26);
+	//		UpdateScore();
+	//	}
+	//}
 
 	public void SignOut()
 	{
@@ -262,5 +323,13 @@ public class GameManager : MonoBehaviour
 			firebase = GameObject.Find("Firebase").GetComponent<FirebaseClass>();
 		firebase.SignOut();
 	}
+
+	//Stacker Logic
+
+	//public void UpdateScore()
+	//{
+	//	Debug.Log("Update score");
+	//	firebase.UpdateScore();
+	//}
 
 }

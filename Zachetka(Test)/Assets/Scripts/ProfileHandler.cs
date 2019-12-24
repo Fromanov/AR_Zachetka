@@ -9,17 +9,16 @@ public class ProfileHandler : MonoBehaviour
 	public GameObject userHours;
 	public GameObject userRank;
 	public GameObject userCoinValue;
+	public GameObject userDiscount;
+	public GameObject userName;
+	public GameObject userSurName;
 	public GameObject userRankProfileAvatar;
 	public GameObject userCoinValueProfileAvatar;
+	
 	public static UserProfileData userProfileData = new UserProfileData();
 
 	private FirebaseClass firebase;	
 
-	public void Avake()
-	{
-		firebase = GameObject.Find("Firebase").GetComponent<FirebaseClass>();
-		//firebase.GetDataFromDB();
-	}
 
 	public void Start()
 	{
@@ -82,9 +81,75 @@ public class ProfileHandler : MonoBehaviour
 		{
 			return ("Доктор наук");
 		}
+		else if (hours >= 10000)   
+		{
+			return ("Академик VR наук");
+		}
 
 		return null;
-	}	
+	}
+
+	public string GetDiscount(int hours)
+	{
+		if (hours >= 0 && hours < 2)            //Абитуриент
+		{
+			return ("0");
+		}
+		else if (hours >= 2 && hours < 5)       //Студент 1к.
+		{
+			return ("5");
+		}
+		else if (hours >= 5 && hours < 10)     //Студент 2к.
+		{
+			return ("7");
+		}
+		else if (hours >= 10 && hours < 15)    //Студент 3к.
+		{
+			return ("10");
+		}
+		else if (hours >= 15 && hours < 20)    //Студент 4к.
+		{
+			return ("12");
+		}
+		else if (hours >= 20 && hours < 30)    //Студент 5к.
+		{
+			return ("15");
+		}
+		else if (hours >= 30 && hours < 35)    //Аспирант.
+		{
+			return ("17");
+		}
+		else if (hours >= 35 && hours < 40)    //МНС.
+		{
+			return ("20");
+		}
+		else if (hours >= 40 && hours < 45)    //ВНС.
+		{
+			return ("23");
+		}
+		else if (hours >= 45 && hours < 50)    //ГНС.
+		{
+			return ("27");
+		}
+		else if (hours >= 50 && hours < 70)    //Кандидат наук.
+		{
+			return ("30");
+		}
+		else if (hours >= 70 && hours < 85)    //Доцент.
+		{
+			return ("40");
+		}
+		else if (hours >= 85 && hours < 100)    //Доктор наук.
+		{
+			return ("50");
+		}
+		else if (hours >= 100)
+		{
+			return ("50");
+		}
+
+		return null;
+	}
 
 	public class UserProfileData
 	{
@@ -97,11 +162,17 @@ public class ProfileHandler : MonoBehaviour
 
 	public void UpdateUserStats()
 	{
+		Debug.Log("Updating Stats");
 		userRank.GetComponent<UnityEngine.UI.Text>().text = GetRank(PlayerPrefs.GetInt(PrefsKey.Hours));
+		Debug.Log(PlayerPrefs.GetInt(PrefsKey.Hours));
 		userCoinValueProfileAvatar.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetInt(PrefsKey.Coin).ToString();
 
 		userRankProfileAvatar.GetComponent<UnityEngine.UI.Text>().text = GetRank(PlayerPrefs.GetInt(PrefsKey.Hours));
 		userCoinValue.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetInt(PrefsKey.Coin).ToString();
 		userHours.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetInt(PrefsKey.Hours) + " ч.";
+		userDiscount.GetComponent<UnityEngine.UI.Text>().text = GetDiscount(PlayerPrefs.GetInt(PrefsKey.Hours)) + " %";
+
+		userName.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetString(PrefsKey.Name);
+		userSurName.GetComponent<UnityEngine.UI.Text>().text = PlayerPrefs.GetString(PrefsKey.LastName);
 	}
 }

@@ -43,7 +43,9 @@ public class TheStackGame : MonoBehaviour
 	public RaycastHit hit;	
 	public GameObject panelfail;
 	public GameObject panelpause;
-	public float speed = 65; 
+	public float speed = 65;
+
+	private GameManager gameManager;
 
 	// Start is called before the first frame update
 	void Start()
@@ -51,6 +53,8 @@ public class TheStackGame : MonoBehaviour
 		LunarConsolePlugin.LunarConsole.Show();
 		Time.timeScale = 1;
 		PlayerPrefs.SetInt("pause", 0);
+
+		gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
 
 		counter = 0;
 		hiz = hiz_degeri;
@@ -259,7 +263,7 @@ public class TheStackGame : MonoBehaviour
 	public void Menu()
 	{
 		Time.timeScale = 1;
-		SceneManager.LoadScene("MainMenu");
+		gameManager.LoadLevel("MainMenu");
 	}
 
 	public void Continue()
@@ -303,7 +307,11 @@ public class TheStackGame : MonoBehaviour
 
 			if (counter >= PlayerPrefs.GetInt("max"))
 			{
+				PlayerPrefs.SetInt("prevMax",PlayerPrefs.GetInt("max"));
 				PlayerPrefs.SetInt("max", counter);
+				Debug.Log("StackGameUpdateScore");
+				
+				
 			}
 		}		
 	}
